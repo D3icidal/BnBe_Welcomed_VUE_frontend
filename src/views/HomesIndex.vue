@@ -1,4 +1,5 @@
 <template>
+  <!-- INDEX PAGE FOR ALL OF A USERS HOMES -->
   <div class="home">
     <h1>{{ message }}</h1>
   </div>
@@ -11,7 +12,7 @@
 export default {
   data: function() {
     return {
-      message: "BnBe Welcomed FrontPage"
+      message: "Homes.vue INDEX PAGE FOR ALL OF A USERS HOMES"
     };
   },
   created: function() {},

@@ -11,7 +11,7 @@
 export default {
   data: function() {
     return {
-      message: "BnBe Welcomed FrontPage"
+      message: "HomesShow.vue - Show page for a individual home - host view"
     };
   },
   created: function() {},
