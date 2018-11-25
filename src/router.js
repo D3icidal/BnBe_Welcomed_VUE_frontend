@@ -6,6 +6,7 @@ import HomesShow from "./views/HomesShow.vue";
 import HostsLogin from "./views/Login.vue";
 import Signup from "./views/Signup.vue";
 import Logout from "./views/Logout.vue";
+import HomesEdit from "./views/HomesEdit.vue";
 
 Vue.use(Router);
 
@@ -37,6 +38,7 @@ export default new Router({
     { path: "/signup", name: "signup", component: Signup },
     // { path: "/login", name: "login", component: Login },
     { path: "/logout", name: "logout", component: Logout },
+    { path: "/homes/:id/edit", name: "homesEdit", component: HomesEdit },
 
     // {
     //   path: "/home",

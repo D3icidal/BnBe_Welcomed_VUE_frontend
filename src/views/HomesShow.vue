@@ -1,5 +1,5 @@
 <template>
-  <!-- INDEX PAGE FOR ALL OF A USERS HOMES -->
+  <!-- Show PAGE FOR A USERS HOMES -->
   <div class="home">
     <h1>{{ message }}</h1> <br>
     <div class="homeShow">
@@ -7,11 +7,11 @@
       <p>Name: {{home.name}} </p>
       <p>Bedrooms: {{home.bedrooms}}  |  
       Bathrooms: {{home.bathrooms}}<br>
-      State: {{home.state}}</p><br>
+      State: {{home.state}}<br>
+      ID: {{home.id}}</p><br>
       <br> 
     </div>
-  </div>
-  
+  </div>  
 </template>
 
 <style>

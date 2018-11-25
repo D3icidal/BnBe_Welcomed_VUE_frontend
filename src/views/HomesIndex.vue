@@ -7,7 +7,8 @@
       <p>Name: {{home.name}} </p>
       <p>Bedrooms: {{home.bedrooms}}  |  
       Bathrooms: {{home.bathrooms}}<br>
-      State: {{home.state}}</p><br>
+      State: {{home.state}}<br>
+      ID: {{home.id}}</p><br>
       <br> 
       <!-- ADD BUTTON TO GO TO SHOW TODO -->
     </div>
