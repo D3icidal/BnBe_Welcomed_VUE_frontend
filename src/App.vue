@@ -10,9 +10,9 @@
           <li class="nav-item active">
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#/home">Home</a>
+            <a class="nav-link" href="#/home">Home</a> | 
           </li><li class="nav-item">
-            <a class="nav-link" href="#/homes">My Homes</a>
+            <a class="nav-link" href="#/homes">My Homes</a> |
           </li><li class="nav-item">
             <a class="nav-link" href="#/about">About</a>
           </li>
@@ -21,10 +21,10 @@
               Auth
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Signup</a>
-              <a class="dropdown-item" href="#">Login</a>
+              <a class="dropdown-item" href="#/signup">Signup</a>
+              <a class="dropdown-item" href="#/login">Login</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Logout</a>
+              <a class="dropdown-item" href="#/logout">Logout</a>
             </div>
           </li>          
         </ul>        

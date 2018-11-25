@@ -3,6 +3,9 @@ import Router from "vue-router";
 import Home from "./views/Home.vue";
 import HomesIndex from "./views/HomesIndex.vue";
 import HomesShow from "./views/HomesShow.vue";
+import HostsLogin from "./views/Login.vue";
+import Signup from "./views/Signup.vue";
+import Logout from "./views/Logout.vue";
 
 Vue.use(Router);
 
@@ -12,6 +15,12 @@ export default new Router({
       path: "/homes",
       name: "homesIndex",
       component: HomesIndex
+    },
+
+    {
+      path: "/login",
+      name: "hostlogin",
+      component: HostsLogin
     },
 
     {
@@ -25,12 +34,15 @@ export default new Router({
       name: "home",
       component: Home
     },
+    { path: "/signup", name: "signup", component: Signup },
+    // { path: "/login", name: "login", component: Login },
+    { path: "/logout", name: "logout", component: Logout },
 
-    {
-      path: "/home",
-      name: "home",
-      component: Home
-    },
+    // {
+    //   path: "/home",
+    //   name: "home",
+    //   component: Home
+    // },
 
     {
       path: "/about",
