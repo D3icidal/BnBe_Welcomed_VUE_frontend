@@ -14,6 +14,8 @@
           </li><li class="nav-item">
             <a class="nav-link" href="#/homes">My Homes</a> |
           </li><li class="nav-item">
+            <a class="nav-link" href="#/homes/new">Add new Home</a> |
+          </li><li class="nav-item">
             <a class="nav-link" href="#/about">About</a>
           </li>
           <li class="nav-item dropdown">

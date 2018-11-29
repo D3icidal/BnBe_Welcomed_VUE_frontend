@@ -1,28 +1,38 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "./views/Home.vue";
+import Home from "./views/Home.vue"; //HOMEPAGE
+
+//HOMES
+import HomesNew from "./views/HomesNew.vue";
 import HomesIndex from "./views/HomesIndex.vue";
 import HomesShow from "./views/HomesShow.vue";
+import HomesEdit from "./views/HomesEdit.vue";
+
+//USERS/HOSTs
 import HostsLogin from "./views/Login.vue";
 import Signup from "./views/Signup.vue";
 import Logout from "./views/Logout.vue";
-import HomesEdit from "./views/HomesEdit.vue";
 
 Vue.use(Router);
 
 export default new Router({
   routes: [
     {
+      //HOMEPAGE
+      path: "/",
+      name: "home",
+      component: Home
+    },
+
+    {
       path: "/homes",
       name: "homesIndex",
       component: HomesIndex
     },
 
-    {
-      path: "/login",
-      name: "hostlogin",
-      component: HostsLogin
-    },
+    { path: "/homes/:id/edit", name: "homesEdit", component: HomesEdit },
+
+    { path: "/homes/new", name: "homesNew", component: HomesNew },
 
     {
       path: "/homes/:id",
@@ -31,14 +41,13 @@ export default new Router({
     },
 
     {
-      path: "/",
-      name: "home",
-      component: Home
+      path: "/login",
+      name: "hostlogin",
+      component: HostsLogin
     },
     { path: "/signup", name: "signup", component: Signup },
     // { path: "/login", name: "login", component: Login },
     { path: "/logout", name: "logout", component: Logout },
-    { path: "/homes/:id/edit", name: "homesEdit", component: HomesEdit },
 
     // {
     //   path: "/home",

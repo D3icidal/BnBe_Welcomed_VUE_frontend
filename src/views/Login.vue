@@ -49,7 +49,7 @@ export default {
           this.$router.push("/");
         })
         .catch(error => {
-          // this.errors = ["Invalid email or password."]; #flesh this out
+          this.errors = ["Invalid email or password."]; //flesh this out
           this.email = "";
           this.password = "";
         });

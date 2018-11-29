@@ -11,7 +11,8 @@
 export default {
   data: function() {
     return {
-      message: "BnBe Welcomed FrontPage"
+      message: "BnBe Welcomed"
+      //TODO add carasol here, login/signup links, how it works.
     };
   },
   created: function() {},
