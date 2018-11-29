@@ -10,6 +10,8 @@
         Bedrooms: {{ home.bedrooms }} | Bathrooms: {{ home.bathrooms }}<br />
         State: {{ home.state }}<br />
         ID: {{ home.id }}
+        <!-- go to the show page -->
+        <br><a v-bind:href="'/#/homes/' + home.id + '/edit'" class="btn btn-primary">Edit</a>
       </p>
       <br />
       <br />
