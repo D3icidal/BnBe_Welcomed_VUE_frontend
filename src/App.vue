@@ -28,7 +28,10 @@
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#/logout">Logout</a>
             </div>
-          </li>          
+          </li>      
+          <li class="nav-item">
+            <a class="nav-link" href="#/bookings">bookings</a>
+          </li>
         </ul>        
       </div>
     </nav>
