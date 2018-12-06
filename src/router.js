@@ -18,9 +18,9 @@ import BookingsNew from "./views/BookingsNew.vue";
 import BookingsIndex from "./views/BookingsIndex.vue";
 import BookingsShow from "./views/BookingsShow.vue";
 
-//GUEST-HOME
-import GuestLogin from "./views/GuestLogin.vue";
-import GuestShow from "./views/GuestShow.vue";
+//GUIDES GUEST-HOME
+import GuidesLogin from "./views/GuidesLogin.vue";
+import GuidesShow from "./views/GuidesShow.vue";
 
 //AMENITIES
 import AmenitiesShow from "./views/AmenitiesShow.vue";
@@ -64,14 +64,14 @@ export default new Router({
 
     //GUIDE GUEST-HOME (login, views) ('GUIDE' => bookings view as guest)
     {
-      path: "/guide/guestlogin",
-      name: "guestlogin",
-      component: GuestLogin
+      path: "/guides/login",
+      name: "GuidesLogin",
+      component: GuidesLogin
     },
     {
       path: "/guide/:booking_code",
-      name: "GuestShow",
-      component: GuestShow
+      name: "guideShow",
+      component: GuidesShow
     },
 
     //HOST LOGIN / SESSIONS
