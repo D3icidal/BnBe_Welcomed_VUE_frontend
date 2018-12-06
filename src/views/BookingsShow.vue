@@ -1,5 +1,5 @@
 <template>
-  <!-- Show PAGE FOR A HOME'S BOOKINGS NOT COMPLETE -->
+  <!-- Show PAGE FOR A HOME'S BOOKINGS -->
   <div class="booking">
     <h1>{{ message }}</h1> <br>
     <div class="bookingShow">
@@ -21,7 +21,7 @@
   export default {
     data: function() {
       return {
-        message: "BookingShow.vue show a bookings booking NOT COMPLTE",
+        message: "BookingShow.vue show a bookings booking",
         booking: {}
       };
     },
