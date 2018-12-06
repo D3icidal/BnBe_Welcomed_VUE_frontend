@@ -24,6 +24,7 @@ import GuestShow from "./views/GuestShow.vue";
 
 //AMENITIES
 import AmenitiesShow from "./views/AmenitiesShow.vue";
+import AmenitiesNew from "./views/AmenitiesNew.vue";
 // import AmenitiesIndex from "./views/AmenityIndex.vue";
 
 Vue.use(Router);
@@ -55,6 +56,11 @@ export default new Router({
     //AMENITIES
     // { path: "/amenities", name: "amenitiesIndex", component: AmenitiesIndex },
     { path: "/amenities/:id", name: "amenitiesShow", component: AmenitiesShow },
+    {
+      path: "/amenities/:id/new",
+      name: "amenitiesNew",
+      component: AmenitiesNew
+    },
 
     //GUIDE GUEST-HOME (login, views) ('GUIDE' => bookings view as guest)
     {

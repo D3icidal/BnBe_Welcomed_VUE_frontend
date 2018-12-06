@@ -2,6 +2,7 @@
   <!-- Show PAGE FOR A HOME'S Amenities -->
   <div class="amenity">
     <h1>{{ message }}</h1> <br>
+    <br><a v-bind:href="'/#/amenities/' + $route.params.id + '/new'" class="btn btn-primary">Add an Amenity</a>
     <div v-for="amenity in amenities">
     <!-- <div class="amenityShow"> -->
       <br>
