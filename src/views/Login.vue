@@ -38,7 +38,7 @@ export default {
     submit: function() {
       var params = {
         email: this.email,
-        password: this.password
+        password: this.password        
       };
       axios
         .post("http://localhost:3000/sessions", params)
@@ -48,9 +48,9 @@ export default {
           localStorage.setItem("jwt", response.data.jwt);
           this.$router.push("/");
         })
-        .catch(error => {
-          this.errors = ["Invalid email or password."]; //flesh this out
-          this.email = "";
+        .catch(error => {    
+          this.errors = [] //clear error log      
+          this.errors.push(error.response.status + ": " + error.response.data)
           this.password = "";
         });
     }

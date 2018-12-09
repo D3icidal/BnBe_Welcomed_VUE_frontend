@@ -92,7 +92,7 @@ export default {
           console.log(error.config);
           console.log("inside homesnew.vue - error caught");
           console.log(error.response.data.errors);
-          this.errors = error.response.data.errors;
+          this.errors.push(error.response.data.errors);
         });
     }
   }

@@ -1,13 +1,23 @@
 <template>
   <div id="app">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">BnBe Welcomed</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      -_- 
        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </ul> -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
+          </li>
+          <li class="nav-item d-lg-none catagories_small">
+            <a class="nav-link" href="#/welcome">Welcome</a> | 
+          </li>
+          <li class="nav-item d-md-none catagories_small">
+            <a class="nav-link" href="#/parking">parking</a> | 
+          </li>
+          <li class="nav-item catagories_small">
+            <a class="nav-link" href="#/amenities">amenities</a> | 
+          </li>
+          <li class="nav-item catagories_small">
+            <a class="nav-link" href="#/checkout">checkout</a> | 
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#/home">Home</a> | 

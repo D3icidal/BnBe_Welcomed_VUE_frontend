@@ -39,9 +39,6 @@ export default {
         .then(response => {
           this.$router.push("http://localhost:3000/guides/" + this.code);
         })
-        // .catch(error => {
-        //   this.errors = ["Invalid code, please try again "]; //flesh this out
-        //   this.code = ""; //Wipes otu the old bad code
         .catch(error => {
           if (error.response) {
             console.log("errors.response:" + error.response.data);
