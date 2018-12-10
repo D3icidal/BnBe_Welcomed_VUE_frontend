@@ -69,7 +69,7 @@ export default new Router({
       component: GuidesLogin
     },
     {
-      path: "/guide/:booking_code",
+      path: "/guides/:booking_code",
       name: "guideShow",
       component: GuidesShow
     },
