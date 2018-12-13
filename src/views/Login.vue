@@ -22,7 +22,7 @@
         <form v-on:submit.prevent="submit()" class="form-login form-wrapper form-narrow">
           <h3 class="title-divider">
             <span>Login</span> 
-            <small class="mt-4">Not signed up? <a href="#/signup.html">Sign up here</a>.</small>
+            <small class="mt-4">Not signed up? <a href="/#/signup">Sign up here</a>.</small>
           </h3>
           <ul>
             <li class="text-danger" v-for="error in errors">{{ error }}</li>

@@ -41,18 +41,16 @@
     ======== @Region: Standout  ========
   -->
   <main class="GuideShow">
-    <div>
+    <div class="content">
       <div id="details">
         <div
           data-toggle="full-height"
-          class="text-center overlay overlay-op-2 p-3 d-lg-flex align-items-lg-center"
-          data-bg-img="assets/img/index-realestate-single/standout.jpg"
+          class="text-center parallax overlay overlay-op-2 p-6 d-lg-flex align-items-lg-center"
+          data-bg-img="assets/img/home2.jpeg"
           data-css="{&quot;background-position&quot;: &quot;center center&quot;}"
         >
           <div class="p-4 p-lg-6 bg-white container">
-            <h2
-              class="font-weight-normal mb-2 text-green-bright font-md-x3 font-sm-x2"
-            >
+            <h2 class="font-weight-normal mb-2 text-green-bright font-md-x3 font-sm-x2" >
               {{ home.details.name }} in {{ home.details.state }}
             </h2>
             <h4
@@ -125,69 +123,30 @@
       </div>
 
 
-      
-      <!-- Guide Content -->
-      <div id="guide-content" class="container"> <!-- Should take up most of the width now, will display menu on left 1/4 and content on right 3/4 -->
-        <div id="amenities" class="row"> <!-- #TODO make amenities only 3/4 col -->
-          <div class="col-sm-4"> <!-- Left Menu -->
-             
-          </div>
-          <div class="col-sm-8">
-            <div class="card card-body" v-for="amenity in home.amenities">
-              <!-- <div class="card card-body"> -->
+      <div class="contaier mx-10 my-8" > 
+        <h2 class="title-divider">
+          <span>Guide:</span><span class="font-weight-normal">Features</span>
+        </h2>
+        <br>
+        <div class="row"> <!-- Guides Body (Sidebar and features/amenities) -->
+            <div class="col-md-3"> <!-- sidebar -->
+              sidebar goes here
+            </div>
+            <!-- Guide Content -->
+            <div class="col-md-9">
+              <div class="card card-body mb-5" v-for="amenity in home.amenities">
                 <h4 class="card-title">
                   {{amenity.name}}
                 </h4>
                 <img class="card-img-top img-fluid" src="assets/img/backgrounds/picjumbo.com_P1010041.jpg" alt="Card image cap">
                 <p class="card-text">{{amenity.instructions}}</p>
                 <br />
-                <p class="card-text">Where to find me: {{amenity.location}}</p>
-              <!-- </div> -->
-            </div>          
-          </div>
-          <div class="col-sm-2">
-
-          </div>
+                <p class="card-text">Location: {{amenity.location}}</p>
+              </div>
+            </div>         
         </div>
       </div>
-      <!-- END Standout -->      
-    </div>
-    <!--
-      <b-row>
-        <div class="col-sm-4" v-for="amenity in amenities">
-          <b-card
-            no-body
-            style="max-width: 20rem;"
-            img-src="https://placekitten.com/380/200"
-            img-alt="Image"
-            img-top
-          >
-            <h4 slot="header">Hello World</h4>
-            <b-card-body>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-              </p>
-            </b-card-body>
-            <b-list-group flush>
-              <b-list-group-item>Cras justo odio</b-list-group-item>
-              <b-list-group-item>Dapibus ac facilisis in</b-list-group-item>
-              <b-list-group-item>Vestibulum at eros</b-list-group-item>
-            </b-list-group>
-            <b-card-body>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </b-card-body>
-            <b-card-footer>This is a footer</b-card-footer>
-            <b-card-img
-              src="https://placekitten.com/480/210"
-              alt="Image"
-              bottom
-            ></b-card-img>
-          </b-card>
-        </div>
-      </b-row>
-    -->
+    </div>    
   </main>
 </template>
 <!--
@@ -207,7 +166,19 @@
   zipcode
 -->
 
-<style></style>
+<style>
+.parallax { 
+
+  /* Set a specific height */
+  height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
 
 <script>
 // var axios = require('axios');

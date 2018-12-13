@@ -1,40 +1,11 @@
 <template>
   <div class="signup">
-    <!-- <div class="container">
-      <form v-on:submit.prevent="submit()">
-        <h1>Signup</h1>
-        <ul>
-          <li class="text-danger" v-for="error in errors">{{ error }}</li>
-        </ul>
-        <div class="form-group">
-          <label>First Name:</label> 
-          <input type="text" class="form-control" v-model="first_name">
-        </div>
-        <div class="form-group">
-          <label>Last Name:</label> 
-          <input type="text" class="form-control" v-model="last_name">
-        </div>
-        <div class="form-group">
-          <label>Email:</label>
-          <input type="email" class="form-control" v-model="email">
-        </div>
-        <div class="form-group">
-          <label>Password:</label>
-          <input type="password" class="form-control" v-model="password">
-        </div>
-        <div class="form-group">
-          <label>Password confirmation:</label>
-          <input type="password" class="form-control" v-model="passwordConfirmation">
-        </div>
-        <input type="submit" class="btn btn-primary" value="Submit">
-      </form>
-    </div> -->
     <div class="container">
         <!-- Sign Up form -->
         <form class="form-login form-wrapper form-medium" role="form" v-on:submit.prevent="submit()">
           <h3 class="title-divider">
             <span>Sign Up</span> 
-            <small class="mt-4">Already signed up? <a href="/login">Login here</a>.</small>
+            <small class="mt-4">Already signed up? <a href="/#/login">Login here</a>.</small>
           </h3>          
           <hr />
           <ul>
@@ -105,7 +76,7 @@ export default {
       axios
         .post("http://localhost:3000/users", params)
         .then(response => {
-          this.$router.push("/login");
+          this.$router.push("/#/login");
         })
         .catch(error => {
           this.errors = []; //clear error log      
