@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Charity Homepage | AppStrap Bootstrap Theme by Themelize.me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- @todo: fill with your company info or remove -->
+    <meta name="description" content="">
+    <meta name="author" content="Themelize.me">
+    
+    <!-- Bootstrap v4.1.3 CSS via CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    
+    <!-- Plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 -->
+    
+    <!-- Theme style -->
+    <link href="assets/css/theme-style.min.css" rel="stylesheet">
+    
+    <!-- Bright green colour scheme -->
+    <link href="assets/css/colour-green-bright.min.css" rel="stylesheet">
+    
+    <!--Your custom colour override-->
+    <link href="#" id="colour-scheme" rel="stylesheet">
+    
+    <!-- Your custom override -->
+    <link href="assets/css/custom-style.css" rel="stylesheet">
+    
+    
+    
+    <!-- Optional: ICON SETS -->
+    <!-- Iconset: Font Awesome 5.0.13 via CDN -->
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <!-- Iconset: flag icons - http://lipis.github.io/flag-icon-css/ -->
+    <link href="assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+    <!-- Iconset: ionicons - http://ionicons.com/ -->
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <!-- Iconset: Linearicons - https://linearicons.com/free -->
+    <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet">
+    <!-- Iconset: Lineawesome - https://icons8.com/articles/line-awesome -->
+    <link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css" rel="stylesheet">
+    
+    
+    <!-- Le fav and touch icons - @todo: fill with your icons or remove, try https://realfavicongenerator.net -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/manifest.json">
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+    <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
+    
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Rambla:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,400,700' rel='stylesheet' type='text/css'>
+    
+    <!--Plugin: Retina.js (high def image replacement) - @see: http://retinajs.com/-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/retina.js/1.3.0/retina.min.js"></script>
+  </head>
+  
+  <!-- ======== @Region: body ======== -->
+  <body class="page page-index-charity navbar-layout-default header-ontop" data-colour-scheme="green-bright">
+    
+    <!-- @plugin: page loading indicator, delete to remove loader -->
+    <div class="page-loader" data-toggle="page-loader"></div>
+    
+    <a id="#top" href="#content" class="sr-only">Skip to content</a> 
+    
+    <!-- ======== @Region: #header ======== -->
+    <div id="header">
+      <div data-toggle="sticky">
+        <!--Header & Branding region-->
+        <div class="header py-2 pb-md-0 border-light border-op-2 header-transparent header-dark bg-dark bg-op-2 sticky-bg-op-8 sticky-border-op-1 sticky-bg-black sticky-py-lg-0">
+          <!-- all direct children of the .header-inner element will be vertically aligned with each other you can override all the behaviours using the flexbox utilities (flexbox.htm) All elements with .header-brand & .header-block-flex wrappers will automatically be aligned inline & vertically using flexbox, this can be overridden using the flexbox utilities (flexbox.htm) Use .header-block to stack elements within on small screen & "float" on larger screens use .order-first or/and .order-last classes to make an element show first or last within .header-inner or .headr-block elements -->
+          <div class="header-inner container">
+            <!--branding/logo -->
+            <div class="header-brand">
+              <a class="header-brand-text text-white" href="index.html" title="Home">
+                <h2 class="h3 my-0 font-weight-normal">
+                  <span class="font-weight-bold">App</span>Strap. 
+                </h2>
+              </a>
+              <div class="header-divider d-none d-lg-block"></div>
+              <div class="header-slogan d-none d-lg-block text-uppercase font-weight-bold text-white">charity </div>
+            </div>
+            <!-- other header content -->
+            <div class="header-block order-12"> <a href="#causes" data-toggle="scroll-link" class="btn btn-rounded btn-primary btn-bold">Donate</a> </div>
+            <div class="navbar navbar-expand-md navbar-main">
+              <!--everything within this div is hidden on mobile-->
+              <div class="navbar-main collapse navbar-dark navbar-border-bottom-effect">
+                <!--main navigation-->
+                <ul class="nav navbar-nav container ">
+                  <li class="nav-item">
+                    <a href="#top" data-toggle="scroll-link" data-dimiss="jpanel-menu" class="nav-link text-capitalize text-white"> <span class="nav-link-inner text-roboto font-weight-bold" data-title="Home">Home</span> </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#about" data-toggle="scroll-link" data-dimiss="jpanel-menu" class="nav-link text-capitalize text-white"> <span class="nav-link-inner text-roboto font-weight-bold" data-title="Concerts">About </span> </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#causes" data-toggle="scroll-link" data-dimiss="jpanel-menu" class="nav-link text-capitalize text-white"> <span class="nav-link-inner text-roboto font-weight-bold" data-title="Services"> Causes </span> </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#gallery" data-toggle="scroll-link" data-dimiss="jpanel-menu" class="nav-link text-capitalize text-white"> <span class="nav-link-inner text-roboto font-weight-bold" data-title="Projects">Gallery</span> </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#news" data-toggle="scroll-link" data-dimiss="jpanel-menu" class="nav-link text-capitalize text-white"> <span class="nav-link-inner text-roboto font-weight-bold" data-title="Contact">News</span> </a>
+                  </li>
+                </ul>
+              </div>
+              <!--/.navbar-collapse -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- ======== @Region: #highlighted ======== -->
+    <div id="highlighted" class=" pos-md-relative">
+      <!-- Image Banner: Use the the data-bg-img functionality to create a simple image banner Use spacer classes to make the banner larger with padding, allows for easy responsive changes too see: elements-ctas.htm To make the banner full height add the attributes: data-toggle="full-height" data-offset="#header" -->
+      <div class="overlay overlay-op-6 text-left" data-animate="fadeIn" data-bg-img="assets/img/index-charity/banner-1.jpg">
+        <div data-toggle="full-height" class="container flex-valign text-white pos-relative">
+          <div class="pos-absolute pos-b pos-r pos-l">
+            <div class="mt-6 mt-lg-7 mb-3 d-flex align-items-center">
+              <div class="w-lg-50">
+                <h2 class="display-1 text-roboto font-weight-medium text-uppercase mb-0 mt-0" >
+                  Empower
+                </h2>
+                <h2 class="display-4 text-roboto font-weight-light mt-md-4-neg ">
+                  Children Dream 
+                </h2>
+                <p class="lead text-roboto font-weight-light">Cu eos liber utinam vituperata, ea audire deseruisse qui. Mei at assum consul causae, et vel legendos inciderint disputando. </p>
+                <div class=""><a href="#" data-toggle="scroll-link" class="btn btn-lg btn-primary text-roboto font-weight-medium px-4 text-sm btn-rounded"> OUR MISSION</a></div>
+              </div>
+            </div>
+            <div class="row p-3 px-lg-5 py-lg-3 mt-lg-0 bg-primary text-white d-lg-flex align-items-lg-center">
+              <div class="col-lg-5">
+                <h3 class="mt-0 text-roboto font-weight-bold mb-0 mb-lg-2 ">
+                  Urgent Cause
+                </h3>
+                <p class="mb-1 mb-lg-0 text-sm"> Duo at probo maluisset, populo theophrastus in sit. Pri te consequat gloriatur, cumid nostrum blandit quaerendum </p>
+              </div>
+              <div class="col-lg-4">
+                <div class="progress h-1 br-10 ">
+                  <div class="progress-bar bg-success bg-op-8 w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="display-5 text-roboto font-weight-bold mt-2 mb-1 mb-lg-0">$40.000 Donated / 50.000 to Go</div>
+              </div>
+              <div class="col-lg-3 text-center pt-3 pt-lg-0"> <a href="#" data-toggle="scroll-link" class="btn btn-xlg btn-primary text-sm btn-rounded border-1 border-white text-uppercase">Donate</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- ======== @Region: #content ======== -->
+    <div id="content" class="p-0 bg-white">
+      <!--about -->
+      <div id="about">
+        <div class="py-5 py-lg-6">
+          <div class="container text-center w-lg-70">
+            <h2 class="h1 text-roboto font-weight-bold mt-0 text-seconary ">
+              What We Do 
+            </h2>
+            <p class="mt-0 w-lg-70 op-4 mx-auto"> Duo at probo maluisset, populo theophrastus in sit. Pri te consequat gloriatur, cum id nostrum blandit quaerendum </p>
+            <div class="row text-center mt-4 mt-lg-5">
+              <div class="d-md-flex col-md-4 px-3 py-2">
+                <div>
+                  <i class="ion-cash icon-3x text-primary animated animated-done" data-animate="fadeIn" data-animate-delay="0.1"></i> 
+                  <h4 class="mt-2 text-uppercase">
+                    Donation 
+                  </h4>
+                  <p class="op-5">Fixed headers are fairly common nowadays with</p>
+                </div>
+              </div>
+              <div class="d-md-flex col-md-4 px-3 py-2">
+                <div>
+                  <i class="ion-heart icon-3x text-primary animated animated-done" data-animate="fadeIn" data-animate-delay="0.2"></i> 
+                  <h4 class="mt-2 text-uppercase">
+                    Volunteer 
+                  </h4>
+                  <p class="op-5">Fixed headers are fairly common nowadays with</p>
+                </div>
+              </div>
+              <div class="d-md-flex col-md-4 px-3 py-2">
+                <div>
+                  <i class="ion-ios-checkmark-outline icon-3x text-primary animated animated-done" data-animate="fadeIn" data-animate-delay="0.3"></i> 
+                  <h4 class="mt-2 text-uppercase">
+                    Fundraise 
+                  </h4>
+                  <p class="op-5"> Fixed headers are fairly common nowadays with</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--causes -->
+      <div id="causes">
+        <div class="py-5 py-lg-6 pos-md-relative overlay overlay-black overlay-op-6" data-bg-img="assets/img/index-charity/recentcauses.jpg">
+          <div class="container text-center">
+            <h2 class="h1 mt-0 text-white op-9">
+              Recent Causes
+            </h2>
+            <p class="mt-0 op-5 w-lg-60 mx-auto text-white text-sm"> Duo at probo maluisset, populo theophrastus in sit. Pri te consequat gloriatur, cum id nostrum blandit quaerendum. </p>
+            <div class="row mt-4 mt-lg-5 ">
+              <div class="d-md-flex col-md-4 ">
+                <div class="card mb-3 border-0 text-black" data-animate="fadeIn" data-animate-delay="0.1">
+                  <img class="card-img-top img-fluid" src="assets/img/index-charity/cause1.jpg" alt="Card image cap">
+                  <div class="card-body px-4 py-4">
+                    <h4 class="card-title mb-4 ">
+                      Ne mea solet insolens pri.
+                    </h4>
+                    <div class="progress h-1 br-10 mb-2 ">
+                      <div class="progress-bar bg-success bg-op-8 w-50 py-1" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class=" text-sm text-roboto font-weight-bold text-primary mb-4 ">$40.000 Donated / 50.000 to Go</p>
+                    <p class="card-text mb-4 text-sm op-7">Ex nec summo oblique. Sea no facer epicuri, no postea oblique nec. Putent impedit inimicus id vel, cum rebum causae aperiri ne, pri veniam reprehendunt ut.</p>
+                    <a href="#" class=" btn btn-lg btn-outline-primary btn-rounded w-lg-50 text-uppercase">Donate</a> 
+                  </div>
+                </div>
+              </div>
+              <div class="d-md-flex col-md-4">
+                <div class="card mb-3 border-0 text-black" data-animate="fadeIn" data-animate-delay="0.1">
+                  <img class="card-img-top img-fluid" src="assets/img/index-charity/cause2.jpg" alt="Card image cap">
+                  <div class="card-body px-4 py-4">
+                    <h4 class="card-title mb-4 ">
+                      Ne mea solet insolens pri.
+                    </h4>
+                    <div class="progress h-1 br-10 mb-2 ">
+                      <div class="progress-bar bg-success bg-op-8 w-50 py-1" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class=" text-sm text-roboto font-weight-bold text-primary mb-4 ">$40.000 Donated / 50.000 to Go</p>
+                    <p class="card-text mb-4 text-sm op-7 text-left">Ex nec summo oblique. Sea no facer epicuri, no postea oblique nec. Putent impedit inimicus id vel, cum rebum causae aperiri ne, pri veniam reprehendunt ut.</p>
+                    <a href="#" class=" btn btn-lg btn-outline-primary btn-rounded w-lg-50 text-uppercase">Donate</a> 
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-md-flex">
+                <div class="card mb-3 border-0 text-black" data-animate="fadeIn" data-animate-delay="0.1">
+                  <img class="card-img-top img-fluid" src="assets/img/index-charity/cause3.jpg" alt="Card image cap">
+                  <div class="card-body px-4 py-4">
+                    <h4 class="card-title mb-4 ">
+                      Ne mea solet insolens pri.
+                    </h4>
+                    <div class="progress h-1 br-10 mb-2 ">
+                      <div class="progress-bar bg-success bg-op-8 w-50 py-1" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class=" text-sm text-roboto font-weight-bold text-primary mb-4 ">$40.000 Donated / 50.000 to Go</p>
+                    <p class="card-text mb-4 text-sm op-7 text-left">Ex nec summo oblique. Sea no facer epicuri, no postea oblique nec. Putent impedit inimicus id vel, cum rebum causae aperiri ne, pri veniam reprehendunt ut.</p>
+                    <a href="#" class=" btn btn-lg btn-outline-primary btn-rounded w-lg-50 text-uppercase">Donate</a> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-green-bright text-white">
+          <div class="container">
+            <div class="row py-3 py-lg-4 d-flex align-items-center ">
+              <div class="col-md-9 mb-3 mb-lg-0">
+                <h3 class="my-0 text-roboto font-weight-bold text-uppercase">
+                  Become a Volnteer 
+                </h3>
+                <p class="my-0 text-left text-sm"> Ex nec summo oblique. Sea no facer epicuri, no postea oblique nec. Putent impedit inimicus id vel, </p>
+              </div>
+              <div class="col-md-3 text-center"> <a href="#" data-toggle="scroll-link" data-animate-delay="0.6" style="animation-delay: 0.6s;" class="btn btn-lg btn-primary text-roboto font-weight-medium px-5 text-sm btn-rounded border-1 border-white text-uppercase">Apply Now </a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- gallery -->
+      <div id="gallery" class="py-5 py-lg-6">
+        <div class="container text-center">
+          <h2 class="h1 mt-0 text-seconary text-roboto font-weight-bold">
+            Gallery
+          </h2>
+          <p class="mt-0 op-5 w-lg-60 mx-auto ">Duo at probo maluisset, populo theophrastus in sit. Pri te consequat gloriatur, cum id nostrum blandit quaerendum </p>
+          <div class="row mx-auto mt-4 mt-lg-5 ">
+            <div class="col-md-5 d-none d-lg-flex">
+              <img class="w-100" src="assets/img/index-charity/Gallery1.jpg" alt="">
+            </div>
+            <div class="col-md-7">
+              <div class="row">
+                <div class="col-md-12 mb-4">
+                  <img class="w-100" src="assets/img/index-charity/Gallery2.jpg" alt="">
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0">
+                  <img class="w-100" src="assets/img/index-charity/Gallery3.jpg" alt="">
+                </div>
+                <div class="col-md-6">
+                  <img class="w-100" src="assets/img/index-charity/Gallery4.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="my-3 container">
+      <!-- news -->
+      <div id="news" class="py-5 py-lg-6">
+        <div class="container ">
+          <h2 class="h1 text-roboto font-weight-bold mt-0 text-seconary text-center">
+            Latest News
+          </h2>
+          <p class="mt-0 op-5 w-lg-60 mx-auto text-center">Duo at probo maluisset, populo theophrastus in sit. Pri te consequat gloriatur, cum id nostrum blandit quaerendum </p>
+          <div class="mx-auto mt-4 mt-lg-5 ">
+            <div class="card-group owl-nav-center owl-dots-center owl-carousel owl-loaded owl-drag owl-equalheight mt-4 mt-lg-5" data-toggle="owl-carousel" data-owl-carousel-settings='{"items": 3, "lazyLoad":true, "nav":false, "dots":false,"responsive":{ "0":{"items":1}, "768":{"items":3}}, "loop":true }'>
+              <!--Timeline item 1-->
+              <div class="card border-0 px-lg-5 text-left" data-url="#" >
+                <h6 class=" mb-3 mt-0 text-success">
+                  <a href="#">June 22/2017 </a> 
+                </h6>
+                <div class="card-block ">
+                  <h4 class="card-title mb-4 ">
+                    Ne mea solet insolens, pri scaevola officiis ea.
+                  </h4>
+                  <p class="card-text mb-3 op-5 ">Ex nec summo oblique. Sea no facer epicuri, no postea oblique nec. Putent impedit inimicus id vel, cum rebum causae aperiri ne, pri veniam reprehendunt ut.</p>
+                  <p class="card-text mb-3 op-5 ">Eos dictas verear facilisi id, an idque corrumpit scribentur nec, pro at meis iuvaret scribentu</p>
+                  <a href="#" class="op-6 d-flex align-items-center text-uppercase" ><span class="mr-2"> Read More </span> <i class="ion-ios-arrow-thin-right icon-2x text-grey-dark "> </i></a>
+                </div>
+              </div>
+              <!--Timeline item 1-->
+              <div class="card border-0 px-lg-5 text-left" data-url="#" >
+                <h6 class="mb-3 mt-0 text-success ">
+                  <a href="#">June 22/2017 </a> 
+                </h6>
+                <div class="card-block ">
+                  <h4 class="card-title mb-4 ">
+                    Ne mea solet insolens, pri scaevola officiis ea.
+                  </h4>
+                  <p class="card-text mb-3 op-5 ">Ex nec summo oblique. Sea no facer epicuri, no postea oblique nec. Putent impedit inimicus id vel, cum rebum causae aperiri ne, pri veniam reprehendunt ut.</p>
+                  <p class="card-text mb-3 op-5 ">Eos dictas verear facilisi id, an idque corrumpit scribentur nec, pro at meis iuvaret scribentu</p>
+                  <div class="text-left">
+                    <a href="#" class="op-6 d-flex align-items-center text-uppercase" ><span class="mr-2"> Read More </span> <i class="ion-ios-arrow-thin-right icon-2x text-grey-dark "> </i></a>
+                  </div>
+                </div>
+              </div>
+              <!--Timeline item 1-->
+              <div class="card border-0 px-lg-5 text-left" data-url="#" >
+                <h6 class=" mb-3 mt-0 text-success">
+                  <a href="#">June 22/2017 </a> 
+                </h6>
+                <div class="card-block ">
+                  <h4 class="card-title mb-4 ">
+                    Ne mea solet insolens, pri scaevola officiis ea.
+                  </h4>
+                  <p class="card-text mb-3 op-5 ">Ex nec summo oblique. Sea no facer epicuri, no postea oblique nec. Putent impedit inimicus id vel, cum rebum causae aperiri ne, pri veniam reprehendunt ut.</p>
+                  <p class="card-text mb-3 op-5 ">Eos dictas verear facilisi id, an idque corrumpit scribentur nec, pro at meis iuvaret scribentu</p>
+                  <div class="text-left">
+                    <a href="#" class="op-6 d-flex align-items-center text-uppercase" ><span class="mr-2"> Read More </span> <i class="ion-ios-arrow-thin-right icon-2x text-grey-dark "> </i></a>
+                  </div>
+                </div>
+              </div>
+              <!--Timeline item 1-->
+              <div class="card border-0 px-lg-5 text-left" data-url="#" >
+                <h6 class=" mb-3 mt-0 text-success">
+                  <a href="#">June 22/2017 </a> 
+                </h6>
+                <div class="card-block ">
+                  <h4 class="card-title mb-4 ">
+                    Ne mea solet insolens, pri scaevola officiis ea.
+                  </h4>
+                  <p class="card-text mb-3 op-5 ">Ex nec summo oblique. Sea no facer epicuri, no postea oblique nec. Putent impedit inimicus id vel, cum rebum causae aperiri ne, pri veniam reprehendunt ut.</p>
+                  <p class="card-text mb-3 op-5 ">Eos dictas verear facilisi id, an idque corrumpit scribentur nec, pro at meis iuvaret scribentu</p>
+                  <div class="text-center">
+                    <a href="#" class="op-6 d-flex align-items-center text-uppercase" ><span class="mr-2"> Read More </span> <i class="ion-ios-arrow-thin-right icon-2x text-grey-dark "> </i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-5 py-lg-6 bg-slate text-white">
+        <div class="container text-center w-lg-70 mx-auto ">
+          <h2 class="h1 mt-0 text-roboto font-weight-bold">
+            How Can You Help? 
+          </h2>
+          <p class="mt-0 op-7 w-lg-70 mx-auto"> Duo at probo maluisset, populo theophrastus in sit. Pri te consequat gloriatur, cum id nostrum blandit quaerendum </p>
+          <div class="row text-center mx-auto mt-4 mt-lg-5 ">
+            <div class="col-md-4 py-2">
+              <i class=" ion-speakerphone icon-2x animated animated-done" data-animate="fadeIn" data-animate-delay="0.1" style="animation-delay: 0.1s;"></i> 
+              <h4 class="mt-2 text-roboto font-weight-medium text-uppercase">
+                Share on Media 
+              </h4>
+              <p class="op-7">Fixed headers are fairly common nowadays with</p>
+            </div>
+            <div class="col-md-4 py-2">
+              <i class="ion-heart icon-2x animated animated-done" data-animate="fadeIn" data-animate-delay="0.2" style="animation-delay: 0.2s;"></i> 
+              <h4 class="mt-2 text-roboto font-weight-medium text-uppercase">
+                Become a Volunteer 
+              </h4>
+              <p class="op-7">Fixed headers are fairly common nowadays with</p>
+            </div>
+            <div class="col-md-4 py-2">
+              <i class="ion-cash icon-2x animated animated-done" data-animate="fadeIn" data-animate-delay="0.3" style="animation-delay: 0.3s;"></i> 
+              <h4 class="mt-2 text-roboto font-weight-medium text-uppercase">
+                Donate 
+              </h4>
+              <p class="op-7"> Fixed headers are fairly common nowadays with</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- VOLUNTEER -->
+      <div class="bg-green-bright text-white ">
+        <div class="container ">
+          <div class="row py-3 py-lg-5 px-lg-5 mx-auto d-flex align-items-center ">
+            <div class="col-md-9 mb-3 mb-lg-0">
+              <h3 class="mt-0 text-roboto font-weight-bold text-uppercase">
+                Are you ready to volunteer? 
+              </h3>
+              <p class="my-0 text-sm"> Ex nec summo oblique. Sea no facer epicuri, no postea oblique nec. Putent impedit inimicus id vel, </p>
+            </div>
+            <div class="col-md-3 text-center"> <a href="#" class="btn btn-lg btn-primary px-5 text-sm btn-rounded border-1 border-white text-uppercase">Apply Now </a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="Contact" class="py-4 py-md-5">
+      <div class="container text-center">
+        <div class="mb-4">
+          <!--@todo: replace with company social media details-->
+          <a href="#" class="btn-icon btn btn-lg mx-3 "><i class="ion-social-youtube icon-2x"></i></a>
+          <a href="#" class="btn-icon btn btn-lg mx-3 "><i class="ion-social-linkedin-outline icon-2x"></i></a>
+          <a href="#" class="btn-icon btn btn-lg mx-3 "><i class="ion-social-twitter icon-2x"></i></a>
+          <a href="#" class="btn-icon btn btn-lg mx-3"><i class="ion-social-facebook icon-2x"></i></a>
+        </div>
+        <p class="my-0 text-black text-roboto font-weight-bold"> Send an email to: <a href="mailto:info@charity.com" class="text-black"> info@charity.com </a> </p>
+        <hr class="my-3 my-lg-5">
+        <p class="my-0 text-roboto font-weight-medium op-8 text-black">© 2018 AppStrap Charity</p>
+      </div>
+    </footer>
+    
+    <!-- Style switcher - demo only - @todo: remove in production -->
+    <div class="colour-switcher">
+      <a href="#" class="colour-switcher-toggle" data-toggle="class" data-target=".colour-switcher"> <i class="fa fa-paint-brush"></i> </a>
+      <h5 class="text-uppercase my-0">
+        Theme Colours
+      </h5>
+      <hr />
+      <div class="theme-colours"> <a href="#green" class="green active" data-toggle="tooltip" data-placement="right" data-original-title="Green (Default)">Green</a> <a href="#red" class="red" data-toggle="tooltip" data-placement="right" data-original-title="Red">Red</a> <a href="#blue" class="blue" data-toggle="tooltip" data-placement="right" data-original-title="Blue">Blue</a> <a href="#purple" class="purple" data-toggle="tooltip" data-placement="right" data-original-title="Purple">Purple</a> <a href="#pink" class="pink" data-toggle="tooltip" data-placement="right" data-original-title="Pink">Pink</a> <a href="#orange" class="orange" data-toggle="tooltip" data-placement="right" data-original-title="Orange">Orange</a> <a href="#lime" class="lime" data-toggle="tooltip" data-placement="right" data-original-title="Lime">Lime</a> <a href="#blue-dark" class="blue-dark" data-toggle="tooltip" data-placement="right" data-original-title="Blue-dark">Blue-dark</a> <a href="#red-dark" class="red-dark" data-toggle="tooltip" data-placement="right" data-original-title="Red-dark">Red-dark</a> <a href="#brown" class="brown" data-toggle="tooltip" data-placement="right" data-original-title="Brown">Brown</a> <a href="#cyan-dark" class="cyan-dark" data-toggle="tooltip" data-placement="right" data-original-title="Cyan-dark">Cyan-dark</a> <a href="#yellow" class="yellow" data-toggle="tooltip" data-placement="right" data-original-title="Yellow">Yellow</a> <a href="#slate" class="slate" data-toggle="tooltip" data-placement="right" data-original-title="Slate">Slate</a> <a href="#olive" class="olive" data-toggle="tooltip" data-placement="right" data-original-title="Olive">Olive</a> <a href="#teal" class="teal" data-toggle="tooltip" data-placement="right" data-original-title="Teal">Teal</a> <a href="#green-bright" class="green-bright" data-toggle="tooltip" data-placement="right" data-original-title="Green-bright">Green-bright</a> </div>
+      <hr />
+      <p class="text-xs text-muted">Cookies are NOT enabled so colour selection is not persistent.</p>
+      <p class="text-xs my-0"><a href="index.html">Back to main homepage</a></p>
+      <p class="text-xs my-0"><a href="intro.html">Back to intro page</a></p>
+    </div>
+    <!--Hidden elements - excluded from jPanel Menu on mobile-->
+    <div class="hidden-elements js-off-canvas-exclude"></div>
+    
+    
+    <!--jQuery 3.3.1 via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper 1.14.3 via CDN, needed for Bootstrap Tooltips & Popovers -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    
+    <!-- Bootstrap v4.1.3 JS via CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    
+    
+    <!-- JS plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 To disable this and load plugin assets manually simple add data-plugins-manual=true to the body tag -->
+    
+    <!--Custom scripts & AppStrap API integration -->
+    <script src="assets/js/custom-script.js"></script>
+    <!--AppStrap scripts mainly used to trigger libraries/plugins -->
+    <script src="assets/js/script.min.js"></script>
+  </body>
+</html>
