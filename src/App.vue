@@ -1,12 +1,11 @@
 <template>
   <div id="app">
     <div class="page page-elements-navs navbar-layout-default">
-      <div class="stick header">
-          <!-- all direct children of the .header-inner element will be vertically aligned with each other you can override all the behaviours using the flexbox utilities (flexbox.html) All elements with .header-brand & .header-block-flex wrappers will automatically be aligned inline & vertically using flexbox, this can be overridden using the flexbox utilities (flexbox.htm) Use .header-block to stack elements within on small screen & "float" on larger screens use .order-first or/and .order-last classes to make an element show first or last within .header-inner or .headr-block elements -->
+      <div class="header">
           <div class="header-inner container">
             <!--branding/logo -->
             <div class="header-brand">
-              <a class="header-brand-text" href="index.html" title="Home">
+              <a class="header-brand-text" href="/#/" title="Home">
                 <h1 class="h2">
                   <span class="header-brand-text-alt">BnBe</span>Welcomed<span class="header-brand-text-alt">.</span>
                 </h1>
@@ -14,14 +13,7 @@
               <div class="header-divider d-none d-lg-block"></div>
               <div class="header-slogan d-none d-lg-block">Your Guide To A Happy Home</div>
             </div>
-            <!-- other header content -->
-            <div class="header-block order-12">
-              
-              <!--Search trigger -->
-                            
-              <!-- mobile collapse menu button - data-toggle="collapse" = default BS menu - data-toggle="off-canvas" = Off-cavnas Menu - data-toggle="overlay" = Overlay Menu -->
-              <!-- <a href="#top" class="btn btn-link btn-icon header-btn float-right d-lg-none" data-toggle="off-canvas" data-target=".navbar-main" data-settings='{"cloneTarget":true, "targetClassExtras": "navbar-offcanvas"}'> <i class="fa fa-bars"></i> </a> -->
-              <!--Show/hide trigger for #offcanvas-sidebar -->
+            <div class="header-block order-12"> <!-- BREAKS WITHOUT THIS - Don't know why TODO -->
               
             </div>
             
@@ -61,6 +53,9 @@
                   </li>
 
                   <li class="nav-item">
+                    <a href="#/guides/login" class="nav-link"> Guides </a> 
+                  </li>
+                  <li class="nav-item">
                     <a href="#/login" class="nav-link"> Login </a> 
                   </li>
                   <li class="nav-item">
@@ -68,9 +63,6 @@
                   </li>
                   <li class="nav-item">
                     <a href="#/logout" class="nav-link"> Logout </a> 
-                  </li>
-                  <li class="nav-item">
-                    <a href="#/contactus" class="nav-link"> Contact Us </a> 
                   </li>
 
                 </ul>
