@@ -127,6 +127,7 @@
         </article>
       </div>
     </div>
+    <a href="https://icons8.com/icon/48655/cafe">Icons by Icons8</a>
   </div>
 </template>
 
