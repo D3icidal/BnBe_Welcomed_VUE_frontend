@@ -50,7 +50,7 @@
               
 
             <!--  CAROUSEL - TODO vertical images with blurred letterbox sides -->            
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="1000">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="2500">
               <div class="carousel-inner">
                   <div v-for="(image, index) in home.images" :class="{ active: index==0 }" class="carousel-item">
                    <img class="carousel-image d-block img-padded rounded" :src="image.url" alt="">            
