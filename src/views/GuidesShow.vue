@@ -85,7 +85,9 @@
         </div>
       </div>
 
-
+    <!--
+      ======== @Region: Features  ========
+    -->
       <div class="contaier mx-10 my-8" > 
         <h2 class="title-divider">
           <span>Guide:</span><span class="font-weight-normal">Features</span>
@@ -94,19 +96,38 @@
         <div class="row"> <!-- Guides Body (Sidebar and features/amenities) -->
             <div class="col-md-3"> <!-- sidebar -->
               sidebar goes here
-            </div>
-            <!-- Guide Content -->
-            <div class="col-md-9">
+            </div>         
+            <!-- 
+              Guide Content 
+            -->   
+            <div class="col-md-9"> <!-- Guide Content -->
+              <div class="card mr-md-10 mb-6" v-for="amenity in home.amenities"> <!-- EACH AMENITIY -->
+                <div class="row no-gutters">
+                  <div class="col-auto card-amenity-image">
+                    <img class="amenity-img img-fluid d-block my-auto" :src="amenity.icon_url" :alt="amenity.name">
+                  </div>
+                  <div class="col">
+                      <div class="card-block px-2">
+                        <h4 class="card-title">Title</h4>
+                        <p class="card-text">{{amenity.instructions}}</p>
+                      </div>
+                  </div>
+                  <div class="card-footer w-100 text-muted">
+                    Location: {{amenity.location}}
+                  </div>
+                </div>
+              </div>    
+            </div>        
+            <!-- <div class="col-md-9"> 
               <div class="card card-body mb-5" v-for="amenity in home.amenities">
                 <h4 class="card-title">
                   {{amenity.name}}
                 </h4>
-                <img class="card-img-top img-fluid" src="assets/img/backgrounds/picjumbo.com_P1010041.jpg" alt="Card image cap">
+                <img class="amenity-img" :src="amenity.icon_url" :alt="amenity.name">
                 <p class="card-text">{{amenity.instructions}}</p>
                 <br />
                 <p class="card-text">Location: {{amenity.location}}</p>
-              </div>
-            </div>         
+              </div>-->  
         </div>
       </div>
     </div>    
@@ -140,6 +161,22 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.card-amenity-image {
+  min-width: 100px;
+  min-height: 200px;
+  max-width: 400px;
+  max-height: 400px;
+  /*max-width: 600px;*/
+  /*height: auto;*/
+  /*height: 600px;*/
+}
+
+.amenity-img {
+  display: block;
+  margin: auto;
+
 }
 </style>
 

@@ -23,15 +23,14 @@
     </div>
   -->
   <div id="content" class="py-0">
-    <div class="container-fluid px-3 py-5 px-lg-4 py-lg-6 bg-grey">
+    <div class="container-fluid px-6 py-5 px-lg-6 py-lg-8 bg-grey">
       <div v-for="home in homes">
         <article
-          class="row mb-5 mt-20 mx-6"
+          class="row mb-5 mt-8 mx-6 center"
           data-animate="fadeIn"
           data-animate-delay="2"
         >
           <div class="col-md-10 order-md-2 px-5">
-            <!-- Post date & mobile author(removed) -->
             <p class="text-sm text-muted mb-0 text-slab">
               <time datetime="2018/04/03">{{ home.create_date }}</time>
             </p>
@@ -48,11 +47,27 @@
               title="Go To This Home"
               class="d-block"
             >
-              <img
-                src="assets/img/home2.jpeg"
-                alt="alt"
-                class="img-fluid img-padded rounded"
-              />
+              
+
+            <!--  CAROUSEL - TODO vertical images with blurred letterbox sides -->            
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="1000">
+              <div class="carousel-inner">
+                  <div v-for="(image, index) in home.images" :class="{ active: index==0 }" class="carousel-item">
+                   <img class="carousel-image d-block img-padded rounded" :src="image.url" alt="">            
+                 </div>
+             </div>
+             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon img-padded" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon img-padded" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+
+
             </a>
           </div>
           <!--
@@ -62,7 +77,7 @@
             <!-- Home small round badge / image / icon -->
             <a :href="'/#/homes/' + home.id" :title="home.name">
               <img
-                src="home3.jpeg"
+                :src="home.images[0].url"
                 :alt="home.name"
                 class="rounded-circle img-padded"
                 width="100"
@@ -101,7 +116,9 @@
                 value="Submit"
               />
             </form>
-            <li class="text-danger" v-for="error in home.errors">{{ error }}</li>
+            <li class="text-danger" v-for="error in home.errors">
+              {{ error }}
+            </li>
             <hr />
             <!--
               <div class="container-fluid">
@@ -131,7 +148,19 @@
   </div>
 </template>
 
-<style></style>
+<style>
+  .carousel {    
+    width:  900px !important; 
+    height: 600px !important;
+  }
+  .carousel-image {
+    margin: auto;
+    height: 600px;
+    /*overflow-y: hidden;*/
+    /*-ms-interpolation-mode: bicubic;*/
+  }
+
+</style>
 
 <script>
 // var axios = require('axios');
@@ -142,7 +171,9 @@ export default {
       message: "",
       homes: [], //#homes array for DOM
       // errors: [],
-      code: ""
+      code: "",
+      slide: 0,
+      sliding: null
     };
   },
   created: function() {
@@ -189,6 +220,14 @@ export default {
           console.log(error.response.data.errors);
           // this.errors.push(error.response.data.errors);
         });
+    },
+
+    onSlideStart (slide) {
+      this.sliding = true
+    },
+
+    onSlideEnd (slide) {
+      this.sliding = false
     }
   },
   computed: {}
