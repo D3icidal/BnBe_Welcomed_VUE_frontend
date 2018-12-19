@@ -125,7 +125,7 @@
           -->
           <div class="col-md-9">
             <!-- Guide Content / SECTIONS -->
-            <div v-for="section in filterBy(sections, 'Welcome', 'name')">
+            <!-- <div v-for="section in filterBy(sections, 'Welcome', 'name')">
               <span class="welcome"> 
                 <div class="card mr-md-10 mb-6">
                   <img
@@ -144,7 +144,7 @@
                   </div>
                 </div>
               </span>
-            </div>
+            </div> -->
 
             <span class="unused"> <!-- unused SECTION --> </span>
 

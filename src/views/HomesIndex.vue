@@ -176,11 +176,27 @@ export default {
       sliding: null
     };
   },
-  created: function() {
-    axios.get("http://localhost:3000/homes").then(response => {
-      console.log(response.data);
-      this.homes = response.data;
-    });
+  beforeCreate: function() {    
+  },
+  created: function() {    
+    axios.get("http://localhost:3000/homes")
+      .then(response => {
+        console.log(response.data);
+        this.homes = response.data;
+        console.log("homes: " + this.homes);
+        console.log("homes.length: " + this.homes.length);
+        console.log("thishomes.length: " + this.homes.length);
+        if (this.homes.length === 1) {
+          this.$router.push("/homes/" + this.homes[0].id );
+        }
+        if (this.homes.length === 0 || this.homes === null ) {
+          this.$router.push("/homes/new");
+        }
+        if (this.homes.length > 1) {
+          this.$router.push("/homes");
+        }
+      });
+
   },
   methods: {
     submit: function(homeObject) {

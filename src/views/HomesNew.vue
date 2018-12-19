@@ -12,16 +12,20 @@
           <input type="text" class="form-control" v-model="name" />
         </div>
         <div class="form-group">
-          <label>Address:</label>
-          <input type="text" class="form-control" v-model="address" />
-        </div>
-        <div class="form-group">
           <label>Bedrooms:</label>
           <input type="number" class="form-control" v-model="bedrooms" />
         </div>
         <div class="form-group">
           <label>Bathrooms:</label>
           <input type="number" class="form-control" v-model="bathrooms" />
+        </div>
+        <div class="form-group">
+          <label>Address:</label>
+          <input type="text" class="form-control" v-model="address" />
+        </div>
+        <div class="form-group">
+          <label>Zipcode:</label>
+          <input type="text" class="form-control" v-model="zipcode" />
         </div>
         <input type="submit" class="btn btn-primary" value="Submit" />
       </form>
@@ -37,6 +41,7 @@ export default {
     return {
       name: "",
       address: "",
+      zipcode: "",
       bedrooms: "",
       bathrooms: "",
       errors: []
@@ -48,7 +53,8 @@ export default {
         name: this.name,
         bedrooms: this.bedrooms,
         bathrooms: this.bathrooms,
-        street_address: this.address
+        street_address: this.address,
+        zipcode: this.zipcode
       };
       axios
         .post("http://localhost:3000/homes", params)
@@ -76,7 +82,7 @@ export default {
             console.log("Error", error.message);
           }
           console.log(error.config);
-          console.log("inside homesnew.vue - error caught");
+          // console.log("inside homesnew.vue - error caught");
           console.log(error.response.data.errors);
           this.errors.push(error.response.data.errors);
         });

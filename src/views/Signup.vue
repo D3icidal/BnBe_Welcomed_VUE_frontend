@@ -6,7 +6,8 @@
           <h3 class="title-divider">
             <span>Sign Up</span> 
             <small class="mt-4">Already signed up? <a href="/#/login">Login here</a>.</small>
-          </h3>          
+          </h3>      
+
           <hr />
           <ul>
             <li class="text-danger" v-for="error in errors">{{ error }}</li>
@@ -28,11 +29,11 @@
           </div>
           <div class="form-group">
             <label class="sr-only" for="signup-password-page">Password</label>
-            <input type="password" class="form-control" v-model="password" id="signup-password-page" placeholder="Password">
+            <input type="password" class="form-control" v-model="password"  placeholder="Password">
           </div>
           <div class="form-group">
             <label class="sr-only" for="signup-password-page">Password Confirmation</label>
-            <input type="password" class="form-control" v-model="passwordConfirmation" id="signup-password-page" placeholder="Password">
+            <input type="password" class="form-control" v-model="passwordConfirmation"  placeholder="Password">
           </div>
           <div class="form-check">
             <label class="form-check-label">
@@ -72,7 +73,7 @@ export default {
         email: this.email,
         password: this.password,
         password_confirmation: this.passwordConfirmation
-      };
+      };      
       axios
         .post("http://localhost:3000/users", params)
         .then(response => {
@@ -80,8 +81,11 @@ export default {
         })
         .catch(error => {
           this.errors = []; //clear error log      
-          this.errors.push(error.response.status + ": " + error.response.data);
-          this.errors.push(error.reponse.data.errors);
+          console.log(error.response)
+          console.log(error.response.data.errors)
+          console.log("error message: " + error.message)
+          // this.errors.push(error.response.status + ": " + error.response.data);
+          this.errors = error.response.data.errors; //WORKING
         });
     }
   }
