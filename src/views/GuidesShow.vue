@@ -1,5 +1,5 @@
 <template>
-  <!-- Show PAGE FOR A USERS HOMES -->
+  <!-- Show a GUIDE PAGE FOR A USERS HOMES -->
   <main class="GuideShow">
     <div class="content">
       <!-- ======== @Region: Details/Standout  ======== -->
@@ -111,6 +111,17 @@
           <div class="col-md-3">
             <!-- sidebar -->
             sidebar goes here
+            <br />
+            <hr />
+            <br />
+            <h5>Weather</h5>
+            <!-- <img :src="home.weather[0].iconLink" class="weatherIcon"> -->
+            <p>              
+            <span class="weather mt-7">Today: {{home.weather[0].highTemperature}}&deg {{home.weather[0].description}}</span><br>
+            <span class="weather">{{home.weather[1].weekday}}: {{home.weather[1].highTemperature}}&deg {{home.weather[1].description}}</span><br>
+            <!-- <span class="weather">{{home.weather[2].weekday}}: {{home.weather[2].highTemperature}}&deg {{home.weather[2].description}}</span><br> -->
+            </p>
+
           </div>
           <!--
             Guide Content
@@ -232,6 +243,11 @@
 .amenity-img {
   display: block;
   margin: auto;
+}
+
+.weather{
+  text-align: right;  
+  margin-top: 10px;
 }
 </style>
 

@@ -1,5 +1,6 @@
 <template>
   <!-- Show PAGE FOR A USERS HOMES -->
+  <!-- IGNORE THIS PAGE FOR NOW - WET CODE, work on GUIDES SHOW  -->
   <main class="GuideShow">
     <div>
       <div id="details">

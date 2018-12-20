@@ -41,7 +41,7 @@
                 home.name
               }}</a>
             </h2>
-            <!-- #TODO image url, then maybe carosel or paralax? -->
+            <!-- #TODO image url, then maybe carosel or parallax? -->
             <a
               :href="'/#/homes/' + home.id"
               title="Go To This Home"
@@ -49,10 +49,10 @@
             >
               
 
-            <!--  CAROUSEL - TODO vertical images with blurred letterbox sides -->            
+            <!--  CAROUSEL - TODO vertical images will have blurred letterbox sides -->            
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="2500">
               <div class="carousel-inner">
-                  <div v-for="(image, index) in home.images" :class="{ active: index==0 }" class="carousel-item">
+                  <div v-for="(image, index1) in home.images" :class="{ 'active': index1 === 0 }" class="carousel-item">
                    <img class="carousel-image d-block img-padded rounded" :src="image.url" alt="">            
                  </div>
              </div>
@@ -159,7 +159,6 @@
     /*overflow-y: hidden;*/
     /*-ms-interpolation-mode: bicubic;*/
   }
-
 </style>
 
 <script>
@@ -173,10 +172,8 @@ export default {
       // errors: [],
       code: "",
       slide: 0,
-      sliding: null
+      sliding: true
     };
-  },
-  beforeCreate: function() {    
   },
   created: function() {    
     axios.get("http://localhost:3000/homes")
@@ -192,9 +189,9 @@ export default {
         if (this.homes.length === 0 || this.homes === null ) {
           this.$router.push("/homes/new");
         }
-        if (this.homes.length > 1) {
-          this.$router.push("/homes");
-        }
+        // if (this.homes.length > 1) {
+        //   this.$router.push("/homes");
+        // }
       });
 
   },

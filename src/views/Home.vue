@@ -8,7 +8,7 @@
         Your Guide To A Happy Home
       </h3>
       <hr class="hr hr-lg w-20 mx-auto my-4" data-animate="fadeIn" data-animate-delay="1" />
-      <div> <a href="#about" class="btn btn-dark btn-rounded btn-lg py-lg-3 px-lg-5" data-toggle="scroll-link" data-animate="fadeIn" data-animate-delay="1.50">Find Out More</a>
+      <div> <a href="/#/signup" class="btn btn-dark btn-rounded btn-lg py-lg-3 px-lg-5" data-toggle="scroll-link" data-animate="fadeIn" data-animate-delay="1.50">Sign Up Now</a>
     </div>
     </div>  
 
