@@ -58,12 +58,23 @@ export default {
         bedrooms: this.bedrooms,
         bathrooms: this.bathrooms,
         street_address: this.address,
-        zipcode: this.zipcode
+        zipcode: this.zipcode,
+        home_id: 0
       };
       axios
         .post("http://localhost:3000/homes", params)
         .then(response => {
-          this.$router.push("/homes"); //TODO maybe redirect to show instead of index?
+          console.log("home created, id: " + response.data);
+          this.home_id = response.data;
+          axios
+            .get(
+              "http://localhost:3000/sections/" +
+                this.home_id +
+                "/createAll"
+            )
+            .then(response => {
+              this.$router.push("/homes"); //TODO maybe redirect to show instead of index?
+            });
         })
         .catch(error => {
           if (error.response) {

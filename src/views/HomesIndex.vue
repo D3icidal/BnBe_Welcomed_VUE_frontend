@@ -17,13 +17,13 @@
             <!-- <a :href="'/job/' + r.id"> -->
             <!-- Home Title -->
             <h2 class="text-slab">
-              <a :href="'/#/homes/' + home.id" :title="home.name">{{
+              <a :href="'/#/guides/' + home.guest_password" :title="home.name">{{
                 home.name
               }}</a>
             </h2>
             <!-- #TODO image url, then maybe carosel or parallax? -->
             <a
-              :href="'/#/homes/' + home.id"
+              :href="'/#/guides/' + home.guest_password"
               title="Go To This Home"
               class="d-block"
             >
@@ -82,9 +82,10 @@
             <p class="text-s mb-2">ID: {{ home.id }}</p>
             <hr />
             <h6 class="text-slab">
-              Home Address <br />
-              {{ home.street_address }}
+              Home Address 
             </h6>
+            <br />
+              {{ home.street_address }}
             <hr />
             <h6 class="text-slab">Guest Guide Code</h6>
             <a :href="'/#/guides/' + home.guest_password">{{

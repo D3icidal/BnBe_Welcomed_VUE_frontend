@@ -1,29 +1,35 @@
 <template>
   <!-- Edit PAGE FOR A USERS HOMES -->
   <div class="home">
-    <h1>{{ message }}</h1> <br>
+    <br>
     <div class="homeEdit">      
-      <form v-on:submit.prevent="submit();">
-            <h1>Edit home</h1>
-            <div class="form-group">
-              <label>{{ home.name }}</label>
-              <input type="text" class="form-control" v-model="home.name" />
-            </div>
-            <div class="form-group">
-              <label>street_address:</label>
-              <input type="text" class="form-control" v-model="home.street_address" />
-            </div>
-            <div class="form-group">
-              <label>bedrooms:</label>
-              <input type="text" class="form-control" v-model="home.bedrooms" />
-            </div>
-            <div class="form-group">
-              <label>bathrooms:</label>
-              <input type="text" class="form-control" v-model="home.bathrooms" />
-            </div>
-            <input type="submit" class="btn btn-primary" value="Submit" />
-          </form>
-    </div>
+      <div class="row">      
+        <div class="col-8 my-6 mx-8 flex">  
+        <form v-on:submit.prevent="submit();">
+              <h1>Edit your home details here</h1>
+              <div class="form-group">
+                <label>Name:{{ home.name }}</label>
+                <input type="text" class="form-control" v-model="home.name" :placeholder="home.details.name"/>
+              </div>
+              <div class="form-group">
+                <label>street_address:</label>
+                <input type="text" class="form-control" v-model="home.street_address" :placeholder="home.details.street_address"/>
+              </div>
+              <span class="row">
+                <div class="form-group col-3">
+                  <label>bedrooms:</label>
+                  <input type="text" class="form-control" v-model="home.bedrooms" :placeholder="home.details.bedrooms"/>
+                </div>
+                <div class="form-group col-3">
+                  <label>bathrooms:</label>
+                  <input type="text" class="form-control" v-model="home.bathrooms" :placeholder="home.details.bathrooms" />
+                </div>
+              </span>
+              <input type="submit" class="btn btn-primary" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
   </div>  
 </template>
 
@@ -47,10 +53,12 @@ home.bathrooms
       };
     },
     created: function() {
-      axios.get('http://localhost:3000/homes/' + this.$route.params.id).then(response => {
-        console.log(response.data);
-        this.home = response.data;
-      });
+      axios.get('http://localhost:3000/homes/' + this.$route.params.id)
+        .then(response => {
+          console.log(response.data);
+          this.home = response.data;
+          console.log("this.home: " + this.home)
+        });
     },
     methods: {
       submit: function() {
@@ -63,7 +71,7 @@ home.bathrooms
         axios
           .patch("http://localhost:3000/homes/" + this.$route.params.id, params)
           .then(response => {
-            this.$router.push("/");
+            this.$router.push("/#/homes");
           });
           // .catch(error => {
           //   this.errors = error.response.data.errors;

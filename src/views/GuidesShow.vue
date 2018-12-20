@@ -6,15 +6,16 @@
       <div id="details">
         <div
           data-toggle="full-height"
-          class="text-center parallax overlay overlay-op-2 p-6 d-lg-flex align-items-lg-center"
-          :data-bg-img-src="home.home_images.url"
-          data-css="{&quot;background-position&quot;: &quot;center center&quot;}"
+          class="standoutbg text-center parallax overlay overlay-op-2 p-6 d-lg-flex align-items-lg-center"
+          :bg-img="urltest1"
+          :data-bg-img="urltest1"
+          data-css="'background-position: center center'"
         >
           <div class="p-4 p-lg-6 bg-white container">
             <h2
               class="font-weight-normal mb-2 text-green-bright font-md-x3 font-sm-x2"
             >
-              {{ home.details.name }} in {{ home.details.state }}
+              {{ home.details.name }} in CA<!-- {{ home.details.state }} -->
             </h2>
             <h4
               class="font-weight-light text-dark op-9 mb-lg-4 mb-sm-4 font-md-x2 font-sm-x1"
@@ -38,7 +39,7 @@
                   <i class="la la-arrows-h icon-3x text-blue"></i>
                 </div>
                 <h4 class="text-dark op-9">Square feet</h4>
-                <h4 class="text-dark op-9">3200</h4>
+                <h4 class="text-dark op-9">800</h4>
                 <!-- {{Home.details.square_feet}}</h4> -->
               </div>
               <div
@@ -114,28 +115,28 @@
             <ul class="nav nav-section-menu mb-4 py-3">
               <li class="nav-header">Find info here</li>
               <li>
-                <a href="Welcome" class="nav-link"> Welcome <i class="fa fa-angle-right"></i> </a>
+                <a v-on:click="setActive('Welcome')" class="nav-link"> Welcome <i class="fa fa-angle-right"></i> </a>
               </li>
               <li>
-                <a href="Amenities" class="nav-link"> Amenities <i class="fa fa-angle-right"></i> </a>
+                <a v-on:click="setActive('WiFi')" class="nav-link"> WiFi <i class="fa fa-angle-right"></i> </a>
               </li>
               <li>
-                <a href="WiFi" class="nav-link"> WiFi <i class="fa fa-angle-right"></i> </a>
+                <a v-on:click="setActive('Amenities')" class="nav-link"> Amenities <i class="fa fa-angle-right"></i> </a>
               </li>
               <li>
-                <a href="Parking" class="nav-link"> Parking <i class="fa fa-angle-right"></i> </a>
+                <a v-on:click="setActive('Parking')" class="nav-link"> Parking <i class="fa fa-angle-right"></i> </a>
               </li>
               <li>
-                <a href="Nearby Attractions" class="nav-link"> Nearby Attractions <i class="fa fa-angle-right"></i> </a>
+                <a v-on:click="setActive('Attractions')" class="nav-link"> Nearby Attractions <i class="fa fa-angle-right"></i> </a>
               </li>
               <li>
-                <a href="Contact Me" class="nav-link"> Contact Me <i class="fa fa-angle-right"></i> </a>
+                <a v-on:click="setActive('Contact')" class="nav-link"> Contact Me <i class="fa fa-angle-right"></i> </a>
               </li>
               <li>
-                <a href="Emergencies" class="nav-link"> Emergencies <i class="fa fa-angle-right"></i> </a>
+                <a v-on:click="setActive('Emergencies')" class="nav-link"> Emergencies <i class="fa fa-angle-right"></i> </a>
               </li>
               <li>
-                <a href="Checkout" class="nav-link"> Checkout <i class="fa fa-angle-right"></i> </a>
+                <a v-on:click="setActive('Checkout')" class="nav-link"> Checkout <i class="fa fa-angle-right"></i> </a>
               </li>
             </ul>
             <br />
@@ -163,7 +164,7 @@
           <div class="col-md-9">
 
             <!-- WELCOME -->
-            <span class="Welcome"> 
+            <span class="Welcome" :class="{ active: isActive('Welcome') }" v-if="isActive('Welcome')"> 
               <div class="card mr-md-8 mb-6">
                 <div class="row">
                   <div class="col-12 my-5">
@@ -180,7 +181,7 @@
             </span>
 
             <!-- WiFi -->
-            <span class="WiFi"> 
+            <span class="WiFi" :class="{ active: isActive('WiFi') }" v-if="isActive('WiFi')"> 
               <div class="card mr-md-8 mb-6">
                 <div class="row">
                   <div class="col-12 my-5">
@@ -197,7 +198,7 @@
             </span>
 
             <!-- Parking -->
-            <span class="Parking"> 
+            <span class="Parking" :class="{ active: isActive('Parking') }" v-if="isActive('Parking')"> 
               <div class="card mr-md-8 mb-6">
                 <div class="row">
                   <div class="col-12 my-5">
@@ -214,7 +215,7 @@
             </span>
 
             <!-- Nearby Attractions -->
-            <span class="Attractions"> 
+            <span class="Attractions" :class="{ active: isActive('Attractions') }" v-if="isActive('Attractions')"> 
               <div class="card mr-md-8 mb-6">
                 <div class="row">
                   <div class="col-12 my-5">
@@ -231,7 +232,7 @@
             </span>
 
             <!-- Contact Me -->
-            <span class="Contact"> 
+            <span class="Contact" :class="{ active: isActive('Contact') }" v-if="isActive('Contact')"> 
               <div class="card mr-md-8 mb-6">
                 <div class="row">
                   <div class="col-12 my-5">
@@ -248,7 +249,7 @@
             </span>
 
             <!-- Emergencies -->
-            <span class="Emergencies"> 
+            <span class="Emergencies" :class="{ active: isActive('Emergencies') }" v-if="isActive('Emergencies')"> 
               <div class="card mr-md-8 mb-6">
                 <div class="row">
                   <div class="col-12 my-5">
@@ -265,7 +266,7 @@
             </span>
 
             <!-- Checkout -->
-            <span class="Checkout"> 
+            <span class="Checkout" :class="{ active: isActive('Checkout') }" v-if="isActive('Checkout')"> 
               <div class="card mr-md-8 mb-6">
                 <div class="row">
                   <div class="col-12 my-5">
@@ -282,7 +283,7 @@
             </span>
 
             <!-- AMENITIES SECTION -->
-            <span class="amenities">
+            <span class="amenities" :class="{ active: isActive('Amenities') }" v-if="isActive('Amenities')">
               <div class="card mr-md-8 mb-6" v-for="amenity in home.amenities">
                 <!-- EACH AMENITIY -->
                 <div class="row no-gutters">
@@ -327,13 +328,17 @@
 <style>
 .parallax {
   /* Set a specific height */
-  height: 500px;
+  height: 650px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.standoutbg {
+  min-height: 650px;
 }
 
 .card-amenity-image {
@@ -375,6 +380,7 @@ export default {
   data: function() {
     return {
       message: "",
+      activeItem: 'Welcome',
       home: {},
       sections: [],
       welcome: "",
@@ -383,7 +389,9 @@ export default {
       attractions: "",
       contact: "",
       emergencies: "",
-      checkout: ""
+      checkout: "",
+      urltest1: "111",
+      urltest2: "222"
     };
   },
   created: function() {
@@ -400,7 +408,8 @@ export default {
         console.log(response.data);
         this.home = response.data;
         console.log("THISHOME: " + this.home);
-        console.log(this.home.details.id);
+        console.log(this.home.details);
+        console.log("this.home.home_images[0].url " + this.home.home_images[0].url);
         axios
           .get("http://localhost:3000/sections/" + this.home.details.id)
           .then(response => {
@@ -430,6 +439,7 @@ export default {
             this.checkout = this.sections.find(obj => {
               return obj.name === 'Checkout';
             }).content;
+            this.urltest1 = this.home.home_images[0].url;
           });
       });  
   },
@@ -440,6 +450,12 @@ export default {
   //     this.sections = response.data;
   //   });
   methods: {
+    isActive: function(menuItem) {
+      return this.activeItem === menuItem;
+    },
+    setActive: function(menuItem) {
+      this.activeItem = menuItem; // no need for Vue.set()
+    }
     // sectionFind: function(term) {
     //   this.sections.find(obj => {
     //     return obj.name === term;
