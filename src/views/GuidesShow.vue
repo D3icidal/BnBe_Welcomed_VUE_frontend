@@ -7,7 +7,7 @@
         <div
           data-toggle="full-height"
           class="text-center parallax overlay overlay-op-2 p-6 d-lg-flex align-items-lg-center"
-          data-bg-img="assets/img/home2.jpeg"
+          :data-bg-img-src="home.home_images.url"
           data-css="{&quot;background-position&quot;: &quot;center center&quot;}"
         >
           <div class="p-4 p-lg-6 bg-white container">
@@ -109,8 +109,35 @@
         <div class="row">
           <!-- Guides Body (Sidebar and features/amenities) -->
           <div class="col-md-3">
-            <!-- sidebar -->
-            sidebar goes here
+          <!-- sidebar -->
+            <!-- Sections Menu-->
+            <ul class="nav nav-section-menu mb-4 py-3">
+              <li class="nav-header">Find info here</li>
+              <li>
+                <a href="Welcome" class="nav-link"> Welcome <i class="fa fa-angle-right"></i> </a>
+              </li>
+              <li>
+                <a href="Amenities" class="nav-link"> Amenities <i class="fa fa-angle-right"></i> </a>
+              </li>
+              <li>
+                <a href="WiFi" class="nav-link"> WiFi <i class="fa fa-angle-right"></i> </a>
+              </li>
+              <li>
+                <a href="Parking" class="nav-link"> Parking <i class="fa fa-angle-right"></i> </a>
+              </li>
+              <li>
+                <a href="Nearby Attractions" class="nav-link"> Nearby Attractions <i class="fa fa-angle-right"></i> </a>
+              </li>
+              <li>
+                <a href="Contact Me" class="nav-link"> Contact Me <i class="fa fa-angle-right"></i> </a>
+              </li>
+              <li>
+                <a href="Emergencies" class="nav-link"> Emergencies <i class="fa fa-angle-right"></i> </a>
+              </li>
+              <li>
+                <a href="Checkout" class="nav-link"> Checkout <i class="fa fa-angle-right"></i> </a>
+              </li>
+            </ul>
             <br />
             <hr />
             <br />
@@ -121,7 +148,6 @@
             <span class="weather">{{home.weather[1].weekday}}: {{home.weather[1].highTemperature}}&deg {{home.weather[1].description}}</span><br>
             <!-- <span class="weather">{{home.weather[2].weekday}}: {{home.weather[2].highTemperature}}&deg {{home.weather[2].description}}</span><br> -->
             </p>
-
           </div>
           <!--
             Guide Content
@@ -135,33 +161,129 @@
             "Checkout"
           -->
           <div class="col-md-9">
-            <!-- Guide Content / SECTIONS -->
-            <!-- <div v-for="section in filterBy(sections, 'Welcome', 'name')">
-              <span class="welcome"> 
-                <div class="card mr-md-10 mb-6">
-                  <img
-                    class="card-img-top img-fluid"
-                    src="https://via.placeholder.com/600x400amenity.icon_url"
-                    alt=""
-                  />
-                  <div class="card-body px-2">
-                    <h4 class="card-title text-center">Welcome to my home</h4>
-                    <p class="card-text">
-                      {{section.content}}
-                    </p>
-                  </div>
-                  <div class="card-footer w-100 text-muted">
-                    Nice phrase or saying
-                  </div>
+
+            <!-- WELCOME -->
+            <span class="Welcome"> 
+              <div class="card mr-md-8 mb-6">
+                <div class="row">
+                  <div class="col-12 my-5">
+                    <div class="card-body px-2">
+                      <h4 class="card-title ml-3">Welcome</h4>                      
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">  {{welcome}} </p>                      
+                    </div>
+                  </div>                  
                 </div>
-              </span>
-            </div> -->
+              </div>
+              
+            </span>
 
-            <span class="unused"> <!-- unused SECTION --> </span>
+            <!-- WiFi -->
+            <span class="WiFi"> 
+              <div class="card mr-md-8 mb-6">
+                <div class="row">
+                  <div class="col-12 my-5">
+                    <div class="card-body px-2">
+                      <h4 class="card-title ml-3">WiFi</h4>                      
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">  {{wifi}} </p>                      
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+              
+            </span>
 
+            <!-- Parking -->
+            <span class="Parking"> 
+              <div class="card mr-md-8 mb-6">
+                <div class="row">
+                  <div class="col-12 my-5">
+                    <div class="card-body px-2">
+                      <h4 class="card-title ml-3">Parking</h4>                      
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">  {{parking}} </p>                      
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+              
+            </span>
+
+            <!-- Nearby Attractions -->
+            <span class="Attractions"> 
+              <div class="card mr-md-8 mb-6">
+                <div class="row">
+                  <div class="col-12 my-5">
+                    <div class="card-body px-2">
+                      <h4 class="card-title ml-3">Nearby Attractions</h4>                      
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">  {{attractions}} </p>                      
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+              
+            </span>
+
+            <!-- Contact Me -->
+            <span class="Contact"> 
+              <div class="card mr-md-8 mb-6">
+                <div class="row">
+                  <div class="col-12 my-5">
+                    <div class="card-body px-2">
+                      <h4 class="card-title ml-3">Contact Me</h4>                      
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">  {{contact}} </p>                      
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+              
+            </span>
+
+            <!-- Emergencies -->
+            <span class="Emergencies"> 
+              <div class="card mr-md-8 mb-6">
+                <div class="row">
+                  <div class="col-12 my-5">
+                    <div class="card-body px-2">
+                      <h4 class="card-title ml-3">Emergencies</h4>                      
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">  {{emergencies}} </p>                      
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+              
+            </span>
+
+            <!-- Checkout -->
+            <span class="Checkout"> 
+              <div class="card mr-md-8 mb-6">
+                <div class="row">
+                  <div class="col-12 my-5">
+                    <div class="card-body px-2">
+                      <h4 class="card-title ml-3">Checkout</h4>                      
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">  {{checkout}} </p>                      
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+              <hr />
+            </span>
+
+            <!-- AMENITIES SECTION -->
             <span class="amenities">
-              <!-- AMENITIES SECTION -->
-              <div class="card mr-md-10 mb-6" v-for="amenity in home.amenities">
+              <div class="card mr-md-8 mb-6" v-for="amenity in home.amenities">
                 <!-- EACH AMENITIY -->
                 <div class="row no-gutters">
                   <div class="col-auto card-amenity-image">
@@ -201,22 +323,6 @@
     </div>
   </main>
 </template>
-<!--
-  bathrooms
-  bedrooms
-  comment_id
-  created_at
-  guest_password
-  id
-  is_active
-  name
-  state
-  street_address
-  updated_at
-  user_id
-  wifi_password
-  zipcode
--->
 
 <style>
 .parallax {
@@ -245,11 +351,22 @@
   margin: auto;
 }
 
-.weather{
-  text-align: right;  
+.weather {
+  text-align: right;
   margin-top: 10px;
 }
 </style>
+
+
+<!-- 
+welcome
+wifi
+parking
+attractions
+contact
+emergencies
+checkout 
+-->
 
 <script>
 // var axios = require('axios');
@@ -259,25 +376,76 @@ export default {
     return {
       message: "",
       home: {},
-      sections: {}
+      sections: [],
+      welcome: "",
+      wifi: "",
+      parking: "",
+      attractions: "",
+      contact: "",
+      emergencies: "",
+      checkout: ""
     };
   },
   created: function() {
+    // axios.get('/user/12345').then(response => {
+    //  this.arrayOne = response.data
+    //  axios.get('/user/12345/' + this.arrayOne.name + '/permissions').then(
+    //      response => this.arrayTwo = response.data
+    //    );
+    // });
+
     axios //Fetch guide for home
       .get("http://localhost:3000/guides/" + this.$route.params.booking_code)
       .then(response => {
         console.log(response.data);
         this.home = response.data;
-      });
-    axios //fetch sections for home
-      .get("http://localhost:3000/sections")
-      .then(response => {
-        console.log(response.data);
-        this.sections = response.data;
-      });
-
+        console.log("THISHOME: " + this.home);
+        console.log(this.home.details.id);
+        axios
+          .get("http://localhost:3000/sections/" + this.home.details.id)
+          .then(response => {
+            this.sections = response.data;
+            console.log("sections: " + this.sections);
+            console.log(this.welcome);
+            // this.welcome = this.sections.find(findSection,Welcome');
+            // console.log(this.welcome)
+            this.welcome = this.sections.find(obj => {
+              return obj.name === 'Welcome';
+            }).content;
+            this.wifi = this.sections.find(obj => {
+              return obj.name === 'WiFi';
+            }).content;
+            this.parking = this.sections.find(obj => {
+              return obj.name === 'Parking';
+            }).content;
+            this.attractions = this.sections.find(obj => {
+              return obj.name === 'Attractions';
+            }).content;
+            this.contact = this.sections.find(obj => {
+              return obj.name === 'Contact Me';
+            }).content;
+            this.emergencies = this.sections.find(obj => {
+              return obj.name === 'Emergencies';
+            }).content;
+            this.checkout = this.sections.find(obj => {
+              return obj.name === 'Checkout';
+            }).content;
+          });
+      });  
   },
-  methods: {},
+  // axios //fetch sections for home
+  //   .get("http://localhost:3000/sections/" + this.home.id)
+  //   .then(response => {
+  //     console.log("sections: " + response);
+  //     this.sections = response.data;
+  //   });
+  methods: {
+    // sectionFind: function(term) {
+    //   this.sections.find(obj => {
+    //     return obj.name === term;
+    //   }).content;
+    // }
+  },
   computed: {}
 };
 </script>

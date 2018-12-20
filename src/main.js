@@ -5,9 +5,12 @@ import axios from "axios";
 import "./../node_modules/jquery/dist/jquery.min.js";
 import "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./../node_modules/bootstrap/dist/js/bootstrap.min.js";
-import vSelect from "vue-select";
+// import vSelect from "vue-select";
+// import VueCarousel from "vue-carousel";
 
-Vue.component("v-select", vSelect);
+// Vue.use(VueCarousel);
+
+// Vue.component("v-select", vSelect);
 
 axios.defaults.baseURL =
   process.env.NODE_ENV === "development" ? "http://localhost:3000" : "/";

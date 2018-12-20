@@ -2,26 +2,6 @@
   <!--
     INDEX PAGE FOR ALL OF A USERS HOMES - If they have multiple (otherwise sent to single show)
   -->
-  <!--
-    <div class="home">
-      <h1>{{ message }}</h1>
-      <br />
-      <div v-for="home in homes">
-        <br />
-        <p>Name: {{ home.name }}</p>
-        <p>
-          Bedrooms: {{ home.bedrooms }} | Bathrooms: {{ home.bathrooms }}<br />
-          State: {{ home.state }}<br />
-          ID: {{ home.id }}
-          <br>
-          <a v-bind:href="'/#/homes/' + home.id + '/edit'" class="btn btn-primary">Edit</a> |
-          <a v-bind:href="'/#/amenities/' + home.id" class="btn btn-primary">Amenities</a>
-        </p>
-        <br />
-        <br />
-      </div>
-    </div>
-  -->
   <div id="content" class="py-0">
     <div class="container-fluid px-6 py-5 px-lg-6 py-lg-8 bg-grey">
       <div v-for="home in homes">
@@ -52,11 +32,11 @@
             <!--  CAROUSEL - TODO vertical images will have blurred letterbox sides -->            
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="2500">
               <div class="carousel-inner">
-                  <div v-for="(image, index1) in home.images" :class="{ 'active': index1 === 0 }" class="carousel-item">
-                   <img class="carousel-image d-block img-padded rounded" :src="image.url" alt="">            
-                 </div>
-             </div>
-             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <div v-for="(image, index1) in home.images" :class="{ 'active': index1 === 0 }" class="carousel-item">
+                  <img class="carousel-image d-block img-padded rounded" :src="image.url" alt="">         
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon img-padded" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
@@ -64,7 +44,16 @@
               <span class="carousel-control-next-icon img-padded" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
-          </div>
+            </div>
+            <!-- <div class="carousel">
+              <carousel :auto="3000" :watch-items="list">
+                <carousel-item v-for="(item, index) in list">
+                  <img class="carousel-image d-block img-padded rounded" :src="item.url" alt=""> 
+                  <div slot="before">Insert node before</div>
+                  <div slot="after">Insert node after</div>
+                </carousel-item>
+              </carousel>
+            </div> -->
 
 
 
@@ -75,10 +64,10 @@
           -->
           <div class="col-md-2 order-md-1 text-md-right">
             <!-- Home small round badge / image / icon -->
-            <a :href="'/#/homes/' + home.id" :title="home.name">
+            <a :href="'/#/homes/' + home.id" :title="home.name">            
               <img
                 :src="home.images[0].url"
-                :alt="home.name"
+                :alt="home.name"                
                 class="rounded-circle img-padded"
                 width="100"
                 height="100"
@@ -149,51 +138,68 @@
 </template>
 
 <style>
-  .carousel {    
-    width:  900px !important; 
-    height: 600px !important;
-  }
-  .carousel-image {
-    margin: auto;
-    height: 600px;
-    /*overflow-y: hidden;*/
-    /*-ms-interpolation-mode: bicubic;*/
-  }
+.carousel {
+  width: 750px !important;
+  height: 450px !important;
+}
+.carousel-image {
+  margin: auto;
+  height: 500px;
+  max-width: 800px;
+  overflow-y: hidden;
+  /*-ms-interpolation-mode: bicubic;*/
+}
 </style>
 
 <script>
 // var axios = require('axios');
 import axios from "axios";
+// import { Carousel, Slide } from "vue-carousel";
+// import { Carousel, CarouselItem } from 'vue-l-carousel'
+
 export default {
   data: function() {
     return {
+      auto: 2000,
+      list: [],
       message: "",
       homes: [], //#homes array for DOM
       // errors: [],
       code: "",
       slide: 0,
-      sliding: true
+      sliding: null
     };
   },
-  created: function() {    
-    axios.get("http://localhost:3000/homes")
-      .then(response => {
-        console.log(response.data);
-        this.homes = response.data;
-        console.log("homes: " + this.homes);
-        console.log("homes.length: " + this.homes.length);
-        console.log("thishomes.length: " + this.homes.length);
-        if (this.homes.length === 1) {
-          this.$router.push("/homes/" + this.homes[0].id );
-        }
-        if (this.homes.length === 0 || this.homes === null ) {
-          this.$router.push("/homes/new");
-        }
-        // if (this.homes.length > 1) {
-        //   this.$router.push("/homes");
-        // }
-      });
+  created: function() {
+    axios.get("http://localhost:3000/homes").then(response => {
+      console.log(response.data);
+      this.homes = response.data;
+      console.log("homes: " + this.homes);
+      console.log("homes.length: " + this.homes.length);
+      console.log("thishomes.length: " + this.homes.length);
+      if (this.homes.length === 1) {
+        this.$router.push("/homes/" + this.homes[0].id);
+      }
+      if (this.homes.length === 0 || this.homes === null) {
+        this.$router.push("/homes/new");
+      }
+      // this.homes.forEach(function(home) {
+      //   console.log("home: " + home );
+      //   home.images.forEach(function(image) {
+      //     console.log("image: " + image);
+      //     this.list.push({url: image.url});
+      //   });      
+      // });
+      // console.log("LIST: " + this.list);
+      // if (this.homes.length > 1) {
+      //   this.$router.push("/homes");
+      // }
+    });
 
+  },  
+  components: {
+    // 'carousel': Carousel,
+    // 'carousel-item': CarouselItem
   },
   methods: {
     submit: function(homeObject) {
@@ -235,12 +241,12 @@ export default {
         });
     },
 
-    onSlideStart (slide) {
-      this.sliding = true
+    onSlideStart(slide) {
+      this.sliding = true;
     },
 
-    onSlideEnd (slide) {
-      this.sliding = false
+    onSlideEnd(slide) {
+      this.sliding = false;
     }
   },
   computed: {}
