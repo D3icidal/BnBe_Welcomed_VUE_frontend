@@ -40,21 +40,31 @@
  *--------------------------------------------------
  */
 
+/* line 39, assets/scss/custom-style.scss */
+
 #header {
   /* 1. Header wrapper */
 }
+
+/* line 40, assets/scss/custom-style.scss */
 
 #highlighted {
   /* 2. Highlighted (below header) wrapper */
 }
 
+/* line 41, assets/scss/custom-style.scss */
+
 #content {
   /* 3. Content wrapper */
 }
 
+/* line 42, assets/scss/custom-style.scss */
+
 #content-below {
   /* 4. Content Below wrapper */
 }
+
+/* line 43, assets/scss/custom-style.scss */
 
 #footer {
   /* 5. Footer wrapper */

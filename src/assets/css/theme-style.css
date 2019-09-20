@@ -2,14 +2,12 @@
  * Custom theme code styles
  * Written by Themelize.me (http://themelize.me)
  *
- * This example shows you how to change the default primary
- * colour from #55A79A (green) to #563d7c (purple)
+ * This version overrides Bootstrap CSS which is included
+ * via the HTML files.
+ * Bootstrap variables & mixins are used & overridden
  *
- * You can copy & paste this into the theme-stye.scss file
- * or change the css file in the <head> from:
- * theme-style.min.css
- * to
- * example-custom-colour.css
+ * To customise this we recommend you copy & paste this file
+ * to make future updates easier
  *******************************************************/
 
 /*******************************************************
@@ -331,7 +329,7 @@
 .header-light .header,
 .header.header-light {
   background-color: #fff;
-  border-bottom: 1px solid rgba(86, 61, 124, 0.6);
+  border-bottom: 1px solid rgba(85, 167, 154, 0.6);
   color: #1b1b1b;
 }
 
@@ -348,7 +346,7 @@
 .header.header-light .header-brand-text,
 .header-light .header .header-brand-text h1,
 .header.header-light .header-brand-text h1 {
-  color: #563d7c;
+  color: #55A79A;
 }
 
 /* line 95, assets/scss/core/_schemes.scss */
@@ -408,8 +406,8 @@
 
 .header-primary .header,
 .header.header-primary {
-  background-color: #563d7c;
-  border-bottom: 1px solid #7a58ad;
+  background-color: #55A79A;
+  border-bottom: 1px solid #87c2b8;
   color: #d7d7d7;
 }
 
@@ -417,7 +415,7 @@
 
 .header-primary .header .header-inner .header-divider:after,
 .header.header-primary .header-inner .header-divider:after {
-  background-color: #7a58ad;
+  background-color: #87c2b8;
 }
 
 /* line 91, assets/scss/core/_schemes.scss */
@@ -446,20 +444,20 @@
 /* line 149, assets/scss/core/_primary-colours.scss */
 
 .card-primary {
-  border-color: #563d7c;
-  background-color: #563d7c;
+  border-color: #55A79A;
+  background-color: #55A79A;
 }
 
 /* line 153, assets/scss/core/_primary-colours.scss */
 
 .card-outline-primary {
-  border-color: #563d7c;
+  border-color: #55A79A;
 }
 
 /* line 156, assets/scss/core/_primary-colours.scss */
 
 .card.clickable-element:hover {
-  border: 1px solid #563d7c;
+  border: 1px solid #55A79A;
 }
 
 /* line 162, assets/scss/core/_primary-colours.scss */
@@ -467,20 +465,20 @@
 .tag-primary,
 .badge-primary,
 .bg-primary {
-  background-color: #563d7c !important;
+  background-color: #55A79A !important;
 }
 
 /* line 167, assets/scss/core/_primary-colours.scss */
 
 .bg-primary-bright {
-  background-color: #4e18a1 !important;
+  background-color: #23d9bc !important;
 }
 
 /* line 173, assets/scss/core/_primary-colours.scss */
 
 .btn-link,
 .btn-link:hover {
-  color: #563d7c;
+  color: #55A79A;
 }
 
 /* line 177, assets/scss/core/_primary-colours.scss */
@@ -488,15 +486,15 @@
 .text-primary,
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #563d7c !important;
+  color: #55A79A !important;
 }
 
 /* line 182, assets/scss/core/_primary-colours.scss */
 
 .btn-primary {
   color: #fff;
-  background-color: #563d7c;
-  border-color: #4a356b;
+  background-color: #55A79A;
+  border-color: #4c968a;
   color: white;
 }
 
@@ -505,16 +503,16 @@ a.text-primary:focus {
 .btn-primary:focus,
 .btn-primary.focus {
   color: #fff;
-  background-color: #3e2c5a;
-  border-color: #0f0b15;
+  background-color: #44857b;
+  border-color: #21423d;
 }
 
 /* line 13, node_modules/bootstrap/scss/mixins/_hover.scss */
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #3e2c5a;
-  border-color: #2e2042;
+  background-color: #44857b;
+  border-color: #386e65;
 }
 
 /* line 178, assets/scss/core/_mixins.scss */
@@ -524,8 +522,8 @@ a.text-primary:focus {
 .show>.btn-primary.dropdown-toggle,
 .open>.btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #3e2c5a;
-  border-color: #2e2042;
+  background-color: #44857b;
+  border-color: #386e65;
   background-image: none;
 }
 
@@ -544,8 +542,8 @@ a.text-primary:focus {
 .open>.btn-primary.dropdown-toggle:focus,
 .open>.btn-primary.dropdown-toggle.focus {
   color: #fff;
-  background-color: #2e2042;
-  border-color: #0f0b15;
+  background-color: #386e65;
+  border-color: #21423d;
 }
 
 /* line 196, assets/scss/core/_mixins.scss */
@@ -554,8 +552,8 @@ a.text-primary:focus {
 .btn-primary[disabled],
 .btn-primary:disabled,
 fieldset[disabled] .btn-primary {
-  background-color: #563d7c;
-  border-color: #4a356b;
+  background-color: #55A79A;
+  border-color: #4c968a;
 }
 
 /* line 203, assets/scss/core/_mixins.scss */
@@ -572,14 +570,14 @@ fieldset[disabled] .btn-primary {
 fieldset[disabled] .btn-primary:hover,
 fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary.focus {
-  background-color: #563d7c;
-  border-color: #4a356b;
+  background-color: #55A79A;
+  border-color: #4c968a;
 }
 
 /* line 211, assets/scss/core/_mixins.scss */
 
 .btn-primary .badge {
-  color: #563d7c;
+  color: #55A79A;
   background-color: #fff;
 }
 
@@ -588,8 +586,8 @@ fieldset[disabled] .btn-primary.focus {
 .btn-outline-primary,
 .btn-outline-primary.disabled,
 .btn-outline-primary:disabled {
-  color: #563d7c;
-  border-color: #563d7c;
+  color: #55A79A;
+  border-color: #55A79A;
 }
 
 /* line 192, assets/scss/core/_primary-colours.scss */
@@ -614,8 +612,8 @@ fieldset[disabled] .btn-primary.focus {
 .btn-outline-primary:active:focus,
 .show>.btn-outline-primary.dropdown-toggle,
 .open>.btn-outline-primary.dropdown-toggle {
-  background-color: #563d7c;
-  border-color: #563d7c;
+  background-color: #55A79A;
+  border-color: #55A79A;
 }
 
 /* line 210, assets/scss/core/_primary-colours.scss */
@@ -629,7 +627,7 @@ fieldset[disabled] .btn-primary.focus {
 .nav-pills .nav-link.active,
 .nav-pills .nav-link.active:focus,
 .nav-pills .nav-link.active:hover {
-  background-color: #563d7c;
+  background-color: #55A79A;
   color: white;
 }
 
@@ -637,7 +635,7 @@ fieldset[disabled] .btn-primary.focus {
 
 .nav-pills-border-bottom .nav-link.active:after,
 .nav-pills-border-bottom-inside .nav-link.active:after {
-  background-color: #563d7c;
+  background-color: #55A79A;
 }
 
 /* line 230, assets/scss/core/_primary-colours.scss */
@@ -650,7 +648,7 @@ fieldset[disabled] .btn-primary.focus {
 .nav-pills.nav-pills-border-bottom-inside .nav-link.active:focus,
 .nav-tabs-flat .nav-link:hover,
 .nav-tabs-flat .nav-link:hover:focus {
-  color: #563d7c !important;
+  color: #55A79A !important;
 }
 
 /* line 235, assets/scss/core/_primary-colours.scss */
@@ -664,8 +662,8 @@ fieldset[disabled] .btn-primary.focus {
 .list-group-item-primary,
 a.list-group-item-primary,
 button.list-group-item-primary {
-  background-color: rgba(86, 61, 124, 0.25);
-  color: #271b38;
+  background-color: rgba(85, 167, 154, 0.25);
+  color: #33635c;
 }
 
 /* line 247, assets/scss/core/_primary-colours.scss */
@@ -674,8 +672,8 @@ a.list-group-item-primary:hover,
 a.list-group-item-primary:focus,
 button.list-group-item-primary:hover,
 button.list-group-item-primary:focus {
-  color: #271b38;
-  background-color: rgba(86, 61, 124, 0.45);
+  color: #33635c;
+  background-color: rgba(85, 167, 154, 0.45);
 }
 
 /* line 254, assets/scss/core/_primary-colours.scss */
@@ -690,7 +688,7 @@ button.list-group-item-primary:focus {
 .nav-section-menu.nav .active .nav-link i,
 .nav-section-menu .nav .active .nav-link:hover i,
 .nav-section-menu.nav .active .nav-link:hover i {
-  color: #563d7c !important;
+  color: #55A79A !important;
 }
 
 /* line 266, assets/scss/core/_primary-colours.scss */
@@ -703,8 +701,8 @@ button.list-group-item-primary:focus {
 .nav-section-menu.nav .active .nav-link,
 .nav-section-menu .nav .active .nav-link:hover,
 .nav-section-menu.nav .active .nav-link:hover {
-  border-left-color: #563d7c;
-  color: #563d7c;
+  border-left-color: #55A79A;
+  color: #55A79A;
 }
 
 @media (min-width: 768px) {
@@ -717,7 +715,7 @@ button.list-group-item-primary:focus {
   .nav-section-menu.nav-section-menu-right.nav .active .nav-link,
   .nav-section-menu.nav-section-menu-right .nav .active .nav-link:hover,
   .nav-section-menu.nav-section-menu-right.nav .active .nav-link:hover {
-    border-right-color: #563d7c;
+    border-right-color: #55A79A;
   }
 }
 
@@ -731,21 +729,21 @@ button.list-group-item-primary:focus {
 .nav-tabs .active>.nav-link:hover,
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-link.active:hover {
-  color: #563d7c;
+  color: #55A79A;
 }
 
 /* line 302, assets/scss/core/_primary-colours.scss */
 
 .nav-tabs .active>.nav-link:before,
 .nav-tabs .nav-link.active:before {
-  background: #563d7c;
+  background: #55A79A;
 }
 
 /* line 307, assets/scss/core/_primary-colours.scss */
 
 .page-link,
 .page-link:hover {
-  color: #563d7c;
+  color: #55A79A;
 }
 
 /* line 311, assets/scss/core/_primary-colours.scss */
@@ -753,72 +751,72 @@ button.list-group-item-primary:focus {
 .page-item.active .page-link,
 .page-item.active .page-link:focus,
 .page-item.active .page-link:hover {
-  background: #563d7c;
-  border-color: #563d7c;
+  background: #55A79A;
+  border-color: #55A79A;
 }
 
 /* line 316, assets/scss/core/_primary-colours.scss */
 
 .nav-steps .nav-link.active,
 .nav-steps .nav-link.active:hover {
-  background: #563d7c;
-  border-color: #563d7c;
+  background: #55A79A;
+  border-color: #55A79A;
 }
 
 /* line 321, assets/scss/core/_primary-colours.scss */
 
 .link-effect-underline:after {
-  background-color: #563d7c;
+  background-color: #55A79A;
 }
 
 /* line 324, assets/scss/core/_primary-colours.scss */
 
 .link-effect-slideup .nav-link-inner:after {
-  color: #563d7c;
+  color: #55A79A;
 }
 
 /* line 331, assets/scss/core/_primary-colours.scss */
 
 .progress[value]::-webkit-progress-value {
-  background-color: #563d7c;
+  background-color: #55A79A;
 }
 
 /* line 334, assets/scss/core/_primary-colours.scss */
 
 .progress[value]::-ms-fill {
-  background-color: #563d7c;
+  background-color: #55A79A;
 }
 
 /* line 337, assets/scss/core/_primary-colours.scss */
 
 .progress[value]::-moz-progress-bar {
-  background-color: #563d7c;
+  background-color: #55A79A;
 }
 
 /* line 340, assets/scss/core/_primary-colours.scss */
 
 .progress-bar {
-  background-color: #563d7c;
+  background-color: #55A79A;
 }
 
 /* line 346, assets/scss/core/_primary-colours.scss */
 
 .alert-primary {
-  background-color: rgba(86, 61, 124, 0.25);
-  border-color: rgba(86, 61, 124, 0.8);
-  color: #271b38;
+  background-color: rgba(85, 167, 154, 0.25);
+  border-color: rgba(85, 167, 154, 0.8);
+  color: #33635c;
 }
 
 /* line 351, assets/scss/core/_primary-colours.scss */
 
 .alert-primary hr {
-  border-top-color: rgba(86, 61, 124, 0.85);
+  border-top-color: rgba(85, 167, 154, 0.85);
 }
 
 /* line 354, assets/scss/core/_primary-colours.scss */
 
 .alert-primary .alert-link {
-  color: #271b38;
+  color: #33635c;
 }
 
 /* line 361, assets/scss/core/_primary-colours.scss */
@@ -826,8 +824,8 @@ button.list-group-item-primary:focus {
 .list-group-item.active,
 .list-group-item.active:focus,
 .list-group-item.active:hover {
-  background-color: #563d7c;
-  border-color: #563d7c;
+  background-color: #55A79A;
+  border-color: #55A79A;
 }
 
 /* line 367, assets/scss/core/_primary-colours.scss */
@@ -841,25 +839,25 @@ button.list-group-item-primary:focus {
 /* line 378, assets/scss/core/_primary-colours.scss */
 
 .blockquote {
-  border-left-color: #563d7c;
+  border-left-color: #55A79A;
 }
 
 /* line 381, assets/scss/core/_primary-colours.scss */
 
 .blockquote-reverse {
-  border-right-color: #563d7c;
+  border-right-color: #55A79A;
 }
 
 /* line 385, assets/scss/core/_primary-colours.scss */
 
 .tag-cloud a.tag {
-  color: #563d7c;
+  color: #55A79A;
 }
 
 @media (min-width: 576px) {
   /* line 391, assets/scss/core/_primary-colours.scss */
   .card-group .card+.card-outline-primary {
-    border-left: 1px solid #563d7c;
+    border-left: 1px solid #55A79A;
   }
 }
 
@@ -867,12 +865,12 @@ button.list-group-item-primary:focus {
   /* line 400, assets/scss/core/_primary-colours.scss */
   .navbar-expand.navbar-main.collapse .dropdown-menu,
   .navbar-expand .navbar-main.collapse .dropdown-menu {
-    border-bottom-color: #563d7c !important;
+    border-bottom-color: #55A79A !important;
   }
   /* line 403, assets/scss/core/_primary-colours.scss */
   .navbar-expand.navbar-main.collapse .dropdown-menu .dropdown-submenu .dropdown-item:after,
   .navbar-expand .navbar-main.collapse .dropdown-menu .dropdown-submenu .dropdown-item:after {
-    border-bottom-color: #563d7c !important;
+    border-bottom-color: #55A79A !important;
   }
   /* line 421, assets/scss/core/_primary-colours.scss */
   .navbar-expand.navbar-main.collapse .dropdown-menu .dropdown-item:hover:before,
@@ -903,7 +901,7 @@ button.list-group-item-primary:focus {
   .navbar-expand .navbar-main.collapse .dropdown-menu .open>.dropdown-item:before,
   .navbar-expand .navbar-main.collapse .dropdown-menu .open>.dropdown-item:hover:before,
   .navbar-expand .navbar-main.collapse .dropdown-menu .open>.dropdown-item:focus:before {
-    color: #563d7c !important;
+    color: #55A79A !important;
   }
   /* line 426, assets/scss/core/_primary-colours.scss */
   .navbar-expand.navbar-main .navbar-nav .show>.dropdown-toggle,
@@ -926,7 +924,7 @@ button.list-group-item-primary:focus {
   .navbar-expand .navbar-main .navbar-nav .open.active>.dropdown-toggle,
   .navbar-expand .navbar-main .nav-link-dd-effect:hover,
   .navbar-expand .navbar-main .nav-link-dd-effect.active {
-    border-top-color: #563d7c !important;
+    border-top-color: #55A79A !important;
   }
 }
 
@@ -934,12 +932,12 @@ button.list-group-item-primary:focus {
   /* line 400, assets/scss/core/_primary-colours.scss */
   .navbar-expand-sm.navbar-main.collapse .dropdown-menu,
   .navbar-expand-sm .navbar-main.collapse .dropdown-menu {
-    border-bottom-color: #563d7c !important;
+    border-bottom-color: #55A79A !important;
   }
   /* line 403, assets/scss/core/_primary-colours.scss */
   .navbar-expand-sm.navbar-main.collapse .dropdown-menu .dropdown-submenu .dropdown-item:after,
   .navbar-expand-sm .navbar-main.collapse .dropdown-menu .dropdown-submenu .dropdown-item:after {
-    border-bottom-color: #563d7c !important;
+    border-bottom-color: #55A79A !important;
   }
   /* line 421, assets/scss/core/_primary-colours.scss */
   .navbar-expand-sm.navbar-main.collapse .dropdown-menu .dropdown-item:hover:before,
@@ -970,7 +968,7 @@ button.list-group-item-primary:focus {
   .navbar-expand-sm .navbar-main.collapse .dropdown-menu .open>.dropdown-item:before,
   .navbar-expand-sm .navbar-main.collapse .dropdown-menu .open>.dropdown-item:hover:before,
   .navbar-expand-sm .navbar-main.collapse .dropdown-menu .open>.dropdown-item:focus:before {
-    color: #563d7c !important;
+    color: #55A79A !important;
   }
   /* line 426, assets/scss/core/_primary-colours.scss */
   .navbar-expand-sm.navbar-main .navbar-nav .show>.dropdown-toggle,
@@ -993,7 +991,7 @@ button.list-group-item-primary:focus {
   .navbar-expand-sm .navbar-main .navbar-nav .open.active>.dropdown-toggle,
   .navbar-expand-sm .navbar-main .nav-link-dd-effect:hover,
   .navbar-expand-sm .navbar-main .nav-link-dd-effect.active {
-    border-top-color: #563d7c !important;
+    border-top-color: #55A79A !important;
   }
 }
 
@@ -1001,12 +999,12 @@ button.list-group-item-primary:focus {
   /* line 400, assets/scss/core/_primary-colours.scss */
   .navbar-expand-md.navbar-main.collapse .dropdown-menu,
   .navbar-expand-md .navbar-main.collapse .dropdown-menu {
-    border-bottom-color: #563d7c !important;
+    border-bottom-color: #55A79A !important;
   }
   /* line 403, assets/scss/core/_primary-colours.scss */
   .navbar-expand-md.navbar-main.collapse .dropdown-menu .dropdown-submenu .dropdown-item:after,
   .navbar-expand-md .navbar-main.collapse .dropdown-menu .dropdown-submenu .dropdown-item:after {
-    border-bottom-color: #563d7c !important;
+    border-bottom-color: #55A79A !important;
   }
   /* line 421, assets/scss/core/_primary-colours.scss */
   .navbar-expand-md.navbar-main.collapse .dropdown-menu .dropdown-item:hover:before,
@@ -1037,7 +1035,7 @@ button.list-group-item-primary:focus {
   .navbar-expand-md .navbar-main.collapse .dropdown-menu .open>.dropdown-item:before,
   .navbar-expand-md .navbar-main.collapse .dropdown-menu .open>.dropdown-item:hover:before,
   .navbar-expand-md .navbar-main.collapse .dropdown-menu .open>.dropdown-item:focus:before {
-    color: #563d7c !important;
+    color: #55A79A !important;
   }
   /* line 426, assets/scss/core/_primary-colours.scss */
   .navbar-expand-md.navbar-main .navbar-nav .show>.dropdown-toggle,
@@ -1060,7 +1058,7 @@ button.list-group-item-primary:focus {
   .navbar-expand-md .navbar-main .navbar-nav .open.active>.dropdown-toggle,
   .navbar-expand-md .navbar-main .nav-link-dd-effect:hover,
   .navbar-expand-md .navbar-main .nav-link-dd-effect.active {
-    border-top-color: #563d7c !important;
+    border-top-color: #55A79A !important;
   }
 }
 
@@ -1068,12 +1066,12 @@ button.list-group-item-primary:focus {
   /* line 400, assets/scss/core/_primary-colours.scss */
   .navbar-expand-lg.navbar-main.collapse .dropdown-menu,
   .navbar-expand-lg .navbar-main.collapse .dropdown-menu {
-    border-bottom-color: #563d7c !important;
+    border-bottom-color: #55A79A !important;
   }
   /* line 403, assets/scss/core/_primary-colours.scss */
   .navbar-expand-lg.navbar-main.collapse .dropdown-menu .dropdown-submenu .dropdown-item:after,
   .navbar-expand-lg .navbar-main.collapse .dropdown-menu .dropdown-submenu .dropdown-item:after {
-    border-bottom-color: #563d7c !important;
+    border-bottom-color: #55A79A !important;
   }
   /* line 421, assets/scss/core/_primary-colours.scss */
   .navbar-expand-lg.navbar-main.collapse .dropdown-menu .dropdown-item:hover:before,
@@ -1104,7 +1102,7 @@ button.list-group-item-primary:focus {
   .navbar-expand-lg .navbar-main.collapse .dropdown-menu .open>.dropdown-item:before,
   .navbar-expand-lg .navbar-main.collapse .dropdown-menu .open>.dropdown-item:hover:before,
   .navbar-expand-lg .navbar-main.collapse .dropdown-menu .open>.dropdown-item:focus:before {
-    color: #563d7c !important;
+    color: #55A79A !important;
   }
   /* line 426, assets/scss/core/_primary-colours.scss */
   .navbar-expand-lg.navbar-main .navbar-nav .show>.dropdown-toggle,
@@ -1127,7 +1125,7 @@ button.list-group-item-primary:focus {
   .navbar-expand-lg .navbar-main .navbar-nav .open.active>.dropdown-toggle,
   .navbar-expand-lg .navbar-main .nav-link-dd-effect:hover,
   .navbar-expand-lg .navbar-main .nav-link-dd-effect.active {
-    border-top-color: #563d7c !important;
+    border-top-color: #55A79A !important;
   }
 }
 
@@ -1135,14 +1133,14 @@ button.list-group-item-primary:focus {
 
 .navbar-expand-xl.navbar-main.collapse .dropdown-menu,
 .navbar-expand-xl .navbar-main.collapse .dropdown-menu {
-  border-bottom-color: #563d7c !important;
+  border-bottom-color: #55A79A !important;
 }
 
 /* line 403, assets/scss/core/_primary-colours.scss */
 
 .navbar-expand-xl.navbar-main.collapse .dropdown-menu .dropdown-submenu .dropdown-item:after,
 .navbar-expand-xl .navbar-main.collapse .dropdown-menu .dropdown-submenu .dropdown-item:after {
-  border-bottom-color: #563d7c !important;
+  border-bottom-color: #55A79A !important;
 }
 
 /* line 421, assets/scss/core/_primary-colours.scss */
@@ -1175,7 +1173,7 @@ button.list-group-item-primary:focus {
 .navbar-expand-xl .navbar-main.collapse .dropdown-menu .open>.dropdown-item:before,
 .navbar-expand-xl .navbar-main.collapse .dropdown-menu .open>.dropdown-item:hover:before,
 .navbar-expand-xl .navbar-main.collapse .dropdown-menu .open>.dropdown-item:focus:before {
-  color: #563d7c !important;
+  color: #55A79A !important;
 }
 
 /* line 426, assets/scss/core/_primary-colours.scss */
@@ -1200,7 +1198,7 @@ button.list-group-item-primary:focus {
 .navbar-expand-xl .navbar-main .navbar-nav .open.active>.dropdown-toggle,
 .navbar-expand-xl .navbar-main .nav-link-dd-effect:hover,
 .navbar-expand-xl .navbar-main .nav-link-dd-effect.active {
-  border-top-color: #563d7c !important;
+  border-top-color: #55A79A !important;
 }
 
 /* line 459, assets/scss/core/_primary-colours.scss */
@@ -1209,513 +1207,513 @@ button.list-group-item-primary:focus {
 .navbar-border-bottom-effect .nav-link:active:after,
 .navbar-border-bottom-effect .nav-link:focus:after,
 .navbar-border-bottom-effect .nav-link.active:after {
-  background: #563d7c;
+  background: #55A79A;
 }
 
 /* line 468, assets/scss/core/_primary-colours.scss */
 
 .form-control:focus,
 .form-control:focus:hover {
-  border-color: #563d7c;
+  border-color: #55A79A;
 }
 
 /* line 475, assets/scss/core/_primary-colours.scss */
 
 .btn-primary.btn-invert {
-  background-color: #3e2c5a;
+  background-color: #44857b;
 }
 
 /* line 478, assets/scss/core/_primary-colours.scss */
 
 .btn-primary.btn-invert:hover,
 .btn-primary.btn-invert:focus {
-  background-color: #563d7c;
+  background-color: #55A79A;
 }
 
 /* line 484, assets/scss/core/_primary-colours.scss */
 
 .text-primary-faded {
-  color: rgba(86, 61, 124, 0.3) !important;
+  color: rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 487, assets/scss/core/_primary-colours.scss */
 
 .text-primary-darkend {
-  color: #271b38 !important;
+  color: #33635c !important;
 }
 
 /* line 490, assets/scss/core/_primary-colours.scss */
 
 .bg-primary-faded {
-  background-color: rgba(86, 61, 124, 0.3) !important;
+  background-color: rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 493, assets/scss/core/_primary-colours.scss */
 
 .bg-primary-darkend {
-  background-color: #271b38 !important;
+  background-color: #33635c !important;
 }
 
 /* line 497, assets/scss/core/_primary-colours.scss */
 
 .border-primary {
-  border-color: #563d7c !important;
+  border-color: #55A79A !important;
 }
 
 /* line 500, assets/scss/core/_primary-colours.scss */
 
 .border-primary-faded {
-  border-color: rgba(86, 61, 124, 0.3) !important;
+  border-color: rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 503, assets/scss/core/_primary-colours.scss */
 
 .border-primary-darkend {
-  border-color: #271b38 !important;
+  border-color: #33635c !important;
 }
 
 /* line 509, assets/scss/core/_primary-colours.scss */
 
 .bg-op-0.bg-primary {
-  background-color: rgba(86, 61, 124, 0) !important;
+  background-color: rgba(85, 167, 154, 0) !important;
 }
 
 /* line 512, assets/scss/core/_primary-colours.scss */
 
 .bg-op-0.border-primary-faded {
-  background-color: rgba(86, 61, 124, 0) !important;
+  background-color: rgba(85, 167, 154, 0) !important;
 }
 
 /* line 515, assets/scss/core/_primary-colours.scss */
 
 .bg-op-0.border-primary-darkend {
-  background-color: rgba(39, 27, 56, 0) !important;
+  background-color: rgba(51, 99, 92, 0) !important;
 }
 
 /* line 520, assets/scss/core/_primary-colours.scss */
 
 .border-op-0.border-primary {
-  border-color: rgba(86, 61, 124, 0) !important;
+  border-color: rgba(85, 167, 154, 0) !important;
 }
 
 /* line 523, assets/scss/core/_primary-colours.scss */
 
 .border-op-0.border-primary-faded {
-  border-color: rgba(86, 61, 124, 0) !important;
+  border-color: rgba(85, 167, 154, 0) !important;
 }
 
 /* line 526, assets/scss/core/_primary-colours.scss */
 
 .border-op-0.border-primary-darkend {
-  border-color: rgba(39, 27, 56, 0) !important;
+  border-color: rgba(51, 99, 92, 0) !important;
 }
 
 /* line 509, assets/scss/core/_primary-colours.scss */
 
 .bg-op-1.bg-primary {
-  background-color: rgba(86, 61, 124, 0.1) !important;
+  background-color: rgba(85, 167, 154, 0.1) !important;
 }
 
 /* line 512, assets/scss/core/_primary-colours.scss */
 
 .bg-op-1.border-primary-faded {
-  background-color: rgba(86, 61, 124, 0.1) !important;
+  background-color: rgba(85, 167, 154, 0.1) !important;
 }
 
 /* line 515, assets/scss/core/_primary-colours.scss */
 
 .bg-op-1.border-primary-darkend {
-  background-color: rgba(39, 27, 56, 0.1) !important;
+  background-color: rgba(51, 99, 92, 0.1) !important;
 }
 
 /* line 520, assets/scss/core/_primary-colours.scss */
 
 .border-op-1.border-primary {
-  border-color: rgba(86, 61, 124, 0.1) !important;
+  border-color: rgba(85, 167, 154, 0.1) !important;
 }
 
 /* line 523, assets/scss/core/_primary-colours.scss */
 
 .border-op-1.border-primary-faded {
-  border-color: rgba(86, 61, 124, 0.1) !important;
+  border-color: rgba(85, 167, 154, 0.1) !important;
 }
 
 /* line 526, assets/scss/core/_primary-colours.scss */
 
 .border-op-1.border-primary-darkend {
-  border-color: rgba(39, 27, 56, 0.1) !important;
+  border-color: rgba(51, 99, 92, 0.1) !important;
 }
 
 /* line 509, assets/scss/core/_primary-colours.scss */
 
 .bg-op-2.bg-primary {
-  background-color: rgba(86, 61, 124, 0.2) !important;
+  background-color: rgba(85, 167, 154, 0.2) !important;
 }
 
 /* line 512, assets/scss/core/_primary-colours.scss */
 
 .bg-op-2.border-primary-faded {
-  background-color: rgba(86, 61, 124, 0.2) !important;
+  background-color: rgba(85, 167, 154, 0.2) !important;
 }
 
 /* line 515, assets/scss/core/_primary-colours.scss */
 
 .bg-op-2.border-primary-darkend {
-  background-color: rgba(39, 27, 56, 0.2) !important;
+  background-color: rgba(51, 99, 92, 0.2) !important;
 }
 
 /* line 520, assets/scss/core/_primary-colours.scss */
 
 .border-op-2.border-primary {
-  border-color: rgba(86, 61, 124, 0.2) !important;
+  border-color: rgba(85, 167, 154, 0.2) !important;
 }
 
 /* line 523, assets/scss/core/_primary-colours.scss */
 
 .border-op-2.border-primary-faded {
-  border-color: rgba(86, 61, 124, 0.2) !important;
+  border-color: rgba(85, 167, 154, 0.2) !important;
 }
 
 /* line 526, assets/scss/core/_primary-colours.scss */
 
 .border-op-2.border-primary-darkend {
-  border-color: rgba(39, 27, 56, 0.2) !important;
+  border-color: rgba(51, 99, 92, 0.2) !important;
 }
 
 /* line 509, assets/scss/core/_primary-colours.scss */
 
 .bg-op-3.bg-primary {
-  background-color: rgba(86, 61, 124, 0.3) !important;
+  background-color: rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 512, assets/scss/core/_primary-colours.scss */
 
 .bg-op-3.border-primary-faded {
-  background-color: rgba(86, 61, 124, 0.3) !important;
+  background-color: rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 515, assets/scss/core/_primary-colours.scss */
 
 .bg-op-3.border-primary-darkend {
-  background-color: rgba(39, 27, 56, 0.3) !important;
+  background-color: rgba(51, 99, 92, 0.3) !important;
 }
 
 /* line 520, assets/scss/core/_primary-colours.scss */
 
 .border-op-3.border-primary {
-  border-color: rgba(86, 61, 124, 0.3) !important;
+  border-color: rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 523, assets/scss/core/_primary-colours.scss */
 
 .border-op-3.border-primary-faded {
-  border-color: rgba(86, 61, 124, 0.3) !important;
+  border-color: rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 526, assets/scss/core/_primary-colours.scss */
 
 .border-op-3.border-primary-darkend {
-  border-color: rgba(39, 27, 56, 0.3) !important;
+  border-color: rgba(51, 99, 92, 0.3) !important;
 }
 
 /* line 509, assets/scss/core/_primary-colours.scss */
 
 .bg-op-4.bg-primary {
-  background-color: rgba(86, 61, 124, 0.4) !important;
+  background-color: rgba(85, 167, 154, 0.4) !important;
 }
 
 /* line 512, assets/scss/core/_primary-colours.scss */
 
 .bg-op-4.border-primary-faded {
-  background-color: rgba(86, 61, 124, 0.4) !important;
+  background-color: rgba(85, 167, 154, 0.4) !important;
 }
 
 /* line 515, assets/scss/core/_primary-colours.scss */
 
 .bg-op-4.border-primary-darkend {
-  background-color: rgba(39, 27, 56, 0.4) !important;
+  background-color: rgba(51, 99, 92, 0.4) !important;
 }
 
 /* line 520, assets/scss/core/_primary-colours.scss */
 
 .border-op-4.border-primary {
-  border-color: rgba(86, 61, 124, 0.4) !important;
+  border-color: rgba(85, 167, 154, 0.4) !important;
 }
 
 /* line 523, assets/scss/core/_primary-colours.scss */
 
 .border-op-4.border-primary-faded {
-  border-color: rgba(86, 61, 124, 0.4) !important;
+  border-color: rgba(85, 167, 154, 0.4) !important;
 }
 
 /* line 526, assets/scss/core/_primary-colours.scss */
 
 .border-op-4.border-primary-darkend {
-  border-color: rgba(39, 27, 56, 0.4) !important;
+  border-color: rgba(51, 99, 92, 0.4) !important;
 }
 
 /* line 509, assets/scss/core/_primary-colours.scss */
 
 .bg-op-5.bg-primary {
-  background-color: rgba(86, 61, 124, 0.5) !important;
+  background-color: rgba(85, 167, 154, 0.5) !important;
 }
 
 /* line 512, assets/scss/core/_primary-colours.scss */
 
 .bg-op-5.border-primary-faded {
-  background-color: rgba(86, 61, 124, 0.5) !important;
+  background-color: rgba(85, 167, 154, 0.5) !important;
 }
 
 /* line 515, assets/scss/core/_primary-colours.scss */
 
 .bg-op-5.border-primary-darkend {
-  background-color: rgba(39, 27, 56, 0.5) !important;
+  background-color: rgba(51, 99, 92, 0.5) !important;
 }
 
 /* line 520, assets/scss/core/_primary-colours.scss */
 
 .border-op-5.border-primary {
-  border-color: rgba(86, 61, 124, 0.5) !important;
+  border-color: rgba(85, 167, 154, 0.5) !important;
 }
 
 /* line 523, assets/scss/core/_primary-colours.scss */
 
 .border-op-5.border-primary-faded {
-  border-color: rgba(86, 61, 124, 0.5) !important;
+  border-color: rgba(85, 167, 154, 0.5) !important;
 }
 
 /* line 526, assets/scss/core/_primary-colours.scss */
 
 .border-op-5.border-primary-darkend {
-  border-color: rgba(39, 27, 56, 0.5) !important;
+  border-color: rgba(51, 99, 92, 0.5) !important;
 }
 
 /* line 509, assets/scss/core/_primary-colours.scss */
 
 .bg-op-6.bg-primary {
-  background-color: rgba(86, 61, 124, 0.6) !important;
+  background-color: rgba(85, 167, 154, 0.6) !important;
 }
 
 /* line 512, assets/scss/core/_primary-colours.scss */
 
 .bg-op-6.border-primary-faded {
-  background-color: rgba(86, 61, 124, 0.6) !important;
+  background-color: rgba(85, 167, 154, 0.6) !important;
 }
 
 /* line 515, assets/scss/core/_primary-colours.scss */
 
 .bg-op-6.border-primary-darkend {
-  background-color: rgba(39, 27, 56, 0.6) !important;
+  background-color: rgba(51, 99, 92, 0.6) !important;
 }
 
 /* line 520, assets/scss/core/_primary-colours.scss */
 
 .border-op-6.border-primary {
-  border-color: rgba(86, 61, 124, 0.6) !important;
+  border-color: rgba(85, 167, 154, 0.6) !important;
 }
 
 /* line 523, assets/scss/core/_primary-colours.scss */
 
 .border-op-6.border-primary-faded {
-  border-color: rgba(86, 61, 124, 0.6) !important;
+  border-color: rgba(85, 167, 154, 0.6) !important;
 }
 
 /* line 526, assets/scss/core/_primary-colours.scss */
 
 .border-op-6.border-primary-darkend {
-  border-color: rgba(39, 27, 56, 0.6) !important;
+  border-color: rgba(51, 99, 92, 0.6) !important;
 }
 
 /* line 509, assets/scss/core/_primary-colours.scss */
 
 .bg-op-7.bg-primary {
-  background-color: rgba(86, 61, 124, 0.7) !important;
+  background-color: rgba(85, 167, 154, 0.7) !important;
 }
 
 /* line 512, assets/scss/core/_primary-colours.scss */
 
 .bg-op-7.border-primary-faded {
-  background-color: rgba(86, 61, 124, 0.7) !important;
+  background-color: rgba(85, 167, 154, 0.7) !important;
 }
 
 /* line 515, assets/scss/core/_primary-colours.scss */
 
 .bg-op-7.border-primary-darkend {
-  background-color: rgba(39, 27, 56, 0.7) !important;
+  background-color: rgba(51, 99, 92, 0.7) !important;
 }
 
 /* line 520, assets/scss/core/_primary-colours.scss */
 
 .border-op-7.border-primary {
-  border-color: rgba(86, 61, 124, 0.7) !important;
+  border-color: rgba(85, 167, 154, 0.7) !important;
 }
 
 /* line 523, assets/scss/core/_primary-colours.scss */
 
 .border-op-7.border-primary-faded {
-  border-color: rgba(86, 61, 124, 0.7) !important;
+  border-color: rgba(85, 167, 154, 0.7) !important;
 }
 
 /* line 526, assets/scss/core/_primary-colours.scss */
 
 .border-op-7.border-primary-darkend {
-  border-color: rgba(39, 27, 56, 0.7) !important;
+  border-color: rgba(51, 99, 92, 0.7) !important;
 }
 
 /* line 509, assets/scss/core/_primary-colours.scss */
 
 .bg-op-8.bg-primary {
-  background-color: rgba(86, 61, 124, 0.8) !important;
+  background-color: rgba(85, 167, 154, 0.8) !important;
 }
 
 /* line 512, assets/scss/core/_primary-colours.scss */
 
 .bg-op-8.border-primary-faded {
-  background-color: rgba(86, 61, 124, 0.8) !important;
+  background-color: rgba(85, 167, 154, 0.8) !important;
 }
 
 /* line 515, assets/scss/core/_primary-colours.scss */
 
 .bg-op-8.border-primary-darkend {
-  background-color: rgba(39, 27, 56, 0.8) !important;
+  background-color: rgba(51, 99, 92, 0.8) !important;
 }
 
 /* line 520, assets/scss/core/_primary-colours.scss */
 
 .border-op-8.border-primary {
-  border-color: rgba(86, 61, 124, 0.8) !important;
+  border-color: rgba(85, 167, 154, 0.8) !important;
 }
 
 /* line 523, assets/scss/core/_primary-colours.scss */
 
 .border-op-8.border-primary-faded {
-  border-color: rgba(86, 61, 124, 0.8) !important;
+  border-color: rgba(85, 167, 154, 0.8) !important;
 }
 
 /* line 526, assets/scss/core/_primary-colours.scss */
 
 .border-op-8.border-primary-darkend {
-  border-color: rgba(39, 27, 56, 0.8) !important;
+  border-color: rgba(51, 99, 92, 0.8) !important;
 }
 
 /* line 509, assets/scss/core/_primary-colours.scss */
 
 .bg-op-9.bg-primary {
-  background-color: rgba(86, 61, 124, 0.9) !important;
+  background-color: rgba(85, 167, 154, 0.9) !important;
 }
 
 /* line 512, assets/scss/core/_primary-colours.scss */
 
 .bg-op-9.border-primary-faded {
-  background-color: rgba(86, 61, 124, 0.9) !important;
+  background-color: rgba(85, 167, 154, 0.9) !important;
 }
 
 /* line 515, assets/scss/core/_primary-colours.scss */
 
 .bg-op-9.border-primary-darkend {
-  background-color: rgba(39, 27, 56, 0.9) !important;
+  background-color: rgba(51, 99, 92, 0.9) !important;
 }
 
 /* line 520, assets/scss/core/_primary-colours.scss */
 
 .border-op-9.border-primary {
-  border-color: rgba(86, 61, 124, 0.9) !important;
+  border-color: rgba(85, 167, 154, 0.9) !important;
 }
 
 /* line 523, assets/scss/core/_primary-colours.scss */
 
 .border-op-9.border-primary-faded {
-  border-color: rgba(86, 61, 124, 0.9) !important;
+  border-color: rgba(85, 167, 154, 0.9) !important;
 }
 
 /* line 526, assets/scss/core/_primary-colours.scss */
 
 .border-op-9.border-primary-darkend {
-  border-color: rgba(39, 27, 56, 0.9) !important;
+  border-color: rgba(51, 99, 92, 0.9) !important;
 }
 
 /* line 509, assets/scss/core/_primary-colours.scss */
 
 .bg-op-10.bg-primary {
-  background-color: #563d7c !important;
+  background-color: #55a79a !important;
 }
 
 /* line 512, assets/scss/core/_primary-colours.scss */
 
 .bg-op-10.border-primary-faded {
-  background-color: #563d7c !important;
+  background-color: #55a79a !important;
 }
 
 /* line 515, assets/scss/core/_primary-colours.scss */
 
 .bg-op-10.border-primary-darkend {
-  background-color: #271b38 !important;
+  background-color: #33635c !important;
 }
 
 /* line 520, assets/scss/core/_primary-colours.scss */
 
 .border-op-10.border-primary {
-  border-color: #563d7c !important;
+  border-color: #55a79a !important;
 }
 
 /* line 523, assets/scss/core/_primary-colours.scss */
 
 .border-op-10.border-primary-faded {
-  border-color: #563d7c !important;
+  border-color: #55a79a !important;
 }
 
 /* line 526, assets/scss/core/_primary-colours.scss */
 
 .border-op-10.border-primary-darkend {
-  border-color: #271b38 !important;
+  border-color: #33635c !important;
 }
 
 /* line 532, assets/scss/core/_primary-colours.scss */
 
 hr.hr-primary {
-  border-top-color: #563d7c !important;
+  border-top-color: #55A79A !important;
 }
 
 /* line 535, assets/scss/core/_primary-colours.scss */
 
 hr.hr-primary-faded {
-  border-top-color: rgba(86, 61, 124, 0.3) !important;
+  border-top-color: rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 538, assets/scss/core/_primary-colours.scss */
 
 hr.hr-primary-darkend {
-  border-top-color: #271b38 !important;
+  border-top-color: #33635c !important;
 }
 
 /* line 542, assets/scss/core/_primary-colours.scss */
 
 .header .header-brand-text {
-  color: #563d7c;
+  color: #55A79A;
 }
 
 /* line 545, assets/scss/core/_primary-colours.scss */
 
 .price-banner {
-  color: #563d7c;
+  color: #55A79A;
 }
 
 /* line 548, assets/scss/core/_primary-colours.scss */
 
 .focus-box {
-  border-bottom-color: #563d7c !important;
+  border-bottom-color: #55A79A !important;
 }
 
 /* line 551, assets/scss/core/_primary-colours.scss */
 
 .blog-grid .blog-post {
-  border-bottom-color: #563d7c !important;
+  border-bottom-color: #55A79A !important;
 }
 
 /* line 554, assets/scss/core/_primary-colours.scss */
 
 .page-loader {
-  background: #563d7c !important;
+  background: #55A79A !important;
 }
 
 /* line 557, assets/scss/core/_primary-colours.scss */
@@ -1723,20 +1721,20 @@ hr.hr-primary-darkend {
 .owl-nav div:hover,
 .owl-dots .owl-dot.active span,
 .owl-dots .owl-dot:hover span {
-  background: #563d7c !important;
+  background: #55A79A !important;
 }
 
 /* line 563, assets/scss/core/_primary-colours.scss */
 
 .modal-progress {
-  background: #563d7c !important;
+  background: #55A79A !important;
 }
 
 /* line 570, assets/scss/core/_primary-colours.scss */
 
 .overlay.overlay-primary:after,
 .overlay-hover-content.overlay-primary:after {
-  background: #563d7c !important;
+  background: #55A79A !important;
 }
 
 /* line 574, assets/scss/core/_primary-colours.scss */
@@ -1745,26 +1743,26 @@ hr.hr-primary-darkend {
 .overlay.overlay-primary .overlay-footer:before,
 .overlay-hover-content.overlay-primary .overlay-header:after,
 .overlay-hover-content.overlay-primary .overlay-footer:before {
-  background: #f5f2f9 !important;
+  background: white !important;
 }
 
 /* line 582, assets/scss/core/_primary-colours.scss */
 
 .header-primary .header {
-  background: #563d7c;
+  background: #55A79A;
 }
 
 /* line 585, assets/scss/core/_primary-colours.scss */
 
 .header-primary .header .header-inner .header-divider:after {
-  background-color: #7a58ad;
+  background-color: #87c2b8;
 }
 
 /* line 592, assets/scss/core/_primary-colours.scss */
 
 .header-transparent .header.is-sticky,
 .header-transparent .is-sticky .header {
-  border-bottom-color: #563d7c;
+  border-bottom-color: #55A79A;
 }
 
 /* line 599, assets/scss/core/_primary-colours.scss */
@@ -1777,7 +1775,7 @@ hr.hr-primary-darkend {
 
 .header-transparent.header-primary .header.is-sticky,
 .header-transparent.header-primary .is-sticky .header {
-  background-color: rgba(86, 61, 124, 0.98);
+  background-color: rgba(85, 167, 154, 0.98);
   border-bottom-color: #292b2c;
 }
 
@@ -1785,78 +1783,78 @@ hr.hr-primary-darkend {
 
 .header-translucent.header-dark .header.is-sticky,
 .header-translucent.header-dark .is-sticky .header {
-  border-bottom-color: rgba(86, 61, 124, 0.4);
+  border-bottom-color: rgba(85, 167, 154, 0.4);
 }
 
 /* line 620, assets/scss/core/_primary-colours.scss */
 
 .header-translucent.header-primary .header {
-  background-color: rgba(86, 61, 124, 0.2);
-  border-bottom-color: rgba(86, 61, 124, 0.6);
+  background-color: rgba(85, 167, 154, 0.2);
+  border-bottom-color: rgba(85, 167, 154, 0.6);
 }
 
 /* line 625, assets/scss/core/_primary-colours.scss */
 
 .header-translucent.header-primary .header.is-sticky,
 .header-translucent.header-primary .is-sticky .header {
-  background-color: rgba(86, 61, 124, 0.95);
+  background-color: rgba(85, 167, 154, 0.95);
   border-bottom-color: #292b2c;
 }
 
 /* line 637, assets/scss/core/_primary-colours.scss */
 
 .divider-primary.divider-diagonal:before {
-  border-left-color: #563d7c;
+  border-left-color: #55A79A;
 }
 
 /* line 640, assets/scss/core/_primary-colours.scss */
 
 .divider-primary.divider-diagonal-r:before {
-  border-right-color: #563d7c;
+  border-right-color: #55A79A;
   border-left-color: transparent;
 }
 
 /* line 646, assets/scss/core/_primary-colours.scss */
 
 .divider-primary.divider-arrow-b:before {
-  border-top-color: #563d7c;
+  border-top-color: #55A79A;
 }
 
 /* line 649, assets/scss/core/_primary-colours.scss */
 
 .divider-primary.divider-arrow-t:before {
-  border-bottom-color: #563d7c;
+  border-bottom-color: #55A79A;
 }
 
 /* line 652, assets/scss/core/_primary-colours.scss */
 
 .divider-primary.divider-arrow-l:before {
-  border-right-color: #563d7c;
+  border-right-color: #55A79A;
 }
 
 /* line 655, assets/scss/core/_primary-colours.scss */
 
 .divider-primary.divider-arrow-r:before {
-  border-left-color: #563d7c;
+  border-left-color: #55A79A;
 }
 
 /* line 664, assets/scss/core/_primary-colours.scss */
 
 .list-timeline.list-timeline-primary:before {
-  background: #563d7c;
+  background: #55A79A;
 }
 
 /* line 668, assets/scss/core/_primary-colours.scss */
 
 .list-timeline.list-timeline-primary .list-timeline-item:before {
-  border-color: #563d7c;
+  border-color: #55A79A;
 }
 
 /* line 671, assets/scss/core/_primary-colours.scss */
 
 .list-timeline.list-timeline-primary .list-timeline-item.active:before,
 .list-timeline.list-timeline-primary .list-timeline-item.show:before {
-  background: #563d7c;
+  background: #55A79A;
 }
 
 /* line 7, assets/scss/core/_typography.scss */
@@ -1878,7 +1876,7 @@ body {
 
 a,
 a:hover {
-  color: #563d7c;
+  color: #55A79A;
 }
 
 /* line 22, assets/scss/core/_typography.scss */
@@ -3075,7 +3073,7 @@ small img {
     border-radius: 0;
     left: auto;
     border: 1px solid #e9ecef;
-    border-bottom: 2px solid #563d7c;
+    border-bottom: 2px solid #55A79A;
     min-width: 250px;
     color: rgba(27, 27, 27, 0.8);
     background: #fff;
@@ -3210,7 +3208,7 @@ small img {
   .navbar-expand .navbar-main.collapse .dropdown-menu .open>.dropdown-item:hover .dropdown-icon,
   .navbar-expand .navbar-main.collapse .dropdown-menu .open>.dropdown-item:focus.dropdown-item-caret:before,
   .navbar-expand .navbar-main.collapse .dropdown-menu .open>.dropdown-item:focus .dropdown-icon {
-    color: #563d7c;
+    color: #55A79A;
   }
   /* line 298, assets/scss/core/_mixins.scss */
   .navbar-expand.navbar-main .dropdown-header,
@@ -3276,7 +3274,7 @@ small img {
   /* line 357, assets/scss/core/_mixins.scss */
   .navbar-expand.navbar-main.collapse .dropdown-menu .dropdown-submenu .dropdown-item:after,
   .navbar-expand .navbar-main.collapse .dropdown-menu .dropdown-submenu .dropdown-item:after {
-    border-color: transparent transparent #563d7c transparent;
+    border-color: transparent transparent #55A79A transparent;
   }
   /* line 361, assets/scss/core/_mixins.scss */
   .navbar-expand.navbar-main.collapse .dropdown-menu .dropdown-submenu.show,
@@ -3394,7 +3392,7 @@ small img {
   .navbar-expand .navbar-main .navbar-nav.navbar-nav-simple>.open>.dropdown-toggle:focus {
     border-color: transparent !important;
     background: transparent !important;
-    color: #563d7c;
+    color: #55A79A;
   }
   /* line 485, assets/scss/core/_mixins.scss */
   .navbar-expand.navbar-main .navbar-nav.navbar-nav-simple .dropdown-menu,
@@ -3679,7 +3677,7 @@ small img {
     border-radius: 0;
     left: auto;
     border: 1px solid #e9ecef;
-    border-bottom: 2px solid #563d7c;
+    border-bottom: 2px solid #55A79A;
     min-width: 250px;
     color: rgba(27, 27, 27, 0.8);
     background: #fff;
@@ -3814,7 +3812,7 @@ small img {
   .navbar-expand-sm .navbar-main.collapse .dropdown-menu .open>.dropdown-item:hover .dropdown-icon,
   .navbar-expand-sm .navbar-main.collapse .dropdown-menu .open>.dropdown-item:focus.dropdown-item-caret:before,
   .navbar-expand-sm .navbar-main.collapse .dropdown-menu .open>.dropdown-item:focus .dropdown-icon {
-    color: #563d7c;
+    color: #55A79A;
   }
   /* line 298, assets/scss/core/_mixins.scss */
   .navbar-expand-sm.navbar-main .dropdown-header,
@@ -3880,7 +3878,7 @@ small img {
   /* line 357, assets/scss/core/_mixins.scss */
   .navbar-expand-sm.navbar-main.collapse .dropdown-menu .dropdown-submenu .dropdown-item:after,
   .navbar-expand-sm .navbar-main.collapse .dropdown-menu .dropdown-submenu .dropdown-item:after {
-    border-color: transparent transparent #563d7c transparent;
+    border-color: transparent transparent #55A79A transparent;
   }
   /* line 361, assets/scss/core/_mixins.scss */
   .navbar-expand-sm.navbar-main.collapse .dropdown-menu .dropdown-submenu.show,
@@ -3998,7 +3996,7 @@ small img {
   .navbar-expand-sm .navbar-main .navbar-nav.navbar-nav-simple>.open>.dropdown-toggle:focus {
     border-color: transparent !important;
     background: transparent !important;
-    color: #563d7c;
+    color: #55A79A;
   }
   /* line 485, assets/scss/core/_mixins.scss */
   .navbar-expand-sm.navbar-main .navbar-nav.navbar-nav-simple .dropdown-menu,
@@ -4283,7 +4281,7 @@ small img {
     border-radius: 0;
     left: auto;
     border: 1px solid #e9ecef;
-    border-bottom: 2px solid #563d7c;
+    border-bottom: 2px solid #55A79A;
     min-width: 250px;
     color: rgba(27, 27, 27, 0.8);
     background: #fff;
@@ -4418,7 +4416,7 @@ small img {
   .navbar-expand-md .navbar-main.collapse .dropdown-menu .open>.dropdown-item:hover .dropdown-icon,
   .navbar-expand-md .navbar-main.collapse .dropdown-menu .open>.dropdown-item:focus.dropdown-item-caret:before,
   .navbar-expand-md .navbar-main.collapse .dropdown-menu .open>.dropdown-item:focus .dropdown-icon {
-    color: #563d7c;
+    color: #55A79A;
   }
   /* line 298, assets/scss/core/_mixins.scss */
   .navbar-expand-md.navbar-main .dropdown-header,
@@ -4484,7 +4482,7 @@ small img {
   /* line 357, assets/scss/core/_mixins.scss */
   .navbar-expand-md.navbar-main.collapse .dropdown-menu .dropdown-submenu .dropdown-item:after,
   .navbar-expand-md .navbar-main.collapse .dropdown-menu .dropdown-submenu .dropdown-item:after {
-    border-color: transparent transparent #563d7c transparent;
+    border-color: transparent transparent #55A79A transparent;
   }
   /* line 361, assets/scss/core/_mixins.scss */
   .navbar-expand-md.navbar-main.collapse .dropdown-menu .dropdown-submenu.show,
@@ -4602,7 +4600,7 @@ small img {
   .navbar-expand-md .navbar-main .navbar-nav.navbar-nav-simple>.open>.dropdown-toggle:focus {
     border-color: transparent !important;
     background: transparent !important;
-    color: #563d7c;
+    color: #55A79A;
   }
   /* line 485, assets/scss/core/_mixins.scss */
   .navbar-expand-md.navbar-main .navbar-nav.navbar-nav-simple .dropdown-menu,
@@ -4887,7 +4885,7 @@ small img {
     border-radius: 0;
     left: auto;
     border: 1px solid #e9ecef;
-    border-bottom: 2px solid #563d7c;
+    border-bottom: 2px solid #55A79A;
     min-width: 250px;
     color: rgba(27, 27, 27, 0.8);
     background: #fff;
@@ -5022,7 +5020,7 @@ small img {
   .navbar-expand-lg .navbar-main.collapse .dropdown-menu .open>.dropdown-item:hover .dropdown-icon,
   .navbar-expand-lg .navbar-main.collapse .dropdown-menu .open>.dropdown-item:focus.dropdown-item-caret:before,
   .navbar-expand-lg .navbar-main.collapse .dropdown-menu .open>.dropdown-item:focus .dropdown-icon {
-    color: #563d7c;
+    color: #55A79A;
   }
   /* line 298, assets/scss/core/_mixins.scss */
   .navbar-expand-lg.navbar-main .dropdown-header,
@@ -5088,7 +5086,7 @@ small img {
   /* line 357, assets/scss/core/_mixins.scss */
   .navbar-expand-lg.navbar-main.collapse .dropdown-menu .dropdown-submenu .dropdown-item:after,
   .navbar-expand-lg .navbar-main.collapse .dropdown-menu .dropdown-submenu .dropdown-item:after {
-    border-color: transparent transparent #563d7c transparent;
+    border-color: transparent transparent #55A79A transparent;
   }
   /* line 361, assets/scss/core/_mixins.scss */
   .navbar-expand-lg.navbar-main.collapse .dropdown-menu .dropdown-submenu.show,
@@ -5206,7 +5204,7 @@ small img {
   .navbar-expand-lg .navbar-main .navbar-nav.navbar-nav-simple>.open>.dropdown-toggle:focus {
     border-color: transparent !important;
     background: transparent !important;
-    color: #563d7c;
+    color: #55A79A;
   }
   /* line 485, assets/scss/core/_mixins.scss */
   .navbar-expand-lg.navbar-main .navbar-nav.navbar-nav-simple .dropdown-menu,
@@ -5532,7 +5530,7 @@ small img {
   border-radius: 0;
   left: auto;
   border: 1px solid #e9ecef;
-  border-bottom: 2px solid #563d7c;
+  border-bottom: 2px solid #55A79A;
   min-width: 250px;
   color: rgba(27, 27, 27, 0.8);
   background: #fff;
@@ -5679,7 +5677,7 @@ small img {
 .navbar-expand-xl .navbar-main.collapse .dropdown-menu .open>.dropdown-item:hover .dropdown-icon,
 .navbar-expand-xl .navbar-main.collapse .dropdown-menu .open>.dropdown-item:focus.dropdown-item-caret:before,
 .navbar-expand-xl .navbar-main.collapse .dropdown-menu .open>.dropdown-item:focus .dropdown-icon {
-  color: #563d7c;
+  color: #55A79A;
 }
 
 /* line 298, assets/scss/core/_mixins.scss */
@@ -5761,7 +5759,7 @@ small img {
 
 .navbar-expand-xl.navbar-main.collapse .dropdown-menu .dropdown-submenu .dropdown-item:after,
 .navbar-expand-xl .navbar-main.collapse .dropdown-menu .dropdown-submenu .dropdown-item:after {
-  border-color: transparent transparent #563d7c transparent;
+  border-color: transparent transparent #55A79A transparent;
 }
 
 /* line 361, assets/scss/core/_mixins.scss */
@@ -5915,7 +5913,7 @@ small img {
 .navbar-expand-xl .navbar-main .navbar-nav.navbar-nav-simple>.open>.dropdown-toggle:focus {
   border-color: transparent !important;
   background: transparent !important;
-  color: #563d7c;
+  color: #55A79A;
 }
 
 /* line 485, assets/scss/core/_mixins.scss */
@@ -6057,7 +6055,7 @@ small img {
 .navbar-border-bottom-effect .nav-link:focus:after,
 .navbar-border-bottom-effect .nav-link.active:after {
   left: 0;
-  background: #563d7c;
+  background: #55A79A;
 }
 
 /* line 205, assets/scss/core/_main-menu.scss */
@@ -6351,13 +6349,13 @@ small img {
 /* line 222, assets/scss/core/_dropdown-menus.scss */
 
 .dropdown-menu-primary {
-  border-bottom-color: #563d7c !important;
+  border-bottom-color: #55A79A !important;
 }
 
 /* line 225, assets/scss/core/_dropdown-menus.scss */
 
 .dropdown-menu-primary a:hover:before {
-  color: #563d7c !important;
+  color: #55A79A !important;
 }
 
 /* line 229, assets/scss/core/_dropdown-menus.scss */
@@ -6447,37 +6445,37 @@ small img {
 /* line 267, assets/scss/core/_dropdown-menus.scss */
 
 .dropdown-menu-primary {
-  border-bottom-color: #563d7c !important;
+  border-bottom-color: #55A79A !important;
 }
 
 /* line 270, assets/scss/core/_dropdown-menus.scss */
 
 .dropdown-menu-primary a:hover:before {
-  color: #563d7c !important;
+  color: #55A79A !important;
 }
 
 /* line 267, assets/scss/core/_dropdown-menus.scss */
 
 .dropdown-menu-primary-dark {
-  border-bottom-color: #271b38 !important;
+  border-bottom-color: #33635c !important;
 }
 
 /* line 270, assets/scss/core/_dropdown-menus.scss */
 
 .dropdown-menu-primary-dark a:hover:before {
-  color: #271b38 !important;
+  color: #33635c !important;
 }
 
 /* line 267, assets/scss/core/_dropdown-menus.scss */
 
 .dropdown-menu-primary-faded {
-  border-bottom-color: rgba(86, 61, 124, 0.3) !important;
+  border-bottom-color: rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 270, assets/scss/core/_dropdown-menus.scss */
 
 .dropdown-menu-primary-faded a:hover:before {
-  color: rgba(86, 61, 124, 0.3) !important;
+  color: rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 267, assets/scss/core/_dropdown-menus.scss */
@@ -7067,7 +7065,7 @@ body.page-translucent {
   padding: 60px 0 30px;
   color: #A2A2A2;
   color: rgba(255, 255, 255, 0.8);
-  border-top: 2px solid #563d7c;
+  border-top: 2px solid #55A79A;
 }
 
 /* line 12, assets/scss/core/_region-footer.scss */
@@ -7213,55 +7211,55 @@ body.page-translucent {
 /* line 15, assets/scss/core/_alerts.scss */
 
 .alert-primary {
-  color: #2d2040;
-  background-color: #ddd8e5;
-  border-color: #d0c9da;
+  color: #2c5750;
+  background-color: #ddedeb;
+  border-color: #cfe6e3;
 }
 
 /* line 6, node_modules/bootstrap/scss/mixins/_alert.scss */
 
 .alert-primary hr {
-  border-top-color: #c3bad0;
+  border-top-color: #beddd9;
 }
 
 /* line 10, node_modules/bootstrap/scss/mixins/_alert.scss */
 
 .alert-primary .alert-link {
-  color: #150f1e;
+  color: #1b3531;
 }
 
 /* line 15, assets/scss/core/_alerts.scss */
 
 .alert-primary-dark {
-  color: #140e1d;
-  background-color: #d4d1d7;
-  border-color: #c2bfc7;
+  color: #1a3430;
+  background-color: #d6e0de;
+  border-color: #c6d3d1;
 }
 
 /* line 6, node_modules/bootstrap/scss/mixins/_alert.scss */
 
 .alert-primary-dark hr {
-  border-top-color: #b5b1bb;
+  border-top-color: #b8c8c5;
 }
 
 /* line 10, node_modules/bootstrap/scss/mixins/_alert.scss */
 
 .alert-primary-dark .alert-link {
-  color: black;
+  color: #091211;
 }
 
 /* line 15, assets/scss/core/_alerts.scss */
 
 .alert-primary-faded {
-  color: rgba(14, 10, 20, 0.636);
-  background-color: rgba(248, 247, 249, 0.86);
-  border-color: rgba(244, 243, 247, 0.804);
+  color: rgba(14, 27, 25, 0.636);
+  background-color: rgba(248, 251, 251, 0.86);
+  border-color: rgba(244, 249, 249, 0.804);
 }
 
 /* line 6, node_modules/bootstrap/scss/mixins/_alert.scss */
 
 .alert-primary-faded hr {
-  border-top-color: rgba(230, 228, 237, 0.804);
+  border-top-color: rgba(228, 240, 240, 0.804);
 }
 
 /* line 10, node_modules/bootstrap/scss/mixins/_alert.scss */
@@ -8713,8 +8711,8 @@ fieldset[disabled] .btn-grey-dark.btn-link.focus {
 
 .btn-primary {
   color: #fff;
-  background-color: #563d7c;
-  border-color: #563d7c;
+  background-color: #55A79A;
+  border-color: #55A79A;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
@@ -8723,16 +8721,16 @@ fieldset[disabled] .btn-grey-dark.btn-link.focus {
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #443062;
-  border-color: #3e2c5a;
+  background-color: #488e83;
+  border-color: #44857b;
 }
 
 /* line 18, node_modules/bootstrap/scss/mixins/_buttons.scss */
 
 .btn-primary:focus,
 .btn-primary.focus {
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 0.2rem rgba(86, 61, 124, 0.5);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 0.2rem rgba(86, 61, 124, 0.5);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 0.2rem rgba(85, 167, 154, 0.5);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 0.2rem rgba(85, 167, 154, 0.5);
 }
 
 /* line 29, node_modules/bootstrap/scss/mixins/_buttons.scss */
@@ -8740,8 +8738,8 @@ fieldset[disabled] .btn-grey-dark.btn-link.focus {
 .btn-primary.disabled,
 .btn-primary:disabled {
   color: #fff;
-  background-color: #563d7c;
-  border-color: #563d7c;
+  background-color: #55A79A;
+  border-color: #55A79A;
 }
 
 /* line 36, node_modules/bootstrap/scss/mixins/_buttons.scss */
@@ -8750,8 +8748,8 @@ fieldset[disabled] .btn-grey-dark.btn-link.focus {
 .btn-primary:not(:disabled):not(.disabled).active,
 .show>.btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #3e2c5a;
-  border-color: #382851;
+  background-color: #44857b;
+  border-color: #3f7d73;
 }
 
 /* line 46, node_modules/bootstrap/scss/mixins/_buttons.scss */
@@ -8759,40 +8757,40 @@ fieldset[disabled] .btn-grey-dark.btn-link.focus {
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show>.btn-primary.dropdown-toggle:focus {
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(86, 61, 124, 0.5);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(86, 61, 124, 0.5);
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(85, 167, 154, 0.5);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(85, 167, 154, 0.5);
 }
 
 /* line 194, assets/scss/core/_buttons.scss */
 
 .btn-outline-primary {
-  color: #563d7c;
+  color: #55A79A;
   background-color: transparent;
   background-image: none;
-  border-color: #563d7c;
+  border-color: #55A79A;
 }
 
 /* line 63, node_modules/bootstrap/scss/mixins/_buttons.scss */
 
 .btn-outline-primary:hover {
   color: white;
-  background-color: #563d7c;
-  border-color: #563d7c;
+  background-color: #55A79A;
+  border-color: #55A79A;
 }
 
 /* line 69, node_modules/bootstrap/scss/mixins/_buttons.scss */
 
 .btn-outline-primary:focus,
 .btn-outline-primary.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(86, 61, 124, 0.5);
-  box-shadow: 0 0 0 0.2rem rgba(86, 61, 124, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(85, 167, 154, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(85, 167, 154, 0.5);
 }
 
 /* line 74, node_modules/bootstrap/scss/mixins/_buttons.scss */
 
 .btn-outline-primary.disabled,
 .btn-outline-primary:disabled {
-  color: #563d7c;
+  color: #55A79A;
   background-color: transparent;
 }
 
@@ -8802,8 +8800,8 @@ fieldset[disabled] .btn-grey-dark.btn-link.focus {
 .btn-outline-primary:not(:disabled):not(.disabled).active,
 .show>.btn-outline-primary.dropdown-toggle {
   color: #fff;
-  background-color: #563d7c;
-  border-color: #563d7c;
+  background-color: #55A79A;
+  border-color: #55A79A;
 }
 
 /* line 87, node_modules/bootstrap/scss/mixins/_buttons.scss */
@@ -8811,27 +8809,27 @@ fieldset[disabled] .btn-grey-dark.btn-link.focus {
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus,
 .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
 .show>.btn-outline-primary.dropdown-toggle:focus {
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(86, 61, 124, 0.5);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(86, 61, 124, 0.5);
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(85, 167, 154, 0.5);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(85, 167, 154, 0.5);
 }
 
 /* line 201, assets/scss/core/_buttons.scss */
 
 .btn-primary.btn-invert {
-  background-color: #3e2c5a;
+  background-color: #44857b;
 }
 
 /* line 204, assets/scss/core/_buttons.scss */
 
 .btn-primary.btn-invert:hover,
 .btn-primary.btn-invert:focus {
-  background-color: #563d7c;
+  background-color: #55A79A;
 }
 
 /* line 209, assets/scss/core/_buttons.scss */
 
 .btn-primary.btn-link {
-  color: #563d7c;
+  color: #55A79A;
   background-color: transparent;
   border-color: transparent;
 }
@@ -8840,7 +8838,7 @@ fieldset[disabled] .btn-grey-dark.btn-link.focus {
 
 .btn-primary.btn-link:focus,
 .btn-primary.btn-link.focus {
-  color: #563d7c;
+  color: #55A79A;
   background-color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
 }
@@ -8848,7 +8846,7 @@ fieldset[disabled] .btn-grey-dark.btn-link.focus {
 /* line 13, node_modules/bootstrap/scss/mixins/_hover.scss */
 
 .btn-primary.btn-link:hover {
-  color: #563d7c;
+  color: #55A79A;
   background-color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
 }
@@ -8859,7 +8857,7 @@ fieldset[disabled] .btn-grey-dark.btn-link.focus {
 .btn-primary.btn-link.active,
 .show>.btn-primary.btn-link.dropdown-toggle,
 .open>.btn-primary.btn-link.dropdown-toggle {
-  color: #563d7c;
+  color: #55A79A;
   background-color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
   background-image: none;
@@ -8879,7 +8877,7 @@ fieldset[disabled] .btn-grey-dark.btn-link.focus {
 .open>.btn-primary.btn-link.dropdown-toggle:hover,
 .open>.btn-primary.btn-link.dropdown-toggle:focus,
 .open>.btn-primary.btn-link.dropdown-toggle.focus {
-  color: #563d7c;
+  color: #55A79A;
   background-color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
 }
@@ -8916,15 +8914,15 @@ fieldset[disabled] .btn-primary.btn-link.focus {
 
 .btn-primary.btn-link .badge {
   color: transparent;
-  background-color: #563d7c;
+  background-color: #55A79A;
 }
 
 /* line 191, assets/scss/core/_buttons.scss */
 
 .btn-primary-dark {
   color: #fff;
-  background-color: #271b38;
-  border-color: #271b38;
+  background-color: #33635c;
+  border-color: #33635c;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
@@ -8933,16 +8931,16 @@ fieldset[disabled] .btn-primary.btn-link.focus {
 
 .btn-primary-dark:hover {
   color: #fff;
-  background-color: #150f1e;
-  border-color: #0f0b15;
+  background-color: #264a44;
+  border-color: #21423d;
 }
 
 /* line 18, node_modules/bootstrap/scss/mixins/_buttons.scss */
 
 .btn-primary-dark:focus,
 .btn-primary-dark.focus {
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 0.2rem rgba(39, 27, 56, 0.5);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 0.2rem rgba(39, 27, 56, 0.5);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 0.2rem rgba(51, 99, 92, 0.5);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 0.2rem rgba(51, 99, 92, 0.5);
 }
 
 /* line 29, node_modules/bootstrap/scss/mixins/_buttons.scss */
@@ -8950,8 +8948,8 @@ fieldset[disabled] .btn-primary.btn-link.focus {
 .btn-primary-dark.disabled,
 .btn-primary-dark:disabled {
   color: #fff;
-  background-color: #271b38;
-  border-color: #271b38;
+  background-color: #33635c;
+  border-color: #33635c;
 }
 
 /* line 36, node_modules/bootstrap/scss/mixins/_buttons.scss */
@@ -8960,8 +8958,8 @@ fieldset[disabled] .btn-primary.btn-link.focus {
 .btn-primary-dark:not(:disabled):not(.disabled).active,
 .show>.btn-primary-dark.dropdown-toggle {
   color: #fff;
-  background-color: #0f0b15;
-  border-color: #09060d;
+  background-color: #21423d;
+  border-color: #1d3935;
 }
 
 /* line 46, node_modules/bootstrap/scss/mixins/_buttons.scss */
@@ -8969,40 +8967,40 @@ fieldset[disabled] .btn-primary.btn-link.focus {
 .btn-primary-dark:not(:disabled):not(.disabled):active:focus,
 .btn-primary-dark:not(:disabled):not(.disabled).active:focus,
 .show>.btn-primary-dark.dropdown-toggle:focus {
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(39, 27, 56, 0.5);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(39, 27, 56, 0.5);
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(51, 99, 92, 0.5);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(51, 99, 92, 0.5);
 }
 
 /* line 194, assets/scss/core/_buttons.scss */
 
 .btn-outline-primary-dark {
-  color: #271b38;
+  color: #33635c;
   background-color: transparent;
   background-image: none;
-  border-color: #271b38;
+  border-color: #33635c;
 }
 
 /* line 63, node_modules/bootstrap/scss/mixins/_buttons.scss */
 
 .btn-outline-primary-dark:hover {
   color: white;
-  background-color: #271b38;
-  border-color: #271b38;
+  background-color: #33635c;
+  border-color: #33635c;
 }
 
 /* line 69, node_modules/bootstrap/scss/mixins/_buttons.scss */
 
 .btn-outline-primary-dark:focus,
 .btn-outline-primary-dark.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(39, 27, 56, 0.5);
-  box-shadow: 0 0 0 0.2rem rgba(39, 27, 56, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(51, 99, 92, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(51, 99, 92, 0.5);
 }
 
 /* line 74, node_modules/bootstrap/scss/mixins/_buttons.scss */
 
 .btn-outline-primary-dark.disabled,
 .btn-outline-primary-dark:disabled {
-  color: #271b38;
+  color: #33635c;
   background-color: transparent;
 }
 
@@ -9012,8 +9010,8 @@ fieldset[disabled] .btn-primary.btn-link.focus {
 .btn-outline-primary-dark:not(:disabled):not(.disabled).active,
 .show>.btn-outline-primary-dark.dropdown-toggle {
   color: #fff;
-  background-color: #271b38;
-  border-color: #271b38;
+  background-color: #33635c;
+  border-color: #33635c;
 }
 
 /* line 87, node_modules/bootstrap/scss/mixins/_buttons.scss */
@@ -9021,27 +9019,27 @@ fieldset[disabled] .btn-primary.btn-link.focus {
 .btn-outline-primary-dark:not(:disabled):not(.disabled):active:focus,
 .btn-outline-primary-dark:not(:disabled):not(.disabled).active:focus,
 .show>.btn-outline-primary-dark.dropdown-toggle:focus {
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(39, 27, 56, 0.5);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(39, 27, 56, 0.5);
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(51, 99, 92, 0.5);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(51, 99, 92, 0.5);
 }
 
 /* line 201, assets/scss/core/_buttons.scss */
 
 .btn-primary-dark.btn-invert {
-  background-color: #0f0b15;
+  background-color: #21423d;
 }
 
 /* line 204, assets/scss/core/_buttons.scss */
 
 .btn-primary-dark.btn-invert:hover,
 .btn-primary-dark.btn-invert:focus {
-  background-color: #271b38;
+  background-color: #33635c;
 }
 
 /* line 209, assets/scss/core/_buttons.scss */
 
 .btn-primary-dark.btn-link {
-  color: #271b38;
+  color: #33635c;
   background-color: transparent;
   border-color: transparent;
 }
@@ -9050,7 +9048,7 @@ fieldset[disabled] .btn-primary.btn-link.focus {
 
 .btn-primary-dark.btn-link:focus,
 .btn-primary-dark.btn-link.focus {
-  color: #271b38;
+  color: #33635c;
   background-color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
 }
@@ -9058,7 +9056,7 @@ fieldset[disabled] .btn-primary.btn-link.focus {
 /* line 13, node_modules/bootstrap/scss/mixins/_hover.scss */
 
 .btn-primary-dark.btn-link:hover {
-  color: #271b38;
+  color: #33635c;
   background-color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
 }
@@ -9069,7 +9067,7 @@ fieldset[disabled] .btn-primary.btn-link.focus {
 .btn-primary-dark.btn-link.active,
 .show>.btn-primary-dark.btn-link.dropdown-toggle,
 .open>.btn-primary-dark.btn-link.dropdown-toggle {
-  color: #271b38;
+  color: #33635c;
   background-color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
   background-image: none;
@@ -9089,7 +9087,7 @@ fieldset[disabled] .btn-primary.btn-link.focus {
 .open>.btn-primary-dark.btn-link.dropdown-toggle:hover,
 .open>.btn-primary-dark.btn-link.dropdown-toggle:focus,
 .open>.btn-primary-dark.btn-link.dropdown-toggle.focus {
-  color: #271b38;
+  color: #33635c;
   background-color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
 }
@@ -9126,15 +9124,15 @@ fieldset[disabled] .btn-primary-dark.btn-link.focus {
 
 .btn-primary-dark.btn-link .badge {
   color: transparent;
-  background-color: #271b38;
+  background-color: #33635c;
 }
 
 /* line 191, assets/scss/core/_buttons.scss */
 
 .btn-primary-faded {
   color: #fff;
-  background-color: rgba(86, 61, 124, 0.3);
-  border-color: rgba(86, 61, 124, 0.3);
+  background-color: rgba(85, 167, 154, 0.3);
+  border-color: rgba(85, 167, 154, 0.3);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
@@ -9143,16 +9141,16 @@ fieldset[disabled] .btn-primary-dark.btn-link.focus {
 
 .btn-primary-faded:hover {
   color: #fff;
-  background-color: rgba(68, 48, 98, 0.3);
-  border-color: rgba(62, 44, 90, 0.3);
+  background-color: rgba(72, 142, 131, 0.3);
+  border-color: rgba(68, 133, 123, 0.3);
 }
 
 /* line 18, node_modules/bootstrap/scss/mixins/_buttons.scss */
 
 .btn-primary-faded:focus,
 .btn-primary-faded.focus {
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 0.2rem rgba(86, 61, 124, 0.5);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 0.2rem rgba(86, 61, 124, 0.5);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 0.2rem rgba(85, 167, 154, 0.5);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 0.2rem rgba(85, 167, 154, 0.5);
 }
 
 /* line 29, node_modules/bootstrap/scss/mixins/_buttons.scss */
@@ -9160,8 +9158,8 @@ fieldset[disabled] .btn-primary-dark.btn-link.focus {
 .btn-primary-faded.disabled,
 .btn-primary-faded:disabled {
   color: #fff;
-  background-color: rgba(86, 61, 124, 0.3);
-  border-color: rgba(86, 61, 124, 0.3);
+  background-color: rgba(85, 167, 154, 0.3);
+  border-color: rgba(85, 167, 154, 0.3);
 }
 
 /* line 36, node_modules/bootstrap/scss/mixins/_buttons.scss */
@@ -9170,8 +9168,8 @@ fieldset[disabled] .btn-primary-dark.btn-link.focus {
 .btn-primary-faded:not(:disabled):not(.disabled).active,
 .show>.btn-primary-faded.dropdown-toggle {
   color: #fff;
-  background-color: rgba(62, 44, 90, 0.3);
-  border-color: rgba(56, 40, 81, 0.3);
+  background-color: rgba(68, 133, 123, 0.3);
+  border-color: rgba(63, 125, 115, 0.3);
 }
 
 /* line 46, node_modules/bootstrap/scss/mixins/_buttons.scss */
@@ -9179,40 +9177,40 @@ fieldset[disabled] .btn-primary-dark.btn-link.focus {
 .btn-primary-faded:not(:disabled):not(.disabled):active:focus,
 .btn-primary-faded:not(:disabled):not(.disabled).active:focus,
 .show>.btn-primary-faded.dropdown-toggle:focus {
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(86, 61, 124, 0.5);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(86, 61, 124, 0.5);
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(85, 167, 154, 0.5);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(85, 167, 154, 0.5);
 }
 
 /* line 194, assets/scss/core/_buttons.scss */
 
 .btn-outline-primary-faded {
-  color: rgba(86, 61, 124, 0.3);
+  color: rgba(85, 167, 154, 0.3);
   background-color: transparent;
   background-image: none;
-  border-color: rgba(86, 61, 124, 0.3);
+  border-color: rgba(85, 167, 154, 0.3);
 }
 
 /* line 63, node_modules/bootstrap/scss/mixins/_buttons.scss */
 
 .btn-outline-primary-faded:hover {
   color: white;
-  background-color: rgba(86, 61, 124, 0.3);
-  border-color: rgba(86, 61, 124, 0.3);
+  background-color: rgba(85, 167, 154, 0.3);
+  border-color: rgba(85, 167, 154, 0.3);
 }
 
 /* line 69, node_modules/bootstrap/scss/mixins/_buttons.scss */
 
 .btn-outline-primary-faded:focus,
 .btn-outline-primary-faded.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(86, 61, 124, 0.5);
-  box-shadow: 0 0 0 0.2rem rgba(86, 61, 124, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(85, 167, 154, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(85, 167, 154, 0.5);
 }
 
 /* line 74, node_modules/bootstrap/scss/mixins/_buttons.scss */
 
 .btn-outline-primary-faded.disabled,
 .btn-outline-primary-faded:disabled {
-  color: rgba(86, 61, 124, 0.3);
+  color: rgba(85, 167, 154, 0.3);
   background-color: transparent;
 }
 
@@ -9222,8 +9220,8 @@ fieldset[disabled] .btn-primary-dark.btn-link.focus {
 .btn-outline-primary-faded:not(:disabled):not(.disabled).active,
 .show>.btn-outline-primary-faded.dropdown-toggle {
   color: #fff;
-  background-color: rgba(86, 61, 124, 0.3);
-  border-color: rgba(86, 61, 124, 0.3);
+  background-color: rgba(85, 167, 154, 0.3);
+  border-color: rgba(85, 167, 154, 0.3);
 }
 
 /* line 87, node_modules/bootstrap/scss/mixins/_buttons.scss */
@@ -9231,27 +9229,27 @@ fieldset[disabled] .btn-primary-dark.btn-link.focus {
 .btn-outline-primary-faded:not(:disabled):not(.disabled):active:focus,
 .btn-outline-primary-faded:not(:disabled):not(.disabled).active:focus,
 .show>.btn-outline-primary-faded.dropdown-toggle:focus {
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(86, 61, 124, 0.5);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(86, 61, 124, 0.5);
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(85, 167, 154, 0.5);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(85, 167, 154, 0.5);
 }
 
 /* line 201, assets/scss/core/_buttons.scss */
 
 .btn-primary-faded.btn-invert {
-  background-color: rgba(62, 44, 90, 0.3);
+  background-color: rgba(68, 133, 123, 0.3);
 }
 
 /* line 204, assets/scss/core/_buttons.scss */
 
 .btn-primary-faded.btn-invert:hover,
 .btn-primary-faded.btn-invert:focus {
-  background-color: rgba(86, 61, 124, 0.3);
+  background-color: rgba(85, 167, 154, 0.3);
 }
 
 /* line 209, assets/scss/core/_buttons.scss */
 
 .btn-primary-faded.btn-link {
-  color: rgba(86, 61, 124, 0.3);
+  color: rgba(85, 167, 154, 0.3);
   background-color: transparent;
   border-color: transparent;
 }
@@ -9260,7 +9258,7 @@ fieldset[disabled] .btn-primary-dark.btn-link.focus {
 
 .btn-primary-faded.btn-link:focus,
 .btn-primary-faded.btn-link.focus {
-  color: rgba(86, 61, 124, 0.3);
+  color: rgba(85, 167, 154, 0.3);
   background-color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
 }
@@ -9268,7 +9266,7 @@ fieldset[disabled] .btn-primary-dark.btn-link.focus {
 /* line 13, node_modules/bootstrap/scss/mixins/_hover.scss */
 
 .btn-primary-faded.btn-link:hover {
-  color: rgba(86, 61, 124, 0.3);
+  color: rgba(85, 167, 154, 0.3);
   background-color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
 }
@@ -9279,7 +9277,7 @@ fieldset[disabled] .btn-primary-dark.btn-link.focus {
 .btn-primary-faded.btn-link.active,
 .show>.btn-primary-faded.btn-link.dropdown-toggle,
 .open>.btn-primary-faded.btn-link.dropdown-toggle {
-  color: rgba(86, 61, 124, 0.3);
+  color: rgba(85, 167, 154, 0.3);
   background-color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
   background-image: none;
@@ -9299,7 +9297,7 @@ fieldset[disabled] .btn-primary-dark.btn-link.focus {
 .open>.btn-primary-faded.btn-link.dropdown-toggle:hover,
 .open>.btn-primary-faded.btn-link.dropdown-toggle:focus,
 .open>.btn-primary-faded.btn-link.dropdown-toggle.focus {
-  color: rgba(86, 61, 124, 0.3);
+  color: rgba(85, 167, 154, 0.3);
   background-color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
 }
@@ -9336,7 +9334,7 @@ fieldset[disabled] .btn-primary-faded.btn-link.focus {
 
 .btn-primary-faded.btn-link .badge {
   color: transparent;
-  background-color: rgba(86, 61, 124, 0.3);
+  background-color: rgba(85, 167, 154, 0.3);
 }
 
 /* line 191, assets/scss/core/_buttons.scss */
@@ -14392,6 +14390,12 @@ fieldset[disabled] .btn-green-bright.btn-link.focus {
   z-index: 1000;
 }
 
+/* line 5, assets/scss/core/_breadcrumb.scss */
+
+.breadcrumb-dark .breadcrumb-item+.breadcrumb-item::before {
+  color: #e9ecef;
+}
+
 /* line 6, assets/scss/core/_navs.scss */
 
 .nav-pills .nav-link {
@@ -14519,7 +14523,7 @@ fieldset[disabled] .btn-green-bright.btn-link.focus {
 .nav-tabs .nav-link.active:hover,
 .nav-tabs .active>.nav-link:focus,
 .nav-tabs .nav-link.active:focus {
-  color: #563d7c;
+  color: #55A79A;
   border: 1px solid #E6E6E6 !important;
   border-bottom-color: white !important;
   position: relative;
@@ -14681,7 +14685,7 @@ fieldset[disabled] .btn-green-bright.btn-link.focus {
 .nav-tabs.nav-stacked .active>.nav-link:hover i,
 .nav-tabs.nav-stacked .nav-link.active i,
 .nav-tabs.nav-stacked .nav-link.active:hover i {
-  color: #563d7c;
+  color: #55A79A;
 }
 
 @media (min-width: 576px) {
@@ -14732,7 +14736,7 @@ fieldset[disabled] .btn-green-bright.btn-link.focus {
 /* line 251, assets/scss/core/_navs.scss */
 
 .nav-tabs-bold .nav-link.active {
-  color: #563d7c;
+  color: #55A79A;
 }
 
 /* line 258, assets/scss/core/_navs.scss */
@@ -14848,7 +14852,7 @@ fieldset[disabled] .btn-green-bright.btn-link.focus {
 .nav-section-menu.nav .nav-link.active:hover,
 .nav-section-menu.nav .active .nav-link,
 .nav-section-menu.nav .active .nav-link:hover {
-  border-left: 4px solid #563d7c;
+  border-left: 4px solid #55A79A;
   background: #fff;
 }
 
@@ -14964,7 +14968,7 @@ fieldset[disabled] .btn-green-bright.btn-link.focus {
   .nav-section-menu.nav-section-menu-right.nav .active .nav-link,
   .nav-section-menu.nav-section-menu-right.nav .active .nav-link:hover {
     border-left-color: white;
-    border-right: 4px solid #563d7c;
+    border-right: 4px solid #55A79A;
   }
   /* line 445, assets/scss/core/_navs.scss */
   .nav .nav-section-menu .nav-link,
@@ -15028,8 +15032,8 @@ fieldset[disabled] .btn-green-bright.btn-link.focus {
 
 .nav-steps .nav-link.active,
 .nav-steps .nav-link.active:hover {
-  background: #563d7c;
-  border-color: #563d7c;
+  background: #55A79A;
+  border-color: #55A79A;
   color: white;
 }
 
@@ -15291,7 +15295,7 @@ fieldset[disabled] .btn-green-bright.btn-link.focus {
 .navbar-offcanvas .nav-tabs .nav-link.active:hover,
 .navbar-offcanvas .nav-tabs .active>.nav-link:focus,
 .navbar-offcanvas .nav-tabs .nav-link.active:focus {
-  color: #563d7c;
+  color: #55A79A;
   border: 1px solid rgba(255, 255, 255, 0.1) !important;
   position: relative;
   background: #282828;
@@ -15657,7 +15661,7 @@ body.modal-open .jPanelMenu-panel {
 
 .modal-progress {
   height: 5px;
-  background: #563d7c;
+  background: #55A79A;
   display: block;
   width: 0;
   -webkit-transition: width 0.2s ease-in-out;
@@ -19642,19 +19646,19 @@ hr.hr-grey-dark {
 /* line 104, assets/scss/core/_spacing.scss */
 
 hr.hr-primary {
-  border-top-color: #563d7c !important;
+  border-top-color: #55A79A !important;
 }
 
 /* line 104, assets/scss/core/_spacing.scss */
 
 hr.hr-primary-dark {
-  border-top-color: #271b38 !important;
+  border-top-color: #33635c !important;
 }
 
 /* line 104, assets/scss/core/_spacing.scss */
 
 hr.hr-primary-faded {
-  border-top-color: rgba(86, 61, 124, 0.3) !important;
+  border-top-color: rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 104, assets/scss/core/_spacing.scss */
@@ -20176,6 +20180,59 @@ input[type=range].form-control {
   font-weight: 400;
 }
 
+/* line 7, assets/scss/core/_off-canvas.scss */
+
+.c-offcanvas-bg {
+  position: fixed !important;
+  background-color: transparent;
+  -webkit-transition: all 300ms cubic-bezier(0.4, 0, 0.6, 1) !important;
+  transition: all 300ms cubic-bezier(0.4, 0, 0.6, 1) !important;
+  opacity: 0;
+  left: 0;
+  z-index: -1;
+  background-color: transparent !important;
+}
+
+/* line 16, assets/scss/core/_off-canvas.scss */
+
+.c-offcanvas-bg.is-open {
+  opacity: 1;
+  z-index: 100;
+}
+
+/* line 21, assets/scss/core/_off-canvas.scss */
+
+.c-offcanvas-bg.overlay:after {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 1030 !important;
+}
+
+/* line 27, assets/scss/core/_off-canvas.scss */
+
+.c-offcanvas-bg.is-open.overlay-close-cursor {
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAA7hGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgICAgICAgICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgICAgICAgICAgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIgogICAgICAgICAgICB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIKICAgICAgICAgICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgICAgICAgICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iCiAgICAgICAgICAgIHhtbG5zOmV4aWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vZXhpZi8xLjAvIj4KICAgICAgICAgPHhtcDpDcmVhdG9yVG9vbD5BZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpPC94bXA6Q3JlYXRvclRvb2w+CiAgICAgICAgIDx4bXA6Q3JlYXRlRGF0ZT4yMDE0LTAxLTIxVDIwOjU1OjUzKzAyOjAwPC94bXA6Q3JlYXRlRGF0ZT4KICAgICAgICAgPHhtcDpNb2RpZnlEYXRlPjIwMTQtMDEtMzFUMjE6NTc6NTErMDI6MDA8L3htcDpNb2RpZnlEYXRlPgogICAgICAgICA8eG1wOk1ldGFkYXRhRGF0ZT4yMDE0LTAxLTMxVDIxOjU3OjUxKzAyOjAwPC94bXA6TWV0YWRhdGFEYXRlPgogICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3BuZzwvZGM6Zm9ybWF0PgogICAgICAgICA8cGhvdG9zaG9wOkNvbG9yTW9kZT4zPC9waG90b3Nob3A6Q29sb3JNb2RlPgogICAgICAgICA8eG1wTU06SW5zdGFuY2VJRD54bXAuaWlkOjUwMzA3YWNkLTU2NWUtYjE0NC05MzM4LWJlMzkxMjI0YTQ3ZTwveG1wTU06SW5zdGFuY2VJRD4KICAgICAgICAgPHhtcE1NOkRvY3VtZW50SUQ+eG1wLmRpZDo5YmE4NzI1Yi04MWVmLWNmNGEtYWM0Mi0yMmQ5Y2MwZTc0YTc8L3htcE1NOkRvY3VtZW50SUQ+CiAgICAgICAgIDx4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ+eG1wLmRpZDo5YmE4NzI1Yi04MWVmLWNmNGEtYWM0Mi0yMmQ5Y2MwZTc0YTc8L3htcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD4KICAgICAgICAgPHhtcE1NOkhpc3Rvcnk+CiAgICAgICAgICAgIDxyZGY6U2VxPgogICAgICAgICAgICAgICA8cmRmOmxpIHJkZjpwYXJzZVR5cGU9IlJlc291cmNlIj4KICAgICAgICAgICAgICAgICAgPHN0RXZ0OmFjdGlvbj5jcmVhdGVkPC9zdEV2dDphY3Rpb24+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDppbnN0YW5jZUlEPnhtcC5paWQ6OWJhODcyNWItODFlZi1jZjRhLWFjNDItMjJkOWNjMGU3NGE3PC9zdEV2dDppbnN0YW5jZUlEPgogICAgICAgICAgICAgICAgICA8c3RFdnQ6d2hlbj4yMDE0LTAxLTIxVDIwOjU1OjUzKzAyOjAwPC9zdEV2dDp3aGVuPgogICAgICAgICAgICAgICAgICA8c3RFdnQ6c29mdHdhcmVBZ2VudD5BZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpPC9zdEV2dDpzb2Z0d2FyZUFnZW50PgogICAgICAgICAgICAgICA8L3JkZjpsaT4KICAgICAgICAgICAgICAgPHJkZjpsaSByZGY6cGFyc2VUeXBlPSJSZXNvdXJjZSI+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDphY3Rpb24+c2F2ZWQ8L3N0RXZ0OmFjdGlvbj4KICAgICAgICAgICAgICAgICAgPHN0RXZ0Omluc3RhbmNlSUQ+eG1wLmlpZDplOTYxZmZlMi00YTdkLWY2NDktODQ0Mi1kMDQ1NDg0NGU0ZGE8L3N0RXZ0Omluc3RhbmNlSUQ+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDp3aGVuPjIwMTQtMDEtMzFUMjE6NTY6MTMrMDI6MDA8L3N0RXZ0OndoZW4+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDpzb2Z0d2FyZUFnZW50PkFkb2JlIFBob3Rvc2hvcCBDQyAoV2luZG93cyk8L3N0RXZ0OnNvZnR3YXJlQWdlbnQ+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDpjaGFuZ2VkPi88L3N0RXZ0OmNoYW5nZWQ+CiAgICAgICAgICAgICAgIDwvcmRmOmxpPgogICAgICAgICAgICAgICA8cmRmOmxpIHJkZjpwYXJzZVR5cGU9IlJlc291cmNlIj4KICAgICAgICAgICAgICAgICAgPHN0RXZ0OmFjdGlvbj5zYXZlZDwvc3RFdnQ6YWN0aW9uPgogICAgICAgICAgICAgICAgICA8c3RFdnQ6aW5zdGFuY2VJRD54bXAuaWlkOjUwMzA3YWNkLTU2NWUtYjE0NC05MzM4LWJlMzkxMjI0YTQ3ZTwvc3RFdnQ6aW5zdGFuY2VJRD4KICAgICAgICAgICAgICAgICAgPHN0RXZ0OndoZW4+MjAxNC0wMS0zMVQyMTo1Nzo1MSswMjowMDwvc3RFdnQ6d2hlbj4KICAgICAgICAgICAgICAgICAgPHN0RXZ0OnNvZnR3YXJlQWdlbnQ+QWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKTwvc3RFdnQ6c29mdHdhcmVBZ2VudD4KICAgICAgICAgICAgICAgICAgPHN0RXZ0OmNoYW5nZWQ+Lzwvc3RFdnQ6Y2hhbmdlZD4KICAgICAgICAgICAgICAgPC9yZGY6bGk+CiAgICAgICAgICAgIDwvcmRmOlNlcT4KICAgICAgICAgPC94bXBNTTpIaXN0b3J5PgogICAgICAgICA8dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPgogICAgICAgICA8dGlmZjpYUmVzb2x1dGlvbj43MjAwMDAvMTAwMDA8L3RpZmY6WFJlc29sdXRpb24+CiAgICAgICAgIDx0aWZmOllSZXNvbHV0aW9uPjcyMDAwMC8xMDAwMDwvdGlmZjpZUmVzb2x1dGlvbj4KICAgICAgICAgPHRpZmY6UmVzb2x1dGlvblVuaXQ+MjwvdGlmZjpSZXNvbHV0aW9uVW5pdD4KICAgICAgICAgPGV4aWY6Q29sb3JTcGFjZT42NTUzNTwvZXhpZjpDb2xvclNwYWNlPgogICAgICAgICA8ZXhpZjpQaXhlbFhEaW1lbnNpb24+MzA8L2V4aWY6UGl4ZWxYRGltZW5zaW9uPgogICAgICAgICA8ZXhpZjpQaXhlbFlEaW1lbnNpb24+MzA8L2V4aWY6UGl4ZWxZRGltZW5zaW9uPgogICAgICA8L3JkZjpEZXNjcmlwdGlvbj4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAKPD94cGFja2V0IGVuZD0idyI/PuITIRAAAAAgY0hSTQAAeiUAAICDAAD5/wAAgOkAAHUwAADqYAAAOpgAABdvkl/FRgAAAatJREFUeNrs1mtuwyAMAGCzE/UIOYp7su4mO0IB84YQepF6f7ppjywNabVJ25DyJ0F8wQLbgpnhJ8YD/ND4ezAw87sHAKDWOtxr/dbaMOd82nGtdWDmp5wz3oqO44jn8/lpmqZh1Y5zzphz5hjjZjylhDlnHscRZ505GAAgxoghBHbOdePee4wx8tuorYZfFnDOsTFmNe6cQ+89hxBwMbJLMACAMQaJiInoKm6MQWvtbJS6YQAAIkKtNWutv8S11khEX0ZnEwwAoJRCKSVLKXHu27Uf2wwDAEgpUUrJx+MRP75TSmFPvhAfMSHEIn5BDwCwv8w/AMB+t9s9XoPfOb3wW/wy9yo6Bz/cI+V+S5GQUqIQ4iCE2F/CfZg7cJuKRM/JllKiUqr7cK2GtdaolFq8TktJZnMCIaLFe0pEaIy5XwKx1qK1dlW+ttaic+72lBlCQO89W2u7ikQI4VNJXQ2nlDDGyN777hMbQsCUEpdS+spiKQVzzpxS2twI5JyxlMK11nWNQGttqLW+dg63jForTtPErbVh1Y5fGrR7jNPpNKwqEv8N/a+DnwcAvI7yXBHolsAAAAAASUVORK5CYII=), auto;
+}
+
+/* line 32, assets/scss/core/_off-canvas.scss */
+
+.c-offcanvas--overlay,
+.c-offcanvas--push {
+  z-index: 101;
+}
+
+/* line 37, assets/scss/core/_off-canvas.scss */
+
+.c-offcanvas-content-wrap {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
 /* line 5, assets/scss/core/_animation.scss */
 
 body.animates-pending *[data-animate] {
@@ -20547,7 +20604,7 @@ body.animates-pending *[data-animate].animated-done {
   content: "\f105";
   font-size: 60px;
   font-weight: bold;
-  color: #563d7c;
+  color: #55A79A;
 }
 
 /* line 53, assets/scss/core/_sliders.scss */
@@ -20669,7 +20726,7 @@ body.animates-pending *[data-animate].animated-done {
 .flex-control-nav .bullet:hover,
 .flex-control-nav .bullet.flex-active,
 .flex-control-nav .bullet.selected {
-  background: #563d7c;
+  background: #55A79A;
 }
 
 /* line 122, assets/scss/core/_sliders.scss */
@@ -22222,15 +22279,15 @@ body.animates-pending *[data-animate].animated-done {
 
 .overlay.overlay-primary:after,
 .overlay-hover-content.overlay-primary:after {
-  background: #563d7c;
+  background: #55A79A;
 }
 
 /* line 301, assets/scss/core/_overlay.scss */
 
 .overlay.overlay-primary.overlay-gradient:after,
 .overlay-hover-content.overlay-primary.overlay-gradient:after {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#563d7c));
-  background-image: linear-gradient(to bottom, transparent 0%, #563d7c 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#55A79A));
+  background-image: linear-gradient(to bottom, transparent 0%, #55A79A 100%);
   background-repeat: repeat-x;
 }
 
@@ -22238,8 +22295,8 @@ body.animates-pending *[data-animate].animated-done {
 
 .overlay.overlay-primary.overlay-gradient-flip:after,
 .overlay-hover-content.overlay-primary.overlay-gradient-flip:after {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#563d7c), to(transparent));
-  background-image: linear-gradient(to bottom, #563d7c 0%, transparent 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#55A79A), to(transparent));
+  background-image: linear-gradient(to bottom, #55A79A 0%, transparent 100%);
   background-repeat: repeat-x;
 }
 
@@ -22276,15 +22333,15 @@ body.animates-pending *[data-animate].animated-done {
 
 .overlay.overlay-primary-dark:after,
 .overlay-hover-content.overlay-primary-dark:after {
-  background: #271b38;
+  background: #33635c;
 }
 
 /* line 301, assets/scss/core/_overlay.scss */
 
 .overlay.overlay-primary-dark.overlay-gradient:after,
 .overlay-hover-content.overlay-primary-dark.overlay-gradient:after {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#271b38));
-  background-image: linear-gradient(to bottom, transparent 0%, #271b38 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#33635c));
+  background-image: linear-gradient(to bottom, transparent 0%, #33635c 100%);
   background-repeat: repeat-x;
 }
 
@@ -22292,8 +22349,8 @@ body.animates-pending *[data-animate].animated-done {
 
 .overlay.overlay-primary-dark.overlay-gradient-flip:after,
 .overlay-hover-content.overlay-primary-dark.overlay-gradient-flip:after {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#271b38), to(transparent));
-  background-image: linear-gradient(to bottom, #271b38 0%, transparent 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#33635c), to(transparent));
+  background-image: linear-gradient(to bottom, #33635c 0%, transparent 100%);
   background-repeat: repeat-x;
 }
 
@@ -22330,15 +22387,15 @@ body.animates-pending *[data-animate].animated-done {
 
 .overlay.overlay-primary-faded:after,
 .overlay-hover-content.overlay-primary-faded:after {
-  background: rgba(86, 61, 124, 0.3);
+  background: rgba(85, 167, 154, 0.3);
 }
 
 /* line 301, assets/scss/core/_overlay.scss */
 
 .overlay.overlay-primary-faded.overlay-gradient:after,
 .overlay-hover-content.overlay-primary-faded.overlay-gradient:after {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(86, 61, 124, 0.3)));
-  background-image: linear-gradient(to bottom, transparent 0%, rgba(86, 61, 124, 0.3) 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(85, 167, 154, 0.3)));
+  background-image: linear-gradient(to bottom, transparent 0%, rgba(85, 167, 154, 0.3) 100%);
   background-repeat: repeat-x;
 }
 
@@ -22346,8 +22403,8 @@ body.animates-pending *[data-animate].animated-done {
 
 .overlay.overlay-primary-faded.overlay-gradient-flip:after,
 .overlay-hover-content.overlay-primary-faded.overlay-gradient-flip:after {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(86, 61, 124, 0.3)), to(transparent));
-  background-image: linear-gradient(to bottom, rgba(86, 61, 124, 0.3) 0%, transparent 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(85, 167, 154, 0.3)), to(transparent));
+  background-image: linear-gradient(to bottom, rgba(85, 167, 154, 0.3) 0%, transparent 100%);
   background-repeat: repeat-x;
 }
 
@@ -24073,7 +24130,7 @@ all and (min-device-pixel-ratio: 1.5) {
   border-radius: 2px;
   position: relative;
   border: 1px solid #f2f2f2;
-  border-bottom: 3px solid #563d7c;
+  border-bottom: 3px solid #55A79A;
   text-align: left;
 }
 
@@ -24134,7 +24191,7 @@ all and (min-device-pixel-ratio: 1.5) {
 .timeline-item.tag-featured:after,
 .timeline-item.marker-highlight:after,
 .timeline-item.highlight:after {
-  color: #62458d;
+  color: #65b1a5;
 }
 
 /* line 207, assets/scss/core/_timeline.scss */
@@ -24322,7 +24379,7 @@ all and (min-device-pixel-ratio: 1.5) {
     border-radius: 2px;
     position: relative;
     border: 1px solid #f2f2f2;
-    border-bottom: 3px solid #563d7c;
+    border-bottom: 3px solid #55A79A;
     text-align: left;
     margin-top: 80px;
   }
@@ -24414,7 +24471,7 @@ all and (min-device-pixel-ratio: 1.5) {
   .timeline-stacked .timeline-item.even.tag-featured:after,
   .timeline-stacked .timeline-item.even.marker-highlight:after,
   .timeline-stacked .timeline-item.even.highlight:after {
-    color: #62458d;
+    color: #65b1a5;
   }
   /* line 207, assets/scss/core/_timeline.scss */
   .timeline.timeline-stacked .timeline-item.overlap-push-large,
@@ -24999,58 +25056,58 @@ all and (min-device-pixel-ratio: 1.5) {
 /* line 336, assets/scss/core/_timeline-variations.scss */
 
 .list-timeline.list-timeline-primary:before {
-  background: #563d7c;
+  background: #55A79A;
 }
 
 /* line 340, assets/scss/core/_timeline-variations.scss */
 
 .list-timeline.list-timeline-primary .list-timeline-item:before {
-  border-color: #563d7c;
+  border-color: #55A79A;
 }
 
 /* line 343, assets/scss/core/_timeline-variations.scss */
 
 .list-timeline.list-timeline-primary .list-timeline-item.active:before,
 .list-timeline.list-timeline-primary .list-timeline-item.show:before {
-  background: #563d7c;
+  background: #55A79A;
 }
 
 /* line 336, assets/scss/core/_timeline-variations.scss */
 
 .list-timeline.list-timeline-primary-dark:before {
-  background: #271b38;
+  background: #33635c;
 }
 
 /* line 340, assets/scss/core/_timeline-variations.scss */
 
 .list-timeline.list-timeline-primary-dark .list-timeline-item:before {
-  border-color: #271b38;
+  border-color: #33635c;
 }
 
 /* line 343, assets/scss/core/_timeline-variations.scss */
 
 .list-timeline.list-timeline-primary-dark .list-timeline-item.active:before,
 .list-timeline.list-timeline-primary-dark .list-timeline-item.show:before {
-  background: #271b38;
+  background: #33635c;
 }
 
 /* line 336, assets/scss/core/_timeline-variations.scss */
 
 .list-timeline.list-timeline-primary-faded:before {
-  background: rgba(86, 61, 124, 0.3);
+  background: rgba(85, 167, 154, 0.3);
 }
 
 /* line 340, assets/scss/core/_timeline-variations.scss */
 
 .list-timeline.list-timeline-primary-faded .list-timeline-item:before {
-  border-color: rgba(86, 61, 124, 0.3);
+  border-color: rgba(85, 167, 154, 0.3);
 }
 
 /* line 343, assets/scss/core/_timeline-variations.scss */
 
 .list-timeline.list-timeline-primary-faded .list-timeline-item.active:before,
 .list-timeline.list-timeline-primary-faded .list-timeline-item.show:before {
-  background: rgba(86, 61, 124, 0.3);
+  background: rgba(85, 167, 154, 0.3);
 }
 
 /* line 336, assets/scss/core/_timeline-variations.scss */
@@ -26203,8 +26260,8 @@ all and (min-device-pixel-ratio: 1.5) {
 /* line 92, assets/scss/core/_blocks.scss */
 
 .stat .stat-header {
-  background: #563d7c;
-  background-image: radial-gradient(circle, #62458d, #4a356b);
+  background: #55A79A;
+  background-image: radial-gradient(circle, #64b1a4, #4c968a);
   background-repeat: no-repeat;
   padding: 20px;
   border-radius: 6px;
@@ -26230,7 +26287,7 @@ all and (min-device-pixel-ratio: 1.5) {
 /* line 113, assets/scss/core/_blocks.scss */
 
 .stat .stat-header:after {
-  border-top-color: #563d7c;
+  border-top-color: #55A79A;
   border-width: 5px;
   left: 50%;
   margin-left: -5px;
@@ -27254,7 +27311,7 @@ a:hover.text-brand-whatsapp {
   margin: 0;
   padding: 20px 1.25rem;
   text-shadow: none;
-  color: #563d7c;
+  color: #55A79A;
   display: block;
   background: #fff;
   font-size: 16px;
@@ -27342,6 +27399,189 @@ a:hover.text-brand-whatsapp {
 .pricing-table .list-group-item {
   height: 50px;
   display: block;
+}
+
+/* line 7, assets/scss/core/_page-titles.scss */
+
+.page-title {
+  margin: 0;
+}
+
+/* line 10, assets/scss/core/_page-titles.scss */
+
+.page-title small {
+  color: rgba(51, 51, 51, 0.5);
+  color: rgba(51, 51, 51, 0.5);
+}
+
+/* line 16, assets/scss/core/_page-titles.scss */
+
+.title-divider {
+  text-align: left;
+  margin-bottom: 1em;
+  background: url(../img/bg_divider.png) left center repeat-x;
+  padding: 0;
+}
+
+/* line 22, assets/scss/core/_page-titles.scss */
+
+.title-divider span {
+  background: #fff;
+  padding-right: 0.5em;
+}
+
+/* line 27, assets/scss/core/_page-titles.scss */
+
+.title-divider small {
+  display: block;
+  color: rgba(51, 51, 51, 0.6);
+  margin-top: 5px;
+}
+
+/* line 35, assets/scss/core/_page-titles.scss */
+
+.bg-light .title-divider span {
+  background: #f8f9fa;
+}
+
+/* line 35, assets/scss/core/_page-titles.scss */
+
+.bg-grey .title-divider span {
+  background: #e9ecef;
+}
+
+/* line 35, assets/scss/core/_page-titles.scss */
+
+.bg-grey-dark .title-divider span {
+  background: #495057;
+}
+
+/* line 35, assets/scss/core/_page-titles.scss */
+
+.bg-primary .title-divider span {
+  background: #55A79A;
+}
+
+/* line 35, assets/scss/core/_page-titles.scss */
+
+.bg-primary-dark .title-divider span {
+  background: #33635c;
+}
+
+/* line 35, assets/scss/core/_page-titles.scss */
+
+.bg-primary-faded .title-divider span {
+  background: rgba(85, 167, 154, 0.3);
+}
+
+/* line 35, assets/scss/core/_page-titles.scss */
+
+.bg-info .title-divider span {
+  background: #17a2b8;
+}
+
+/* line 35, assets/scss/core/_page-titles.scss */
+
+.bg-success .title-divider span {
+  background: #28a745;
+}
+
+/* line 35, assets/scss/core/_page-titles.scss */
+
+.bg-warning .title-divider span {
+  background: #ffc107;
+}
+
+/* line 35, assets/scss/core/_page-titles.scss */
+
+.bg-danger .title-divider span {
+  background: #dc3545;
+}
+
+/* line 35, assets/scss/core/_page-titles.scss */
+
+.bg-dark .title-divider span {
+  background: #343a40;
+}
+
+/* line 35, assets/scss/core/_page-titles.scss */
+
+.bg-secondary .title-divider span {
+  background: #6c757d;
+}
+
+/* line 35, assets/scss/core/_page-titles.scss */
+
+.bg-black .title-divider span {
+  background: #000;
+}
+
+/* line 35, assets/scss/core/_page-titles.scss */
+
+.bg-white .title-divider span {
+  background: #fff;
+}
+
+/* line 5, assets/scss/core/_countdown.scss */
+
+.countdown-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+/* line 9, assets/scss/core/_countdown.scss */
+
+.countdown-cards .count {
+  text-align: center;
+  display: block;
+  padding: 1.5em;
+  margin: 2px;
+  border-radius: 0.2rem;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+}
+
+/* line 5, assets/scss/core/_collapse.scss */
+
+[data-toggle="collapse"].collapsing {
+  height: auto;
+}
+
+/* line 5, assets/scss/core/_overflow.scss */
+
+.overflow-x {
+  overflow-x: auto !important;
+}
+
+/* line 8, assets/scss/core/_overflow.scss */
+
+.overflow-y {
+  overflow-y: auto !important;
+}
+
+/* line 11, assets/scss/core/_overflow.scss */
+
+.overflow-visible {
+  overflow: visible !important;
+}
+
+/* line 14, assets/scss/core/_overflow.scss */
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+/* line 19, assets/scss/core/_overflow.scss */
+
+[data-toggle="scrollbar"] {
+  -ms-flex-wrap: nowrap !important;
+  flex-wrap: nowrap !important;
 }
 
 /* line 8, assets/scss/core/_layout-variations.scss */
@@ -28506,7 +28746,7 @@ a:hover.text-brand-whatsapp {
   content: attr(data-title);
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  color: #563d7c;
+  color: #55A79A;
   display: block;
 }
 
@@ -28671,25 +28911,25 @@ button.bg-hover-grey-dark:focus {
 /* line 33, assets/scss/core/utils/utils-colours.scss */
 
 .bg-primary {
-  background-color: #563d7c !important;
+  background-color: #55A79A !important;
 }
 
 /* line 36, assets/scss/core/utils/utils-colours.scss */
 
 .text-primary {
-  color: #563d7c !important;
+  color: #55A79A !important;
 }
 
 /* line 41, assets/scss/core/utils/utils-colours.scss */
 
 .text-hover-primary:hover {
-  color: #563d7c !important;
+  color: #55A79A !important;
 }
 
 /* line 44, assets/scss/core/utils/utils-colours.scss */
 
 .bg-hover-primary:hover {
-  background-color: #563d7c !important;
+  background-color: #55A79A !important;
 }
 
 /* line 17, node_modules/bootstrap/scss/mixins/_hover.scss */
@@ -28698,31 +28938,31 @@ a.bg-hover-primary:hover,
 a.bg-hover-primary:focus,
 button.bg-hover-primary:hover,
 button.bg-hover-primary:focus {
-  background-color: #563d7c !important;
+  background-color: #55A79A !important;
 }
 
 /* line 33, assets/scss/core/utils/utils-colours.scss */
 
 .bg-primary-dark {
-  background-color: #271b38 !important;
+  background-color: #33635c !important;
 }
 
 /* line 36, assets/scss/core/utils/utils-colours.scss */
 
 .text-primary-dark {
-  color: #271b38 !important;
+  color: #33635c !important;
 }
 
 /* line 41, assets/scss/core/utils/utils-colours.scss */
 
 .text-hover-primary-dark:hover {
-  color: #271b38 !important;
+  color: #33635c !important;
 }
 
 /* line 44, assets/scss/core/utils/utils-colours.scss */
 
 .bg-hover-primary-dark:hover {
-  background-color: #271b38 !important;
+  background-color: #33635c !important;
 }
 
 /* line 17, node_modules/bootstrap/scss/mixins/_hover.scss */
@@ -28731,31 +28971,31 @@ a.bg-hover-primary-dark:hover,
 a.bg-hover-primary-dark:focus,
 button.bg-hover-primary-dark:hover,
 button.bg-hover-primary-dark:focus {
-  background-color: #271b38 !important;
+  background-color: #33635c !important;
 }
 
 /* line 33, assets/scss/core/utils/utils-colours.scss */
 
 .bg-primary-faded {
-  background-color: rgba(86, 61, 124, 0.3) !important;
+  background-color: rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 36, assets/scss/core/utils/utils-colours.scss */
 
 .text-primary-faded {
-  color: rgba(86, 61, 124, 0.3) !important;
+  color: rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 41, assets/scss/core/utils/utils-colours.scss */
 
 .text-hover-primary-faded:hover {
-  color: rgba(86, 61, 124, 0.3) !important;
+  color: rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 44, assets/scss/core/utils/utils-colours.scss */
 
 .bg-hover-primary-faded:hover {
-  background-color: rgba(86, 61, 124, 0.3) !important;
+  background-color: rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 17, node_modules/bootstrap/scss/mixins/_hover.scss */
@@ -28764,7 +29004,7 @@ a.bg-hover-primary-faded:hover,
 a.bg-hover-primary-faded:focus,
 button.bg-hover-primary-faded:hover,
 button.bg-hover-primary-faded:focus {
-  background-color: rgba(86, 61, 124, 0.3) !important;
+  background-color: rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 33, assets/scss/core/utils/utils-colours.scss */
@@ -30327,7 +30567,7 @@ ul.list-sm li {
 /* line 22, assets/scss/core/utils/utils-borders.scss */
 
 .border-primary {
-  border-color: #563d7c !important;
+  border-color: #55A79A !important;
 }
 
 /* line 23, assets/scss/core/utils/utils-borders.scss */
@@ -30339,7 +30579,7 @@ ul.list-sm li {
 /* line 22, assets/scss/core/utils/utils-borders.scss */
 
 .border-primary-dark {
-  border-color: #271b38 !important;
+  border-color: #33635c !important;
 }
 
 /* line 23, assets/scss/core/utils/utils-borders.scss */
@@ -30351,7 +30591,7 @@ ul.list-sm li {
 /* line 22, assets/scss/core/utils/utils-borders.scss */
 
 .border-primary-faded {
-  border-color: rgba(86, 61, 124, 0.3) !important;
+  border-color: rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 23, assets/scss/core/utils/utils-borders.scss */
@@ -30783,91 +31023,91 @@ ul.list-sm li {
 /* line 43, assets/scss/core/utils/utils-borders.scss */
 
 .border-1-primary {
-  border: 1px solid #563d7c !important;
+  border: 1px solid #55A79A !important;
 }
 
 /* line 46, assets/scss/core/utils/utils-borders.scss */
 
 .border-top-1-primary {
-  border-top: 1px solid #563d7c !important;
+  border-top: 1px solid #55A79A !important;
 }
 
 /* line 49, assets/scss/core/utils/utils-borders.scss */
 
 .border-bottom-1-primary {
-  border-bottom: 1px solid #563d7c !important;
+  border-bottom: 1px solid #55A79A !important;
 }
 
 /* line 52, assets/scss/core/utils/utils-borders.scss */
 
 .border-right-1-primary {
-  border-right: 1px solid #563d7c !important;
+  border-right: 1px solid #55A79A !important;
 }
 
 /* line 55, assets/scss/core/utils/utils-borders.scss */
 
 .border-left-1-primary {
-  border-left: 1px solid #563d7c !important;
+  border-left: 1px solid #55A79A !important;
 }
 
 /* line 43, assets/scss/core/utils/utils-borders.scss */
 
 .border-1-primary-dark {
-  border: 1px solid #271b38 !important;
+  border: 1px solid #33635c !important;
 }
 
 /* line 46, assets/scss/core/utils/utils-borders.scss */
 
 .border-top-1-primary-dark {
-  border-top: 1px solid #271b38 !important;
+  border-top: 1px solid #33635c !important;
 }
 
 /* line 49, assets/scss/core/utils/utils-borders.scss */
 
 .border-bottom-1-primary-dark {
-  border-bottom: 1px solid #271b38 !important;
+  border-bottom: 1px solid #33635c !important;
 }
 
 /* line 52, assets/scss/core/utils/utils-borders.scss */
 
 .border-right-1-primary-dark {
-  border-right: 1px solid #271b38 !important;
+  border-right: 1px solid #33635c !important;
 }
 
 /* line 55, assets/scss/core/utils/utils-borders.scss */
 
 .border-left-1-primary-dark {
-  border-left: 1px solid #271b38 !important;
+  border-left: 1px solid #33635c !important;
 }
 
 /* line 43, assets/scss/core/utils/utils-borders.scss */
 
 .border-1-primary-faded {
-  border: 1px solid rgba(86, 61, 124, 0.3) !important;
+  border: 1px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 46, assets/scss/core/utils/utils-borders.scss */
 
 .border-top-1-primary-faded {
-  border-top: 1px solid rgba(86, 61, 124, 0.3) !important;
+  border-top: 1px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 49, assets/scss/core/utils/utils-borders.scss */
 
 .border-bottom-1-primary-faded {
-  border-bottom: 1px solid rgba(86, 61, 124, 0.3) !important;
+  border-bottom: 1px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 52, assets/scss/core/utils/utils-borders.scss */
 
 .border-right-1-primary-faded {
-  border-right: 1px solid rgba(86, 61, 124, 0.3) !important;
+  border-right: 1px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 55, assets/scss/core/utils/utils-borders.scss */
 
 .border-left-1-primary-faded {
-  border-left: 1px solid rgba(86, 61, 124, 0.3) !important;
+  border-left: 1px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 43, assets/scss/core/utils/utils-borders.scss */
@@ -31719,91 +31959,91 @@ ul.list-sm li {
 /* line 43, assets/scss/core/utils/utils-borders.scss */
 
 .border-2-primary {
-  border: 2px solid #563d7c !important;
+  border: 2px solid #55A79A !important;
 }
 
 /* line 46, assets/scss/core/utils/utils-borders.scss */
 
 .border-top-2-primary {
-  border-top: 2px solid #563d7c !important;
+  border-top: 2px solid #55A79A !important;
 }
 
 /* line 49, assets/scss/core/utils/utils-borders.scss */
 
 .border-bottom-2-primary {
-  border-bottom: 2px solid #563d7c !important;
+  border-bottom: 2px solid #55A79A !important;
 }
 
 /* line 52, assets/scss/core/utils/utils-borders.scss */
 
 .border-right-2-primary {
-  border-right: 2px solid #563d7c !important;
+  border-right: 2px solid #55A79A !important;
 }
 
 /* line 55, assets/scss/core/utils/utils-borders.scss */
 
 .border-left-2-primary {
-  border-left: 2px solid #563d7c !important;
+  border-left: 2px solid #55A79A !important;
 }
 
 /* line 43, assets/scss/core/utils/utils-borders.scss */
 
 .border-2-primary-dark {
-  border: 2px solid #271b38 !important;
+  border: 2px solid #33635c !important;
 }
 
 /* line 46, assets/scss/core/utils/utils-borders.scss */
 
 .border-top-2-primary-dark {
-  border-top: 2px solid #271b38 !important;
+  border-top: 2px solid #33635c !important;
 }
 
 /* line 49, assets/scss/core/utils/utils-borders.scss */
 
 .border-bottom-2-primary-dark {
-  border-bottom: 2px solid #271b38 !important;
+  border-bottom: 2px solid #33635c !important;
 }
 
 /* line 52, assets/scss/core/utils/utils-borders.scss */
 
 .border-right-2-primary-dark {
-  border-right: 2px solid #271b38 !important;
+  border-right: 2px solid #33635c !important;
 }
 
 /* line 55, assets/scss/core/utils/utils-borders.scss */
 
 .border-left-2-primary-dark {
-  border-left: 2px solid #271b38 !important;
+  border-left: 2px solid #33635c !important;
 }
 
 /* line 43, assets/scss/core/utils/utils-borders.scss */
 
 .border-2-primary-faded {
-  border: 2px solid rgba(86, 61, 124, 0.3) !important;
+  border: 2px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 46, assets/scss/core/utils/utils-borders.scss */
 
 .border-top-2-primary-faded {
-  border-top: 2px solid rgba(86, 61, 124, 0.3) !important;
+  border-top: 2px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 49, assets/scss/core/utils/utils-borders.scss */
 
 .border-bottom-2-primary-faded {
-  border-bottom: 2px solid rgba(86, 61, 124, 0.3) !important;
+  border-bottom: 2px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 52, assets/scss/core/utils/utils-borders.scss */
 
 .border-right-2-primary-faded {
-  border-right: 2px solid rgba(86, 61, 124, 0.3) !important;
+  border-right: 2px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 55, assets/scss/core/utils/utils-borders.scss */
 
 .border-left-2-primary-faded {
-  border-left: 2px solid rgba(86, 61, 124, 0.3) !important;
+  border-left: 2px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 43, assets/scss/core/utils/utils-borders.scss */
@@ -32655,91 +32895,91 @@ ul.list-sm li {
 /* line 43, assets/scss/core/utils/utils-borders.scss */
 
 .border-3-primary {
-  border: 3px solid #563d7c !important;
+  border: 3px solid #55A79A !important;
 }
 
 /* line 46, assets/scss/core/utils/utils-borders.scss */
 
 .border-top-3-primary {
-  border-top: 3px solid #563d7c !important;
+  border-top: 3px solid #55A79A !important;
 }
 
 /* line 49, assets/scss/core/utils/utils-borders.scss */
 
 .border-bottom-3-primary {
-  border-bottom: 3px solid #563d7c !important;
+  border-bottom: 3px solid #55A79A !important;
 }
 
 /* line 52, assets/scss/core/utils/utils-borders.scss */
 
 .border-right-3-primary {
-  border-right: 3px solid #563d7c !important;
+  border-right: 3px solid #55A79A !important;
 }
 
 /* line 55, assets/scss/core/utils/utils-borders.scss */
 
 .border-left-3-primary {
-  border-left: 3px solid #563d7c !important;
+  border-left: 3px solid #55A79A !important;
 }
 
 /* line 43, assets/scss/core/utils/utils-borders.scss */
 
 .border-3-primary-dark {
-  border: 3px solid #271b38 !important;
+  border: 3px solid #33635c !important;
 }
 
 /* line 46, assets/scss/core/utils/utils-borders.scss */
 
 .border-top-3-primary-dark {
-  border-top: 3px solid #271b38 !important;
+  border-top: 3px solid #33635c !important;
 }
 
 /* line 49, assets/scss/core/utils/utils-borders.scss */
 
 .border-bottom-3-primary-dark {
-  border-bottom: 3px solid #271b38 !important;
+  border-bottom: 3px solid #33635c !important;
 }
 
 /* line 52, assets/scss/core/utils/utils-borders.scss */
 
 .border-right-3-primary-dark {
-  border-right: 3px solid #271b38 !important;
+  border-right: 3px solid #33635c !important;
 }
 
 /* line 55, assets/scss/core/utils/utils-borders.scss */
 
 .border-left-3-primary-dark {
-  border-left: 3px solid #271b38 !important;
+  border-left: 3px solid #33635c !important;
 }
 
 /* line 43, assets/scss/core/utils/utils-borders.scss */
 
 .border-3-primary-faded {
-  border: 3px solid rgba(86, 61, 124, 0.3) !important;
+  border: 3px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 46, assets/scss/core/utils/utils-borders.scss */
 
 .border-top-3-primary-faded {
-  border-top: 3px solid rgba(86, 61, 124, 0.3) !important;
+  border-top: 3px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 49, assets/scss/core/utils/utils-borders.scss */
 
 .border-bottom-3-primary-faded {
-  border-bottom: 3px solid rgba(86, 61, 124, 0.3) !important;
+  border-bottom: 3px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 52, assets/scss/core/utils/utils-borders.scss */
 
 .border-right-3-primary-faded {
-  border-right: 3px solid rgba(86, 61, 124, 0.3) !important;
+  border-right: 3px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 55, assets/scss/core/utils/utils-borders.scss */
 
 .border-left-3-primary-faded {
-  border-left: 3px solid rgba(86, 61, 124, 0.3) !important;
+  border-left: 3px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 43, assets/scss/core/utils/utils-borders.scss */
@@ -33591,91 +33831,91 @@ ul.list-sm li {
 /* line 43, assets/scss/core/utils/utils-borders.scss */
 
 .border-4-primary {
-  border: 4px solid #563d7c !important;
+  border: 4px solid #55A79A !important;
 }
 
 /* line 46, assets/scss/core/utils/utils-borders.scss */
 
 .border-top-4-primary {
-  border-top: 4px solid #563d7c !important;
+  border-top: 4px solid #55A79A !important;
 }
 
 /* line 49, assets/scss/core/utils/utils-borders.scss */
 
 .border-bottom-4-primary {
-  border-bottom: 4px solid #563d7c !important;
+  border-bottom: 4px solid #55A79A !important;
 }
 
 /* line 52, assets/scss/core/utils/utils-borders.scss */
 
 .border-right-4-primary {
-  border-right: 4px solid #563d7c !important;
+  border-right: 4px solid #55A79A !important;
 }
 
 /* line 55, assets/scss/core/utils/utils-borders.scss */
 
 .border-left-4-primary {
-  border-left: 4px solid #563d7c !important;
+  border-left: 4px solid #55A79A !important;
 }
 
 /* line 43, assets/scss/core/utils/utils-borders.scss */
 
 .border-4-primary-dark {
-  border: 4px solid #271b38 !important;
+  border: 4px solid #33635c !important;
 }
 
 /* line 46, assets/scss/core/utils/utils-borders.scss */
 
 .border-top-4-primary-dark {
-  border-top: 4px solid #271b38 !important;
+  border-top: 4px solid #33635c !important;
 }
 
 /* line 49, assets/scss/core/utils/utils-borders.scss */
 
 .border-bottom-4-primary-dark {
-  border-bottom: 4px solid #271b38 !important;
+  border-bottom: 4px solid #33635c !important;
 }
 
 /* line 52, assets/scss/core/utils/utils-borders.scss */
 
 .border-right-4-primary-dark {
-  border-right: 4px solid #271b38 !important;
+  border-right: 4px solid #33635c !important;
 }
 
 /* line 55, assets/scss/core/utils/utils-borders.scss */
 
 .border-left-4-primary-dark {
-  border-left: 4px solid #271b38 !important;
+  border-left: 4px solid #33635c !important;
 }
 
 /* line 43, assets/scss/core/utils/utils-borders.scss */
 
 .border-4-primary-faded {
-  border: 4px solid rgba(86, 61, 124, 0.3) !important;
+  border: 4px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 46, assets/scss/core/utils/utils-borders.scss */
 
 .border-top-4-primary-faded {
-  border-top: 4px solid rgba(86, 61, 124, 0.3) !important;
+  border-top: 4px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 49, assets/scss/core/utils/utils-borders.scss */
 
 .border-bottom-4-primary-faded {
-  border-bottom: 4px solid rgba(86, 61, 124, 0.3) !important;
+  border-bottom: 4px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 52, assets/scss/core/utils/utils-borders.scss */
 
 .border-right-4-primary-faded {
-  border-right: 4px solid rgba(86, 61, 124, 0.3) !important;
+  border-right: 4px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 55, assets/scss/core/utils/utils-borders.scss */
 
 .border-left-4-primary-faded {
-  border-left: 4px solid rgba(86, 61, 124, 0.3) !important;
+  border-left: 4px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 43, assets/scss/core/utils/utils-borders.scss */
@@ -34527,91 +34767,91 @@ ul.list-sm li {
 /* line 43, assets/scss/core/utils/utils-borders.scss */
 
 .border-5-primary {
-  border: 5px solid #563d7c !important;
+  border: 5px solid #55A79A !important;
 }
 
 /* line 46, assets/scss/core/utils/utils-borders.scss */
 
 .border-top-5-primary {
-  border-top: 5px solid #563d7c !important;
+  border-top: 5px solid #55A79A !important;
 }
 
 /* line 49, assets/scss/core/utils/utils-borders.scss */
 
 .border-bottom-5-primary {
-  border-bottom: 5px solid #563d7c !important;
+  border-bottom: 5px solid #55A79A !important;
 }
 
 /* line 52, assets/scss/core/utils/utils-borders.scss */
 
 .border-right-5-primary {
-  border-right: 5px solid #563d7c !important;
+  border-right: 5px solid #55A79A !important;
 }
 
 /* line 55, assets/scss/core/utils/utils-borders.scss */
 
 .border-left-5-primary {
-  border-left: 5px solid #563d7c !important;
+  border-left: 5px solid #55A79A !important;
 }
 
 /* line 43, assets/scss/core/utils/utils-borders.scss */
 
 .border-5-primary-dark {
-  border: 5px solid #271b38 !important;
+  border: 5px solid #33635c !important;
 }
 
 /* line 46, assets/scss/core/utils/utils-borders.scss */
 
 .border-top-5-primary-dark {
-  border-top: 5px solid #271b38 !important;
+  border-top: 5px solid #33635c !important;
 }
 
 /* line 49, assets/scss/core/utils/utils-borders.scss */
 
 .border-bottom-5-primary-dark {
-  border-bottom: 5px solid #271b38 !important;
+  border-bottom: 5px solid #33635c !important;
 }
 
 /* line 52, assets/scss/core/utils/utils-borders.scss */
 
 .border-right-5-primary-dark {
-  border-right: 5px solid #271b38 !important;
+  border-right: 5px solid #33635c !important;
 }
 
 /* line 55, assets/scss/core/utils/utils-borders.scss */
 
 .border-left-5-primary-dark {
-  border-left: 5px solid #271b38 !important;
+  border-left: 5px solid #33635c !important;
 }
 
 /* line 43, assets/scss/core/utils/utils-borders.scss */
 
 .border-5-primary-faded {
-  border: 5px solid rgba(86, 61, 124, 0.3) !important;
+  border: 5px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 46, assets/scss/core/utils/utils-borders.scss */
 
 .border-top-5-primary-faded {
-  border-top: 5px solid rgba(86, 61, 124, 0.3) !important;
+  border-top: 5px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 49, assets/scss/core/utils/utils-borders.scss */
 
 .border-bottom-5-primary-faded {
-  border-bottom: 5px solid rgba(86, 61, 124, 0.3) !important;
+  border-bottom: 5px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 52, assets/scss/core/utils/utils-borders.scss */
 
 .border-right-5-primary-faded {
-  border-right: 5px solid rgba(86, 61, 124, 0.3) !important;
+  border-right: 5px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 55, assets/scss/core/utils/utils-borders.scss */
 
 .border-left-5-primary-faded {
-  border-left: 5px solid rgba(86, 61, 124, 0.3) !important;
+  border-left: 5px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 43, assets/scss/core/utils/utils-borders.scss */
@@ -35463,91 +35703,91 @@ ul.list-sm li {
 /* line 43, assets/scss/core/utils/utils-borders.scss */
 
 .border-10-primary {
-  border: 10px solid #563d7c !important;
+  border: 10px solid #55A79A !important;
 }
 
 /* line 46, assets/scss/core/utils/utils-borders.scss */
 
 .border-top-10-primary {
-  border-top: 10px solid #563d7c !important;
+  border-top: 10px solid #55A79A !important;
 }
 
 /* line 49, assets/scss/core/utils/utils-borders.scss */
 
 .border-bottom-10-primary {
-  border-bottom: 10px solid #563d7c !important;
+  border-bottom: 10px solid #55A79A !important;
 }
 
 /* line 52, assets/scss/core/utils/utils-borders.scss */
 
 .border-right-10-primary {
-  border-right: 10px solid #563d7c !important;
+  border-right: 10px solid #55A79A !important;
 }
 
 /* line 55, assets/scss/core/utils/utils-borders.scss */
 
 .border-left-10-primary {
-  border-left: 10px solid #563d7c !important;
+  border-left: 10px solid #55A79A !important;
 }
 
 /* line 43, assets/scss/core/utils/utils-borders.scss */
 
 .border-10-primary-dark {
-  border: 10px solid #271b38 !important;
+  border: 10px solid #33635c !important;
 }
 
 /* line 46, assets/scss/core/utils/utils-borders.scss */
 
 .border-top-10-primary-dark {
-  border-top: 10px solid #271b38 !important;
+  border-top: 10px solid #33635c !important;
 }
 
 /* line 49, assets/scss/core/utils/utils-borders.scss */
 
 .border-bottom-10-primary-dark {
-  border-bottom: 10px solid #271b38 !important;
+  border-bottom: 10px solid #33635c !important;
 }
 
 /* line 52, assets/scss/core/utils/utils-borders.scss */
 
 .border-right-10-primary-dark {
-  border-right: 10px solid #271b38 !important;
+  border-right: 10px solid #33635c !important;
 }
 
 /* line 55, assets/scss/core/utils/utils-borders.scss */
 
 .border-left-10-primary-dark {
-  border-left: 10px solid #271b38 !important;
+  border-left: 10px solid #33635c !important;
 }
 
 /* line 43, assets/scss/core/utils/utils-borders.scss */
 
 .border-10-primary-faded {
-  border: 10px solid rgba(86, 61, 124, 0.3) !important;
+  border: 10px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 46, assets/scss/core/utils/utils-borders.scss */
 
 .border-top-10-primary-faded {
-  border-top: 10px solid rgba(86, 61, 124, 0.3) !important;
+  border-top: 10px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 49, assets/scss/core/utils/utils-borders.scss */
 
 .border-bottom-10-primary-faded {
-  border-bottom: 10px solid rgba(86, 61, 124, 0.3) !important;
+  border-bottom: 10px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 52, assets/scss/core/utils/utils-borders.scss */
 
 .border-right-10-primary-faded {
-  border-right: 10px solid rgba(86, 61, 124, 0.3) !important;
+  border-right: 10px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 55, assets/scss/core/utils/utils-borders.scss */
 
 .border-left-10-primary-faded {
-  border-left: 10px solid rgba(86, 61, 124, 0.3) !important;
+  border-left: 10px solid rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 43, assets/scss/core/utils/utils-borders.scss */
@@ -39027,109 +39267,109 @@ ul.list-sm li {
 /* line 14, assets/scss/core/utils/utils-dividers.scss */
 
 .divider-primary.divider-diagonal:before {
-  border-left-color: #563d7c;
+  border-left-color: #55A79A;
 }
 
 /* line 17, assets/scss/core/utils/utils-dividers.scss */
 
 .divider-primary.divider-diagonal-r:before {
-  border-right-color: #563d7c;
+  border-right-color: #55A79A;
 }
 
 /* line 22, assets/scss/core/utils/utils-dividers.scss */
 
 .divider-primary.divider-arrow-b:before {
-  border-top-color: #563d7c;
+  border-top-color: #55A79A;
 }
 
 /* line 25, assets/scss/core/utils/utils-dividers.scss */
 
 .divider-primary.divider-arrow-t:before {
-  border-bottom-color: #563d7c;
+  border-bottom-color: #55A79A;
 }
 
 /* line 28, assets/scss/core/utils/utils-dividers.scss */
 
 .divider-primary.divider-arrow-l:before {
-  border-right-color: #563d7c;
+  border-right-color: #55A79A;
 }
 
 /* line 31, assets/scss/core/utils/utils-dividers.scss */
 
 .divider-primary.divider-arrow-r:before {
-  border-left-color: #563d7c;
+  border-left-color: #55A79A;
 }
 
 /* line 14, assets/scss/core/utils/utils-dividers.scss */
 
 .divider-primary-dark.divider-diagonal:before {
-  border-left-color: #271b38;
+  border-left-color: #33635c;
 }
 
 /* line 17, assets/scss/core/utils/utils-dividers.scss */
 
 .divider-primary-dark.divider-diagonal-r:before {
-  border-right-color: #271b38;
+  border-right-color: #33635c;
 }
 
 /* line 22, assets/scss/core/utils/utils-dividers.scss */
 
 .divider-primary-dark.divider-arrow-b:before {
-  border-top-color: #271b38;
+  border-top-color: #33635c;
 }
 
 /* line 25, assets/scss/core/utils/utils-dividers.scss */
 
 .divider-primary-dark.divider-arrow-t:before {
-  border-bottom-color: #271b38;
+  border-bottom-color: #33635c;
 }
 
 /* line 28, assets/scss/core/utils/utils-dividers.scss */
 
 .divider-primary-dark.divider-arrow-l:before {
-  border-right-color: #271b38;
+  border-right-color: #33635c;
 }
 
 /* line 31, assets/scss/core/utils/utils-dividers.scss */
 
 .divider-primary-dark.divider-arrow-r:before {
-  border-left-color: #271b38;
+  border-left-color: #33635c;
 }
 
 /* line 14, assets/scss/core/utils/utils-dividers.scss */
 
 .divider-primary-faded.divider-diagonal:before {
-  border-left-color: rgba(86, 61, 124, 0.3);
+  border-left-color: rgba(85, 167, 154, 0.3);
 }
 
 /* line 17, assets/scss/core/utils/utils-dividers.scss */
 
 .divider-primary-faded.divider-diagonal-r:before {
-  border-right-color: rgba(86, 61, 124, 0.3);
+  border-right-color: rgba(85, 167, 154, 0.3);
 }
 
 /* line 22, assets/scss/core/utils/utils-dividers.scss */
 
 .divider-primary-faded.divider-arrow-b:before {
-  border-top-color: rgba(86, 61, 124, 0.3);
+  border-top-color: rgba(85, 167, 154, 0.3);
 }
 
 /* line 25, assets/scss/core/utils/utils-dividers.scss */
 
 .divider-primary-faded.divider-arrow-t:before {
-  border-bottom-color: rgba(86, 61, 124, 0.3);
+  border-bottom-color: rgba(85, 167, 154, 0.3);
 }
 
 /* line 28, assets/scss/core/utils/utils-dividers.scss */
 
 .divider-primary-faded.divider-arrow-l:before {
-  border-right-color: rgba(86, 61, 124, 0.3);
+  border-right-color: rgba(85, 167, 154, 0.3);
 }
 
 /* line 31, assets/scss/core/utils/utils-dividers.scss */
 
 .divider-primary-faded.divider-arrow-r:before {
-  border-left-color: rgba(86, 61, 124, 0.3);
+  border-left-color: rgba(85, 167, 154, 0.3);
 }
 
 /* line 14, assets/scss/core/utils/utils-dividers.scss */
@@ -40391,19 +40631,19 @@ a.op-10:hover,
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-0.bg-primary {
-  background-color: rgba(86, 61, 124, 0) !important;
+  background-color: rgba(85, 167, 154, 0) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-0.bg-primary-dark {
-  background-color: rgba(39, 27, 56, 0) !important;
+  background-color: rgba(51, 99, 92, 0) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-0.bg-primary-faded {
-  background-color: rgba(86, 61, 124, 0) !important;
+  background-color: rgba(85, 167, 154, 0) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
@@ -40587,19 +40827,19 @@ a.op-10:hover,
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-0.border-primary {
-  border-color: rgba(86, 61, 124, 0) !important;
+  border-color: rgba(85, 167, 154, 0) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-0.border-primary-dark {
-  border-color: rgba(39, 27, 56, 0) !important;
+  border-color: rgba(51, 99, 92, 0) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-0.border-primary-faded {
-  border-color: rgba(86, 61, 124, 0) !important;
+  border-color: rgba(85, 167, 154, 0) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
@@ -40767,19 +41007,19 @@ a.op-10:hover,
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-1.bg-primary {
-  background-color: rgba(86, 61, 124, 0.1) !important;
+  background-color: rgba(85, 167, 154, 0.1) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-1.bg-primary-dark {
-  background-color: rgba(39, 27, 56, 0.1) !important;
+  background-color: rgba(51, 99, 92, 0.1) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-1.bg-primary-faded {
-  background-color: rgba(86, 61, 124, 0.1) !important;
+  background-color: rgba(85, 167, 154, 0.1) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
@@ -40963,19 +41203,19 @@ a.op-10:hover,
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-1.border-primary {
-  border-color: rgba(86, 61, 124, 0.1) !important;
+  border-color: rgba(85, 167, 154, 0.1) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-1.border-primary-dark {
-  border-color: rgba(39, 27, 56, 0.1) !important;
+  border-color: rgba(51, 99, 92, 0.1) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-1.border-primary-faded {
-  border-color: rgba(86, 61, 124, 0.1) !important;
+  border-color: rgba(85, 167, 154, 0.1) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
@@ -41143,19 +41383,19 @@ a.op-10:hover,
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-2.bg-primary {
-  background-color: rgba(86, 61, 124, 0.2) !important;
+  background-color: rgba(85, 167, 154, 0.2) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-2.bg-primary-dark {
-  background-color: rgba(39, 27, 56, 0.2) !important;
+  background-color: rgba(51, 99, 92, 0.2) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-2.bg-primary-faded {
-  background-color: rgba(86, 61, 124, 0.2) !important;
+  background-color: rgba(85, 167, 154, 0.2) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
@@ -41339,19 +41579,19 @@ a.op-10:hover,
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-2.border-primary {
-  border-color: rgba(86, 61, 124, 0.2) !important;
+  border-color: rgba(85, 167, 154, 0.2) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-2.border-primary-dark {
-  border-color: rgba(39, 27, 56, 0.2) !important;
+  border-color: rgba(51, 99, 92, 0.2) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-2.border-primary-faded {
-  border-color: rgba(86, 61, 124, 0.2) !important;
+  border-color: rgba(85, 167, 154, 0.2) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
@@ -41519,19 +41759,19 @@ a.op-10:hover,
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-3.bg-primary {
-  background-color: rgba(86, 61, 124, 0.3) !important;
+  background-color: rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-3.bg-primary-dark {
-  background-color: rgba(39, 27, 56, 0.3) !important;
+  background-color: rgba(51, 99, 92, 0.3) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-3.bg-primary-faded {
-  background-color: rgba(86, 61, 124, 0.3) !important;
+  background-color: rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
@@ -41715,19 +41955,19 @@ a.op-10:hover,
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-3.border-primary {
-  border-color: rgba(86, 61, 124, 0.3) !important;
+  border-color: rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-3.border-primary-dark {
-  border-color: rgba(39, 27, 56, 0.3) !important;
+  border-color: rgba(51, 99, 92, 0.3) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-3.border-primary-faded {
-  border-color: rgba(86, 61, 124, 0.3) !important;
+  border-color: rgba(85, 167, 154, 0.3) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
@@ -41895,19 +42135,19 @@ a.op-10:hover,
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-4.bg-primary {
-  background-color: rgba(86, 61, 124, 0.4) !important;
+  background-color: rgba(85, 167, 154, 0.4) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-4.bg-primary-dark {
-  background-color: rgba(39, 27, 56, 0.4) !important;
+  background-color: rgba(51, 99, 92, 0.4) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-4.bg-primary-faded {
-  background-color: rgba(86, 61, 124, 0.4) !important;
+  background-color: rgba(85, 167, 154, 0.4) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
@@ -42091,19 +42331,19 @@ a.op-10:hover,
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-4.border-primary {
-  border-color: rgba(86, 61, 124, 0.4) !important;
+  border-color: rgba(85, 167, 154, 0.4) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-4.border-primary-dark {
-  border-color: rgba(39, 27, 56, 0.4) !important;
+  border-color: rgba(51, 99, 92, 0.4) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-4.border-primary-faded {
-  border-color: rgba(86, 61, 124, 0.4) !important;
+  border-color: rgba(85, 167, 154, 0.4) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
@@ -42271,19 +42511,19 @@ a.op-10:hover,
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-5.bg-primary {
-  background-color: rgba(86, 61, 124, 0.5) !important;
+  background-color: rgba(85, 167, 154, 0.5) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-5.bg-primary-dark {
-  background-color: rgba(39, 27, 56, 0.5) !important;
+  background-color: rgba(51, 99, 92, 0.5) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-5.bg-primary-faded {
-  background-color: rgba(86, 61, 124, 0.5) !important;
+  background-color: rgba(85, 167, 154, 0.5) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
@@ -42467,19 +42707,19 @@ a.op-10:hover,
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-5.border-primary {
-  border-color: rgba(86, 61, 124, 0.5) !important;
+  border-color: rgba(85, 167, 154, 0.5) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-5.border-primary-dark {
-  border-color: rgba(39, 27, 56, 0.5) !important;
+  border-color: rgba(51, 99, 92, 0.5) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-5.border-primary-faded {
-  border-color: rgba(86, 61, 124, 0.5) !important;
+  border-color: rgba(85, 167, 154, 0.5) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
@@ -42647,19 +42887,19 @@ a.op-10:hover,
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-6.bg-primary {
-  background-color: rgba(86, 61, 124, 0.6) !important;
+  background-color: rgba(85, 167, 154, 0.6) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-6.bg-primary-dark {
-  background-color: rgba(39, 27, 56, 0.6) !important;
+  background-color: rgba(51, 99, 92, 0.6) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-6.bg-primary-faded {
-  background-color: rgba(86, 61, 124, 0.6) !important;
+  background-color: rgba(85, 167, 154, 0.6) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
@@ -42843,19 +43083,19 @@ a.op-10:hover,
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-6.border-primary {
-  border-color: rgba(86, 61, 124, 0.6) !important;
+  border-color: rgba(85, 167, 154, 0.6) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-6.border-primary-dark {
-  border-color: rgba(39, 27, 56, 0.6) !important;
+  border-color: rgba(51, 99, 92, 0.6) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-6.border-primary-faded {
-  border-color: rgba(86, 61, 124, 0.6) !important;
+  border-color: rgba(85, 167, 154, 0.6) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
@@ -43023,19 +43263,19 @@ a.op-10:hover,
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-7.bg-primary {
-  background-color: rgba(86, 61, 124, 0.7) !important;
+  background-color: rgba(85, 167, 154, 0.7) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-7.bg-primary-dark {
-  background-color: rgba(39, 27, 56, 0.7) !important;
+  background-color: rgba(51, 99, 92, 0.7) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-7.bg-primary-faded {
-  background-color: rgba(86, 61, 124, 0.7) !important;
+  background-color: rgba(85, 167, 154, 0.7) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
@@ -43219,19 +43459,19 @@ a.op-10:hover,
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-7.border-primary {
-  border-color: rgba(86, 61, 124, 0.7) !important;
+  border-color: rgba(85, 167, 154, 0.7) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-7.border-primary-dark {
-  border-color: rgba(39, 27, 56, 0.7) !important;
+  border-color: rgba(51, 99, 92, 0.7) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-7.border-primary-faded {
-  border-color: rgba(86, 61, 124, 0.7) !important;
+  border-color: rgba(85, 167, 154, 0.7) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
@@ -43399,19 +43639,19 @@ a.op-10:hover,
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-8.bg-primary {
-  background-color: rgba(86, 61, 124, 0.8) !important;
+  background-color: rgba(85, 167, 154, 0.8) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-8.bg-primary-dark {
-  background-color: rgba(39, 27, 56, 0.8) !important;
+  background-color: rgba(51, 99, 92, 0.8) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-8.bg-primary-faded {
-  background-color: rgba(86, 61, 124, 0.8) !important;
+  background-color: rgba(85, 167, 154, 0.8) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
@@ -43595,19 +43835,19 @@ a.op-10:hover,
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-8.border-primary {
-  border-color: rgba(86, 61, 124, 0.8) !important;
+  border-color: rgba(85, 167, 154, 0.8) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-8.border-primary-dark {
-  border-color: rgba(39, 27, 56, 0.8) !important;
+  border-color: rgba(51, 99, 92, 0.8) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-8.border-primary-faded {
-  border-color: rgba(86, 61, 124, 0.8) !important;
+  border-color: rgba(85, 167, 154, 0.8) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
@@ -43775,19 +44015,19 @@ a.op-10:hover,
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-9.bg-primary {
-  background-color: rgba(86, 61, 124, 0.9) !important;
+  background-color: rgba(85, 167, 154, 0.9) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-9.bg-primary-dark {
-  background-color: rgba(39, 27, 56, 0.9) !important;
+  background-color: rgba(51, 99, 92, 0.9) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-9.bg-primary-faded {
-  background-color: rgba(86, 61, 124, 0.9) !important;
+  background-color: rgba(85, 167, 154, 0.9) !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
@@ -43971,19 +44211,19 @@ a.op-10:hover,
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-9.border-primary {
-  border-color: rgba(86, 61, 124, 0.9) !important;
+  border-color: rgba(85, 167, 154, 0.9) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-9.border-primary-dark {
-  border-color: rgba(39, 27, 56, 0.9) !important;
+  border-color: rgba(51, 99, 92, 0.9) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-9.border-primary-faded {
-  border-color: rgba(86, 61, 124, 0.9) !important;
+  border-color: rgba(85, 167, 154, 0.9) !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
@@ -44151,19 +44391,19 @@ a.op-10:hover,
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-10.bg-primary {
-  background-color: #563d7c !important;
+  background-color: #55a79a !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-10.bg-primary-dark {
-  background-color: #271b38 !important;
+  background-color: #33635c !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
 
 .bg-op-10.bg-primary-faded {
-  background-color: #563d7c !important;
+  background-color: #55a79a !important;
 }
 
 /* line 30, assets/scss/core/utils/utils-opacity.scss */
@@ -44347,19 +44587,19 @@ a.op-10:hover,
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-10.border-primary {
-  border-color: #563d7c !important;
+  border-color: #55a79a !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-10.border-primary-dark {
-  border-color: #271b38 !important;
+  border-color: #33635c !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
 
 .border-op-10.border-primary-faded {
-  border-color: #563d7c !important;
+  border-color: #55a79a !important;
 }
 
 /* line 48, assets/scss/core/utils/utils-opacity.scss */
@@ -44506,8 +44746,202 @@ a.op-10:hover,
   border-color: #2ecc71 !important;
 }
 
-/*
-@import "core/plugin-isotope.scss";*/
+/* line 12, assets/scss/core/utils/utils-squares.scss */
+
+.sq-sm {
+  height: 50px !important;
+  width: 50px !important;
+  min-height: 50px !important;
+  min-width: 50px !important;
+}
+
+/* line 12, assets/scss/core/utils/utils-squares.scss */
+
+.sq-md {
+  height: 75px !important;
+  width: 75px !important;
+  min-height: 75px !important;
+  min-width: 75px !important;
+}
+
+/* line 12, assets/scss/core/utils/utils-squares.scss */
+
+.sq-lg {
+  height: 100px !important;
+  width: 100px !important;
+  min-height: 100px !important;
+  min-width: 100px !important;
+}
+
+/* line 12, assets/scss/core/utils/utils-squares.scss */
+
+.sq-xl {
+  height: 150px !important;
+  width: 150px !important;
+  min-height: 150px !important;
+  min-width: 150px !important;
+}
+
+/* line 19, assets/scss/core/utils/utils-squares.scss */
+
+.sq-auto {
+  height: auto !important;
+  width: auto !important;
+  min-height: auto !important;
+  min-width: auto !important;
+}
+
+@media (min-width: 576px) {
+  /* line 12, assets/scss/core/utils/utils-squares.scss */
+  .sq-sm-sm {
+    height: 50px !important;
+    width: 50px !important;
+    min-height: 50px !important;
+    min-width: 50px !important;
+  }
+  /* line 12, assets/scss/core/utils/utils-squares.scss */
+  .sq-sm-md {
+    height: 75px !important;
+    width: 75px !important;
+    min-height: 75px !important;
+    min-width: 75px !important;
+  }
+  /* line 12, assets/scss/core/utils/utils-squares.scss */
+  .sq-sm-lg {
+    height: 100px !important;
+    width: 100px !important;
+    min-height: 100px !important;
+    min-width: 100px !important;
+  }
+  /* line 12, assets/scss/core/utils/utils-squares.scss */
+  .sq-sm-xl {
+    height: 150px !important;
+    width: 150px !important;
+    min-height: 150px !important;
+    min-width: 150px !important;
+  }
+  /* line 19, assets/scss/core/utils/utils-squares.scss */
+  .sq-sm-auto {
+    height: auto !important;
+    width: auto !important;
+    min-height: auto !important;
+    min-width: auto !important;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 12, assets/scss/core/utils/utils-squares.scss */
+  .sq-md-sm {
+    height: 50px !important;
+    width: 50px !important;
+    min-height: 50px !important;
+    min-width: 50px !important;
+  }
+  /* line 12, assets/scss/core/utils/utils-squares.scss */
+  .sq-md-md {
+    height: 75px !important;
+    width: 75px !important;
+    min-height: 75px !important;
+    min-width: 75px !important;
+  }
+  /* line 12, assets/scss/core/utils/utils-squares.scss */
+  .sq-md-lg {
+    height: 100px !important;
+    width: 100px !important;
+    min-height: 100px !important;
+    min-width: 100px !important;
+  }
+  /* line 12, assets/scss/core/utils/utils-squares.scss */
+  .sq-md-xl {
+    height: 150px !important;
+    width: 150px !important;
+    min-height: 150px !important;
+    min-width: 150px !important;
+  }
+  /* line 19, assets/scss/core/utils/utils-squares.scss */
+  .sq-md-auto {
+    height: auto !important;
+    width: auto !important;
+    min-height: auto !important;
+    min-width: auto !important;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 12, assets/scss/core/utils/utils-squares.scss */
+  .sq-lg-sm {
+    height: 50px !important;
+    width: 50px !important;
+    min-height: 50px !important;
+    min-width: 50px !important;
+  }
+  /* line 12, assets/scss/core/utils/utils-squares.scss */
+  .sq-lg-md {
+    height: 75px !important;
+    width: 75px !important;
+    min-height: 75px !important;
+    min-width: 75px !important;
+  }
+  /* line 12, assets/scss/core/utils/utils-squares.scss */
+  .sq-lg-lg {
+    height: 100px !important;
+    width: 100px !important;
+    min-height: 100px !important;
+    min-width: 100px !important;
+  }
+  /* line 12, assets/scss/core/utils/utils-squares.scss */
+  .sq-lg-xl {
+    height: 150px !important;
+    width: 150px !important;
+    min-height: 150px !important;
+    min-width: 150px !important;
+  }
+  /* line 19, assets/scss/core/utils/utils-squares.scss */
+  .sq-lg-auto {
+    height: auto !important;
+    width: auto !important;
+    min-height: auto !important;
+    min-width: auto !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 12, assets/scss/core/utils/utils-squares.scss */
+  .sq-xl-sm {
+    height: 50px !important;
+    width: 50px !important;
+    min-height: 50px !important;
+    min-width: 50px !important;
+  }
+  /* line 12, assets/scss/core/utils/utils-squares.scss */
+  .sq-xl-md {
+    height: 75px !important;
+    width: 75px !important;
+    min-height: 75px !important;
+    min-width: 75px !important;
+  }
+  /* line 12, assets/scss/core/utils/utils-squares.scss */
+  .sq-xl-lg {
+    height: 100px !important;
+    width: 100px !important;
+    min-height: 100px !important;
+    min-width: 100px !important;
+  }
+  /* line 12, assets/scss/core/utils/utils-squares.scss */
+  .sq-xl-xl {
+    height: 150px !important;
+    width: 150px !important;
+    min-height: 150px !important;
+    min-width: 150px !important;
+  }
+  /* line 19, assets/scss/core/utils/utils-squares.scss */
+  .sq-xl-auto {
+    height: auto !important;
+    width: auto !important;
+    min-height: auto !important;
+    min-width: auto !important;
+  }
+}
 
 /* --------------------------------------------------
  * Blog pages
@@ -44725,7 +45159,7 @@ a.op-10:hover,
 
 .blog-grid .blog-post {
   border: 1px solid #E6E6E6;
-  border-bottom: 3px solid #563d7c;
+  border-bottom: 3px solid #55A79A;
   padding: 15px;
   margin-bottom: 30px;
   background: white;
