@@ -38,7 +38,7 @@
     "gulp-html-assets": "^0.0.14",
     "gulp-order": "^1.2.0",
     "ionicons": "^3.0.0",
-    "jquery": "3.2.1",
+    "jquery": "3.5.0",
     "js-offcanvas": "^1.2.2",
     "linearicons": "^1.0.1",
     "map-stream": "^0.0.7",
